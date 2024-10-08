@@ -1,0 +1,27 @@
+
+
+
+
+
+****************************************          Parameters{'pretrained_model': 'roberta-base', 'lr': 5e-06, 'batch_size': 16, 'epoch': 30, 'dropout': 0.5, 'fine_tune': True}
+Namespace(batch_size=16, cuda=True, dataset='data/entity_extraction', decay=0, dropout=0.5, epoch=30, fine_tune=True, freeze_bert=False, gradient_clip=-1, lr=5e-06, lstm_dim=-1, name='entity_recognition', pretrained_model='roberta-base', save_path='logs/entity_extraction\\1720963320', seed=1, sequence_length=256)
+
+
+
+Exception occurred for configuration: {'pretrained_model': 'roberta-base', 'lr': 5e-06, 'batch_size': 16, 'epoch': 30, 'dropout': 0.5, 'fine_tune': True}module 'numpy' has no attribute 'int'.
+`np.int` was a deprecated alias for the builtin `int`. To avoid this error in existing code, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+The aliases was originally deprecated in NumPy 1.20; for more details and guidance see the original release note at:
+    https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+
+
+
+
+
+
+****************************************          Parameters{'pretrained_model': 'roberta-large', 'lr': 5e-06, 'batch_size': 16, 'epoch': 30, 'dropout': 0.5, 'fine_tune': True}
+Namespace(batch_size=16, cuda=True, dataset='data/entity_extraction', decay=0, dropout=0.5, epoch=30, fine_tune=True, freeze_bert=False, gradient_clip=-1, lr=5e-06, lstm_dim=-1, name='entity_recognition', pretrained_model='roberta-large', save_path='logs/entity_extraction\\1720968508', seed=1, sequence_length=256)
+
+
+
+Exception occurred for configuration: {'pretrained_model': 'roberta-large', 'lr': 5e-06, 'batch_size': 16, 'epoch': 30, 'dropout': 0.5, 'fine_tune': True}cuDNN error: CUDNN_STATUS_INTERNAL_ERROR
+

@@ -1,0 +1,52 @@
+across MS Excel droppers that use hidden spreadsheets and VBA macros to drop their first stage implant
+implant itself is a VBS script with functionality
+collect system information and execute arbitrary code sent by the attackers on the infected machine
+sent spear-phishing emails , luring the victims to open a malicious Microsoft Excel/Word document
+using standard VBA macros to download the payload
+using logos and themes relevant to the targeted company
+using trending topics from their region
+mimicking the Palestinian authority
+Exploitation , installation and persistence
+execute a series of formulas placed in a hidden column
+hide the main spreadsheet that requested the user to “ enable editing ”
+unhide a secondary spreadsheet that contains the decoy , to avoid raising suspicion
+run formulas from a third spreadsheet with hidden columns
+using the Excel 4.0 function “ GET.WORKSPACE
+Check if a mouse is present
+Check if the host computer is capable of playing sounds
+save a VBS stager to %
+set up registry keys for persistence
+runs winrm.vbs using explorer.exe
+add a Class ID in the current user registry hive ( HKCU ) referencing the malicious VBS script written previously
+invoke the malicious VBS script any time a program or script references
+Registry keys used for COM hijacking
+Registry keys used for COM hijacking
+delete the winrm.vbs and winrm.txt files
+recreating and opening the same files
+writes a PowerShell one-liner wrapped with VB code temporarily into
+saved into
+using explorer.exe
+acts as a downloader and secondary stager used to execute commands provided by its C2
+connect with the embedded C2 domain using predefined HTTP settings such as a unique User-Agent
+payloads containing system commands are sent back to the victim in the form of PowerShell functions
+sent back
+conducts system reconnaissance to assess the AV software installed and the user privilege
+Sample scheduled task settings referencing SLMGR.VBS
+trigger WINRM.VBS through COM hijacking
+Sample scheduled task settings referencing SLMGR.VBS
+trigger WINRM.VBS through COM hijacking
+select volumeserialnumber List local disk drives
+Check if current user has admin privileges
+checks for possible backdoors installed as services
+checks for the registry keys added for COM hijacking
+lists all hotfixes installed
+takes system screenshots and saves them to % AppData % before sending them to the C2 via a POST request
+Command and control
+listens for incoming HTTPS connections on several ports
+uses common names seen on other C2 domains
+deploying Visual Basic Script ( VBS ) , potentially delivered through spear phishing , decoys with Arabic content , occasionally associated with Palestinian matters
+request highlighting the status condition , IEX invocation and 60-100 sleep function
+request highlighting the status condition , IEX invocation and 60-100 sleep function
+request highlighting the status condition , IEX invocation and 60-100 sleep function
+request highlighting the status condition , IEX invocation and 60-100 sleep function
+Malicious documents and droppers

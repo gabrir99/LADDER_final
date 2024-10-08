@@ -1,0 +1,26 @@
+digraph "graph.dot" {
+rankdir="LR"
+size="9"
+fixedsize="false"
+splines="true"
+nodesep=0.3
+ranksep=0
+fontsize=10
+overlap="scalexy"
+engine= "neato"
+	"'to the remote ip : * ( remote ip : * ) server'" [node_type=file shape=ellipse]
+	"'The malware'" [node_type=file shape=ellipse]
+	"'The malware'" -> "'to the remote ip : * ( remote ip : * ) server'" [label="1: connect"]
+	"'keylogger functionality'" [node_type=file shape=ellipse]
+	"'The malware'" [node_type=file shape=ellipse]
+	"'The malware'" -> "'keylogger functionality'" [label="2: have"]
+	"'the logged keystrokes in the following file'" [node_type=file shape=ellipse]
+	"'The malware'" [node_type=Process shape=box]
+	"'The malware'" -> "'the logged keystrokes in the following file'" [label="3: write"]
+	"'the logged keystrokes in the following file'" [node_type=file shape=ellipse]
+	"'The malware'" [node_type=Process shape=box]
+	"'The malware'" -> "'the logged keystrokes in the following file'" [label="4: write"]
+	"'exe-0ad199d6.pf'" [node_type=file shape=ellipse]
+	"'Authorization.exe'" [node_type=Process shape=box]
+	"'Authorization.exe'" -> "'exe-0ad199d6.pf'" [label="5: write"]
+}
