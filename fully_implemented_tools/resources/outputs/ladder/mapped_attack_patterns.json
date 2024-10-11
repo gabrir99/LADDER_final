@@ -1,0 +1,623 @@
+[
+    {
+        "sent": "The implant itself is a VBS script with functionality to collect system information and execute arbitrary code sent by the attackers on the infected machine.",
+        "attack_patterns": [
+            "implant itself is a VBS",
+            "execute arbitrary code sent by the attackers on the infected machine"
+        ],
+        "mapped_attack_patterns": [
+            {
+                "report_text": "execute arbitrary code sent by the attackers on the infected machine",
+                "ttp_id": "T1574",
+                "ttp_name": "Hijack Execution Flow",
+                "ttp_descr": "Adversaries may execute their own malicious payloads by hijacking the way operating systems run programs. Hijacking execution flow can be for the purposes of persistence, since this hijacked execution may reoccur over time. Adversaries may also use these mechanisms to elevate privileges or evade defenses, such as application control or other restrictions on execution.",
+                "sent_emb_dist": 0.4804832339286804
+            }
+        ]
+    },
+    {
+        "sent": "The Word droppers were using standard VBA macros to download the payload.",
+        "attack_patterns": [
+            "using standard VBA macros to download the payload"
+        ],
+        "mapped_attack_patterns": [
+            {
+                "report_text": "using standard VBA macros to download the payload",
+                "ttp_id": "T1564",
+                "ttp_name": "Hide Artifacts",
+                "ttp_descr": "Adversaries may attempt to hide artifacts associated with their behaviors to evade detection. Operating systems may have features to hide various artifacts, such as important system files and administrative task execution, to avoid disrupting user work environments and prevent users from changing files or features on the system. Adversaries may abuse these features to hide artifacts such as files, directories, user accounts, or other system activity to evade detection.",
+                "sent_emb_dist": 0.5172929167747498
+            }
+        ]
+    },
+    {
+        "sent": "Sample VBS dropper Excel and Word documents, and executable Sample VBS dropper Excel and Word documents, and executable Sample VBS dropper Excel and Word documents, and executable",
+        "attack_patterns": []
+    },
+    {
+        "sent": "Sample VBS dropper Excel and Word documents, and executable",
+        "attack_patterns": [
+            "Sample VBS dropper Excel and Word documents , and executable"
+        ],
+        "mapped_attack_patterns": [
+            {
+                "report_text": "Sample VBS dropper Excel and Word documents , and executable",
+                "ttp_id": "T1564",
+                "ttp_name": "Hide Artifacts",
+                "ttp_descr": "Adversaries may attempt to hide artifacts associated with their behaviors to evade detection. Operating systems may have features to hide various artifacts, such as important system files and administrative task execution, to avoid disrupting user work environments and prevent users from changing files or features on the system. Adversaries may abuse these features to hide artifacts such as files, directories, user accounts, or other system activity to evade detection.",
+                "sent_emb_dist": 0.5291604548692703
+            }
+        ]
+    },
+    {
+        "sent": "Exploitation, installation and persistence",
+        "attack_patterns": [
+            "Exploitation , installation and persistence"
+        ],
+        "mapped_attack_patterns": [
+            {
+                "report_text": "Exploitation , installation and persistence",
+                "ttp_id": "T1499",
+                "ttp_name": "Endpoint Denial of Service",
+                "ttp_descr": "Adversaries may perform Endpoint Denial of Service (DoS) attacks to degrade or block the availability of services to users. Endpoint DoS can be performed by exhausting the system resources those services are hosted on or exploiting the system to cause a persistent crash condition. Example services include websites, email services, DNS, and web-based applications. Adversaries have been observed conducting DoS attacks for political purposes and to support other malicious activities, including distraction, hacktivism, and extortion.",
+                "sent_emb_dist": 0.45792877674102783
+            }
+        ]
+    },
+    {
+        "sent": "This first stage implant is composed of VBS and PowerShell scripts.",
+        "attack_patterns": []
+    },
+    {
+        "sent": "Ferocious dropper: The Excel dropper, after the user opens it and disables the protected mode, will execute a series of formulas placed in a hidden column.",
+        "attack_patterns": [
+            "the user opens it and disables the protected mode",
+            "will execute a series of formulas placed in a hidden column"
+        ],
+        "mapped_attack_patterns": [
+            {
+                "report_text": "the user opens it and disables the protected mode",
+                "ttp_id": "T1562",
+                "ttp_name": "Impair Defenses",
+                "ttp_descr": "Adversaries may maliciously modify components of a victim environment in order to hinder or disable defensive mechanisms. This not only involves impairing preventative defenses, such as firewalls and anti-virus, but also detection capabilities that defenders can use to audit activity and identify malicious behavior. This may also span both native defenses as well as supplemental capabilities installed by users and administrators.",
+                "sent_emb_dist": 0.5632126182317734
+            }
+        ]
+    },
+    {
+        "sent": "Initially, they will hide the main spreadsheet that requested the user to \u201cenable editing\u201d, then unhide a secondary spreadsheet that contains the decoy, to avoid raising suspicion.",
+        "attack_patterns": [
+            "hide the main spreadsheet that requested the user to \u201c enable editing \u201d",
+            "unhide a secondary spreadsheet that contains the decoy"
+        ]
+    },
+    {
+        "sent": "The dropper will then run formulas from a third spreadsheet with hidden columns.",
+        "attack_patterns": [
+            "run formulas from a third spreadsheet with hidden columns"
+        ]
+    },
+    {
+        "sent": "The infection process will start by running three basic anti-sandbox checks using the Excel 4.0 function \u201cGET.WORKSPACE\u201d, with three integers:",
+        "attack_patterns": []
+    },
+    {
+        "sent": "1: Get the name of the environment in which Microsoft Excel is running, as text, followed by the environment\u2019s version number.",
+        "attack_patterns": [
+            "Get the name of the environment in which Microsoft Excel is running , as text , followed by the environment \u2019 s version number"
+        ]
+    },
+    {
+        "sent": "42: Check if the host computer is capable of playing sounds.",
+        "attack_patterns": [
+            "Check if the host computer is capable of playing sounds"
+        ]
+    },
+    {
+        "sent": "If any of the above checks fail, or if the Windows environment matches any of the aforementioned versions predefined in the document (different documents have different predefined versions), the process will halt.",
+        "attack_patterns": []
+    },
+    {
+        "sent": "Otherwise, the macro will open a temporary %ProgramData%\\winrm.txt file and save a VBS stager to %ProgramData%\\winrm.vbs and set up registry keys for persistence.",
+        "attack_patterns": [
+            "open a temporary % ProgramData",
+            "save a VBS stager to %",
+            "set up registry keys for persistence"
+        ],
+        "mapped_attack_patterns": [
+            {
+                "report_text": "set up registry keys for persistence",
+                "ttp_id": "T1547",
+                "ttp_name": "Boot or Logon Autostart Execution",
+                "ttp_descr": "Adversaries may configure system settings to automatically execute a program during system boot or logon to maintain persistence or gain higher-level privileges on compromised systems. Operating systems may have mechanisms for automatically running a program on system boot or account logon. These mechanisms may include automatically executing programs that are placed in specially designated directories or are referenced by repositories that store configuration information, such as the Windows Registry. An adversary may achieve the same goal by modifying or extending features of the kernel.",
+                "sent_emb_dist": 0.4296819418668747
+            }
+        ]
+    },
+    {
+        "sent": "Ferocious run-1: After the macro finishes writing to disk, it runs winrm.vbs using explorer.exe.",
+        "attack_patterns": [
+            "finishes writing to disk",
+            "runs winrm.vbs using"
+        ],
+        "mapped_attack_patterns": [
+            {
+                "report_text": "finishes writing to disk",
+                "ttp_id": "T1561",
+                "ttp_name": "Disk Wipe",
+                "ttp_descr": "Adversaries may wipe or corrupt raw disk data on specific systems or in large numbers in a network to interrupt availability to system and network resources. With direct write access to a disk, adversaries may attempt to overwrite portions of disk data. Adversaries may opt to wipe arbitrary portions of disk data and/or wipe disk structures like the master boot record (MBR). A complete wipe of all disk sectors may be attempted.",
+                "sent_emb_dist": 0.533032089471817
+            },
+            {
+                "report_text": "runs winrm.vbs using",
+                "ttp_id": "T1059",
+                "ttp_name": "Command and Scripting Interpreter",
+                "ttp_descr": "Adversaries may abuse command and script interpreters to execute commands, scripts, or binaries. These interfaces and languages provide ways of interacting with computer systems and are a common feature across many different platforms. Most systems come with some built-in command-line interface and scripting capabilities, for example, macOS and Linux distributions include some flavor of Unix Shell while Windows installations include the Windows Command Shell and PowerShell.",
+                "sent_emb_dist": 0.5230189114809036
+            }
+        ]
+    },
+    {
+        "sent": "In turn, the VBS script will write an embedded PowerShell snippet to a predefined filename that varies between samples, for instance, %ProgramData%\\regionh.txt.",
+        "attack_patterns": [
+            "write an embedded PowerShell snippet to a predefined filename that varies between"
+        ],
+        "mapped_attack_patterns": [
+            {
+                "report_text": "write an embedded PowerShell snippet to a predefined filename that varies between",
+                "ttp_id": "T1059",
+                "ttp_name": "Command and Scripting Interpreter",
+                "ttp_descr": "Adversaries may abuse command and script interpreters to execute commands, scripts, or binaries. These interfaces and languages provide ways of interacting with computer systems and are a common feature across many different platforms. Most systems come with some built-in command-line interface and scripting capabilities, for example, macOS and Linux distributions include some flavor of Unix Shell while Windows installations include the Windows Command Shell and PowerShell.",
+                "sent_emb_dist": 0.5613582581281662
+            }
+        ]
+    },
+    {
+        "sent": "The VBS script will also add two important registry keys for persistence.",
+        "attack_patterns": []
+    },
+    {
+        "sent": "The persistence technique observed in all intrusions uses COM hijacking.",
+        "attack_patterns": [
+            "observed in all intrusions uses COM hijacking"
+        ],
+        "mapped_attack_patterns": [
+            {
+                "report_text": "observed in all intrusions uses COM hijacking",
+                "ttp_id": "T1574",
+                "ttp_name": "Hijack Execution Flow",
+                "ttp_descr": "Adversaries may execute their own malicious payloads by hijacking the way operating systems run programs. Hijacking execution flow can be for the purposes of persistence, since this hijacked execution may reoccur over time. Adversaries may also use these mechanisms to elevate privileges or evade defenses, such as application control or other restrictions on execution.",
+                "sent_emb_dist": 0.46927812695503235
+            }
+        ]
+    },
+    {
+        "sent": "In this technique, the threat actor is able to add a Class ID in the current user registry hive (HKCU) referencing the malicious VBS script written previously to %ProgramData%\\winrm.vbs.",
+        "attack_patterns": [
+            "add a Class ID in the current user registry hive",
+            ") referencing the malicious VBS script written previously to"
+        ],
+        "mapped_attack_patterns": [
+            {
+                "report_text": "add a Class ID in the current user registry hive",
+                "ttp_id": "T1112",
+                "ttp_name": "Modify Registry",
+                "ttp_descr": "Adversaries may interact with the Windows Registry to hide configuration information within Registry keys, remove information as part of cleaning up, or as part of other techniques to aid in persistence and execution.",
+                "sent_emb_dist": 0.5930142998695374
+            },
+            {
+                "report_text": ") referencing the malicious VBS script written previously to",
+                "ttp_id": "T1564",
+                "ttp_name": "Hide Artifacts",
+                "ttp_descr": "Adversaries may attempt to hide artifacts associated with their behaviors to evade detection. Operating systems may have features to hide various artifacts, such as important system files and administrative task execution, to avoid disrupting user work environments and prevent users from changing files or features on the system. Adversaries may abuse these features to hide artifacts such as files, directories, user accounts, or other system activity to evade detection.",
+                "sent_emb_dist": 0.5021622776985168
+            }
+        ]
+    },
+    {
+        "sent": "This registry modification will effectively invoke the malicious VBS script any time a program or script references \u201cScripting.Dictionary\u201d COM programs during their execution.",
+        "attack_patterns": [
+            "invoke the malicious VBS script any time a program or script references \u201c Scripting.Dictionary \u201d COM programs during their execution"
+        ],
+        "mapped_attack_patterns": [
+            {
+                "report_text": "invoke the malicious VBS script any time a program or script references \u201c Scripting.Dictionary \u201d COM programs during their execution",
+                "ttp_id": "T1564",
+                "ttp_name": "Hide Artifacts",
+                "ttp_descr": "Adversaries may attempt to hide artifacts associated with their behaviors to evade detection. Operating systems may have features to hide various artifacts, such as important system files and administrative task execution, to avoid disrupting user work environments and prevent users from changing files or features on the system. Adversaries may abuse these features to hide artifacts such as files, directories, user accounts, or other system activity to evade detection.",
+                "sent_emb_dist": 0.5290287137031555
+            }
+        ]
+    },
+    {
+        "sent": "Both winrm.vbs and slmgr.vbs were leveraged across different intrusions.",
+        "attack_patterns": []
+    },
+    {
+        "sent": "Registry keys used for COM hijacking",
+        "attack_patterns": [
+            "Registry keys used for COM hijacking"
+        ],
+        "mapped_attack_patterns": [
+            {
+                "report_text": "Registry keys used for COM hijacking",
+                "ttp_id": "T1112",
+                "ttp_name": "Modify Registry",
+                "ttp_descr": "Adversaries may interact with the Windows Registry to hide configuration information within Registry keys, remove information as part of cleaning up, or as part of other techniques to aid in persistence and execution.",
+                "sent_emb_dist": 0.40235960483551025
+            }
+        ]
+    },
+    {
+        "sent": "Registry keys used for COM hijacking",
+        "attack_patterns": [
+            "Registry keys used for COM hijacking"
+        ],
+        "mapped_attack_patterns": [
+            {
+                "report_text": "Registry keys used for COM hijacking",
+                "ttp_id": "T1112",
+                "ttp_name": "Modify Registry",
+                "ttp_descr": "Adversaries may interact with the Windows Registry to hide configuration information within Registry keys, remove information as part of cleaning up, or as part of other techniques to aid in persistence and execution.",
+                "sent_emb_dist": 0.40235960483551025
+            }
+        ]
+    },
+    {
+        "sent": "After the above execution chain, the Excel 4.0 macro will clean up and delete the winrm.vbs and winrm.txt files.",
+        "attack_patterns": [
+            "clean up and delete the winrm.vbs and winrm.txt files"
+        ]
+    },
+    {
+        "sent": "Ferocious run-2: The macro will continue after the cleanup by recreating and opening the same files, winrm.vbs and winrm.txt.",
+        "attack_patterns": [
+            "continue after the cleanup by recreating and opening the same files"
+        ],
+        "mapped_attack_patterns": [
+            {
+                "report_text": "continue after the cleanup by recreating and opening the same files",
+                "ttp_id": "T1070",
+                "ttp_name": "Indicator Removal on Host",
+                "ttp_descr": "Adversaries may delete or modify artifacts generated on a host system to remove evidence of their presence or hinder defenses. Various artifacts may be created by an adversary or something that can be attributed to an adversary\u2019s actions. Typically these artifacts are used as defensive indicators related to monitored events, such as strings from downloaded files, logs that are generated from user actions, and other data analyzed by defenders. Location, format, and type of artifact (such as command or login history) are often specific to each platform.",
+                "sent_emb_dist": 0.5437494963407516
+            }
+        ]
+    },
+    {
+        "sent": "However, this time it writes a PowerShell one-liner wrapped with VB code temporarily into %ProgramData%\\winrm.txt and then saved into %ProgramData%\\winrm.vbs.",
+        "attack_patterns": [
+            "writes a PowerShell one-liner wrapped with VB code temporarily into",
+            "saved into"
+        ],
+        "mapped_attack_patterns": [
+            {
+                "report_text": "writes a PowerShell one-liner wrapped with VB code temporarily into",
+                "ttp_id": "T1059",
+                "ttp_name": "Command and Scripting Interpreter",
+                "ttp_descr": "Adversaries may abuse command and script interpreters to execute commands, scripts, or binaries. These interfaces and languages provide ways of interacting with computer systems and are a common feature across many different platforms. Most systems come with some built-in command-line interface and scripting capabilities, for example, macOS and Linux distributions include some flavor of Unix Shell while Windows installations include the Windows Command Shell and PowerShell.",
+                "sent_emb_dist": 0.4794650971889496
+            }
+        ]
+    },
+    {
+        "sent": "Once successful, the macro invokes %ProgramData%\\winrm.vbs again using explorer.exe, which in turn will execute the PowerShell snippet that connects to the C2 server and which we named LitePower Stager.",
+        "attack_patterns": []
+    },
+    {
+        "sent": "The implant is a small PowerShell script that acts as a downloader and secondary stager used to execute commands provided by its C2, and possibly download and deploy further malware.",
+        "attack_patterns": [
+            "that acts as a downloader and secondary stager used to execute commands provided by its C2",
+            "download and deploy further malware"
+        ],
+        "mapped_attack_patterns": [
+            {
+                "report_text": "download and deploy further malware",
+                "ttp_id": "T1587",
+                "ttp_name": "Develop Capabilities",
+                "ttp_descr": "Adversaries may build capabilities that can be used during targeting. Rather than purchasing, freely downloading, or stealing capabilities, adversaries may develop their own capabilities in-house. This is the process of identifying development requirements and building solutions such as malware, exploits, and self-signed certificates. Adversaries may develop capabilities to support their operations throughout numerous phases of the adversary lifecycle.",
+                "sent_emb_dist": 0.3734913766384125
+            }
+        ]
+    },
+    {
+        "sent": "This script is able to connect with the embedded C2 domain using predefined HTTP settings such as a unique User-Agent:",
+        "attack_patterns": [
+            "connect with the embedded C2 domain using predefined HTTP settings such as a unique User-Agent"
+        ]
+    },
+    {
+        "sent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:FTS_06) Gecko/22.36.35.06 Firefox/2.0",
+        "attack_patterns": []
+    },
+    {
+        "sent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:FTS_06) Gecko/22.36.35.06 Firefox/2.0",
+        "attack_patterns": []
+    },
+    {
+        "sent": "If the connection to the C2 server is successful, the script parses the output and invokes it using IEX.",
+        "attack_patterns": [
+            "parses the output and invokes it using IEX"
+        ]
+    },
+    {
+        "sent": "The script sleeps for a random number of seconds between 60 and 100 after each attempt to reach the C2.",
+        "attack_patterns": [
+            "sleeps for a random number of seconds between 60 and 100 after each attempt to reach the C2"
+        ]
+    },
+    {
+        "sent": "If the threat actor succeeds in establishing C2 communications using LitePower, further payloads containing system commands are sent back to the victim in the form of PowerShell functions through HTTP GET requests, and the command results are sent back as HTTP POST requests to the C2 server.",
+        "attack_patterns": [
+            "establishing C2 communications using LitePower",
+            "further payloads containing system commands are sent back to the victim in the form of PowerShell functions through HTTP GET requests",
+            "results are sent back as HTTP POST requests to the C2 server"
+        ],
+        "mapped_attack_patterns": [
+            {
+                "report_text": "further payloads containing system commands are sent back to the victim in the form of PowerShell functions through HTTP GET requests",
+                "ttp_id": "T1059",
+                "ttp_name": "Command and Scripting Interpreter",
+                "ttp_descr": "Adversaries may abuse command and script interpreters to execute commands, scripts, or binaries. These interfaces and languages provide ways of interacting with computer systems and are a common feature across many different platforms. Most systems come with some built-in command-line interface and scripting capabilities, for example, macOS and Linux distributions include some flavor of Unix Shell while Windows installations include the Windows Command Shell and PowerShell.",
+                "sent_emb_dist": 0.5238487869501114
+            }
+        ]
+    },
+    {
+        "sent": "The GET requests will be parsed by LitePower and invoked using PowerShell\u2019s IEX function.",
+        "attack_patterns": [
+            "The GET requests will be parsed by LitePower and invoked using PowerShell \u2019 s IEX"
+        ]
+    },
+    {
+        "sent": "The threat actor initially conducts system reconnaissance to assess the AV software installed and the user privilege.",
+        "attack_patterns": [
+            "conducts system reconnaissance to assess the AV software installed and the user privilege"
+        ],
+        "mapped_attack_patterns": [
+            {
+                "report_text": "conducts system reconnaissance to assess the AV software installed and the user privilege",
+                "ttp_id": "T1592",
+                "ttp_name": "Gather Victim Host Information",
+                "ttp_descr": "Adversaries may gather information about the victim's hosts that can be used during targeting. Information about hosts may include a variety of details, including administrative data (ex: name, assigned IP, functionality, etc.) as well as specifics regarding its configuration (ex: operating system, language, etc.).",
+                "sent_emb_dist": 0.4657905846834183
+            }
+        ]
+    },
+    {
+        "sent": "This is followed by the creation of a legitimate scheduled task to trigger \u201cScripting.Dictionary\u201d COM programs; this will become the cornerstone that allows the persistence to work using the COM hijacking technique and the registry keys added during the installation phase described above.",
+        "attack_patterns": []
+    },
+    {
+        "sent": "Sample scheduled task settings referencing SLMGR.VBS to trigger WINRM.VBS through COM hijacking",
+        "attack_patterns": [
+            "scheduled task settings referencing SLMGR.VBS to trigger WINRM.VBS through COM hijacking"
+        ],
+        "mapped_attack_patterns": [
+            {
+                "report_text": "scheduled task settings referencing SLMGR.VBS to trigger WINRM.VBS through COM hijacking",
+                "ttp_id": "T1053",
+                "ttp_name": "Scheduled Task/Job",
+                "ttp_descr": "Adversaries may abuse task scheduling functionality to facilitate initial or recurring execution of malicious code. Utilities exist within all major operating systems to schedule programs or scripts to be executed at a specified date and time. A task can also be scheduled on a remote system, provided the proper authentication is met (ex: RPC and file and printer sharing in Windows environments). Scheduling a task on a remote system typically may require being a member of an admin or otherwise privileged group on the remote system.",
+                "sent_emb_dist": 0.5723796039819717
+            }
+        ]
+    },
+    {
+        "sent": "Sample scheduled task settings referencing SLMGR.VBS to trigger WINRM.VBS through COM hijacking",
+        "attack_patterns": [
+            "scheduled task settings referencing SLMGR.VBS to trigger WINRM.VBS through COM hijacking"
+        ],
+        "mapped_attack_patterns": [
+            {
+                "report_text": "scheduled task settings referencing SLMGR.VBS to trigger WINRM.VBS through COM hijacking",
+                "ttp_id": "T1053",
+                "ttp_name": "Scheduled Task/Job",
+                "ttp_descr": "Adversaries may abuse task scheduling functionality to facilitate initial or recurring execution of malicious code. Utilities exist within all major operating systems to schedule programs or scripts to be executed at a specified date and time. A task can also be scheduled on a remote system, provided the proper authentication is met (ex: RPC and file and printer sharing in Windows environments). Scheduling a task on a remote system typically may require being a member of an admin or otherwise privileged group on the remote system.",
+                "sent_emb_dist": 0.5723796039819717
+            }
+        ]
+    },
+    {
+        "sent": "select volumeserialnumber List local disk drives",
+        "attack_patterns": [
+            "select volumeserialnumber List local disk drives"
+        ]
+    },
+    {
+        "sent": "\u2018SELECT * FROM AntiVirusProduct\u2019",
+        "attack_patterns": []
+    },
+    {
+        "sent": "$antivirusProduct = Get-WmiObject -Namespace",
+        "attack_patterns": [
+            "Get-WmiObject -Namespace"
+        ]
+    },
+    {
+        "sent": "\u2018root\\SecurityCenter2\u2019 -Query $wmiQuery",
+        "attack_patterns": []
+    },
+    {
+        "sent": "if($antivirusProduct.displayName -eq \u201d){$ret= \u2018N/A\u2019}",
+        "attack_patterns": []
+    },
+    {
+        "sent": "else{$ret= $antivirusProduct.displayName} Get list of antivirus software installed",
+        "attack_patterns": [
+            "Get list of antivirus software installed"
+        ]
+    },
+    {
+        "sent": "inRole]::Administrator Check if current user has admin privileges",
+        "attack_patterns": [
+            ":Administrator Check if current user has admin privileges"
+        ],
+        "mapped_attack_patterns": [
+            {
+                "report_text": ":Administrator Check if current user has admin privileges",
+                "ttp_id": "T1548",
+                "ttp_name": "Abuse Elevation Control Mechanism",
+                "ttp_descr": "Adversaries may circumvent mechanisms designed to control elevate privileges to gain higher-level permissions. Most modern systems contain native elevation control mechanisms that are intended to limit privileges that a user can perform on a machine. Authorization has to be granted to specific users in order to perform tasks that can be considered of higher risk. An adversary can perform several methods to take advantage of built-in control mechanisms in order to escalate privileges on a system.",
+                "sent_emb_dist": 0.5646708160638809
+            }
+        ]
+    },
+    {
+        "sent": "Get-WmiObject win32_operatingsystem).caption) + \u2018 x\u2019+ ((Get-",
+        "attack_patterns": []
+    },
+    {
+        "sent": "WmiObject Win32_OperatingSystem).OSArchitecture).substring(0,2) Get operating system architecture",
+        "attack_patterns": [
+            "operating system architecture"
+        ],
+        "mapped_attack_patterns": [
+            {
+                "report_text": "operating system architecture",
+                "ttp_id": "T1542",
+                "ttp_name": "Pre-OS Boot",
+                "ttp_descr": "Adversaries may abuse Pre-OS Boot mechanisms as a way to establish persistence on a system. During the booting process of a computer, firmware and various startup services are loaded before the operating system. These programs control flow of execution before the operating system takes control.",
+                "sent_emb_dist": 0.5204631239175797
+            }
+        ]
+    },
+    {
+        "sent": "Function Get-ServiceStatus: checks for possible backdoors installed as services (MsDataSvc and NgcCtrlSvc), if the computer is part of a domain, and if the current user is a member of \u201cDomain admins\u201d.",
+        "attack_patterns": [
+            "checks for possible backdoors installed as services"
+        ],
+        "mapped_attack_patterns": [
+            {
+                "report_text": "checks for possible backdoors installed as services",
+                "ttp_id": "T1007",
+                "ttp_name": "System Service Discovery",
+                "ttp_descr": "Adversaries may try to gather information about registered local system services. Adversaries may obtain information about services using tools as well as OS utility commands such as sc query, tasklist /svc, systemctl --type=service, and net start.",
+                "sent_emb_dist": 0.5307250320911407
+            }
+        ]
+    },
+    {
+        "sent": "Function Get-PersistenceStatus: checks for the registry keys added for COM hijacking.",
+        "attack_patterns": [
+            "checks for the registry keys added for COM hijacking"
+        ],
+        "mapped_attack_patterns": [
+            {
+                "report_text": "checks for the registry keys added for COM hijacking",
+                "ttp_id": "T1112",
+                "ttp_name": "Modify Registry",
+                "ttp_descr": "Adversaries may interact with the Windows Registry to hide configuration information within Registry keys, remove information as part of cleaning up, or as part of other techniques to aid in persistence and execution.",
+                "sent_emb_dist": 0.45678913593292236
+            }
+        ]
+    },
+    {
+        "sent": "Function Get-HotFixes: lists all hotfixes installed.",
+        "attack_patterns": [
+            "lists all hotfixes installed"
+        ]
+    },
+    {
+        "sent": "Screenshot: takes system screenshots and saves them to %AppData% before sending them to the C2 via a POST request.",
+        "attack_patterns": [
+            "takes system screenshots and saves them to % AppData % before sending them to the C2 via a POST request"
+        ],
+        "mapped_attack_patterns": [
+            {
+                "report_text": "takes system screenshots and saves them to % AppData % before sending them to the C2 via a POST request",
+                "ttp_id": "T1113",
+                "ttp_name": "Screen Capture",
+                "ttp_descr": "Adversaries may attempt to take screen captures of the desktop to gather information over the course of an operation. Screen capturing functionality may be included as a feature of a remote access tool used in post-compromise operations. Taking a screenshot is also typically possible through native utilities or API calls, such as CopyFromScreen, xwd, or screencapture.",
+                "sent_emb_dist": 0.5551867485046387
+            }
+        ]
+    },
+    {
+        "sent": "These C2 domains were occasionally behind CloudFlare to obscure the real C2 IP address.",
+        "attack_patterns": [
+            "CloudFlare to obscure the real C2 IP address"
+        ]
+    },
+    {
+        "sent": "]net listens for incoming HTTPS connections on several ports and uses common names seen on other C2 domains.",
+        "attack_patterns": [
+            "listens for incoming HTTPS connections on several ports and uses common names seen on other C2 domains"
+        ]
+    },
+    {
+        "sent": "Both old and new intrusions leveraged VBS and PowerShell in similar ways to stage additional tools and communicate with the C2.",
+        "attack_patterns": [
+            "ways to stage additional tools and communicate with the C2"
+        ]
+    },
+    {
+        "sent": "Old C2 request highlighting the status condition, IEX invocation and 60-100 sleep function ",
+        "attack_patterns": [
+            "request highlighting the status condition , IEX invocation and 60-100 sleep function"
+        ]
+    },
+    {
+        "sent": "Old C2 request highlighting the status condition, IEX invocation and 60-100 sleep function",
+        "attack_patterns": [
+            "request highlighting the status condition , IEX invocation and 60-100 sleep function"
+        ]
+    },
+    {
+        "sent": "New C2 request highlighting the status condition, IEX invocation and 60-100 sleep function",
+        "attack_patterns": [
+            "highlighting the status condition , IEX invocation and 60-100 sleep function"
+        ]
+    },
+    {
+        "sent": "New C2 request highlighting the status condition, IEX invocation and 60-100 sleep function",
+        "attack_patterns": [
+            "highlighting the status condition , IEX invocation and 60-100 sleep function"
+        ]
+    },
+    {
+        "sent": "Malicious documents and droppers",
+        "attack_patterns": [
+            "Malicious documents and droppers"
+        ],
+        "mapped_attack_patterns": [
+            {
+                "report_text": "Malicious documents and droppers",
+                "ttp_id": "T1204",
+                "ttp_name": "User Execution",
+                "ttp_descr": "An adversary may rely upon specific actions by a user in order to gain execution. Users may be subjected to social engineering to get them to execute malicious code by, for example, opening a malicious document file or link. These user actions will typically be observed as follow-on behavior from forms of Phishing.",
+                "sent_emb_dist": 0.45362819731235504
+            }
+        ]
+    },
+    {
+        "sent": "Class IDs in registry",
+        "attack_patterns": [
+            "Class IDs in registry"
+        ],
+        "mapped_attack_patterns": [
+            {
+                "report_text": "Class IDs in registry",
+                "ttp_id": "T1112",
+                "ttp_name": "Modify Registry",
+                "ttp_descr": "Adversaries may interact with the Windows Registry to hide configuration information within Registry keys, remove information as part of cleaning up, or as part of other techniques to aid in persistence and execution.",
+                "sent_emb_dist": 0.49909763038158417
+            }
+        ]
+    },
+    {
+        "sent": "File path",
+        "attack_patterns": [
+            "File path"
+        ],
+        "mapped_attack_patterns": [
+            {
+                "report_text": "File path",
+                "ttp_id": "T1083",
+                "ttp_name": "File and Directory Discovery",
+                "ttp_descr": "Adversaries may enumerate files and directories or may search in specific locations of a host or network share for certain information within a file system. Adversaries may use the information from File and Directory Discovery during automated discovery to shape follow-on behaviors, including whether or not the adversary fully infects the target and/or attempts specific actions.",
+                "sent_emb_dist": 0.5313312262296677
+            }
+        ]
+    }
+]

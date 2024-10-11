@@ -1,0 +1,981 @@
+{
+    "type": "bundle",
+    "id": "bundle--fa25e2e3-8e89-442c-905c-a7805f011749",
+    "objects": [
+        {
+            "type": "malware",
+            "spec_version": "2.1",
+            "id": "malware--de324080-aad9-4caa-bf49-9c7f271002c3",
+            "created": "2024-08-27T16:29:22.277054Z",
+            "modified": "2024-08-27T16:29:22.277054Z",
+            "name": "WIRTE",
+            "description": "We attribute this campaign with high confidence to an actor named WIRTE, which is a lesser-known threat actor first publicly referenced by our colleagues at Lab52 in 2019.",
+            "is_family": false
+        },
+        {
+            "type": "tool",
+            "spec_version": "2.1",
+            "id": "tool--2a23fce3-24db-49e2-81e4-a676ec016d08",
+            "created": "2024-08-27T16:29:22.27857Z",
+            "modified": "2024-08-27T16:29:22.27857Z",
+            "name": "MS Excel",
+            "description": "This February, during our hunting efforts for threat actors using VBS/VBA implants, we came across MS Excel droppers that use hidden spreadsheets and VBA macros to drop their first stage implant."
+        },
+        {
+            "type": "malware",
+            "spec_version": "2.1",
+            "id": "malware--21fed426-9ca8-48c6-8888-4eb2db71ef09",
+            "created": "2024-08-27T16:29:22.278858Z",
+            "modified": "2024-08-27T16:29:22.278858Z",
+            "name": "MuddyWater",
+            "description": "Although these intrusion sets may appear similar to the new MuddyWater first stage VBS implant used for reconnaissance and profiling activities, which we described recently in a private report, they have slightly different TTPs and wider targeting.",
+            "is_family": false
+        },
+        {
+            "type": "tool",
+            "spec_version": "2.1",
+            "id": "tool--68d6dccf-b586-425c-859e-20a439fc0056",
+            "created": "2024-08-27T16:29:22.279111Z",
+            "modified": "2024-08-27T16:29:22.279111Z",
+            "name": "law firm",
+            "description": "The main focus is on government and diplomatic entities, though we also noticed an unusual targeting of law firms and financial institutions."
+        },
+        {
+            "type": "tool",
+            "spec_version": "2.1",
+            "id": "tool--450fa8c3-1a33-4565-a546-27a8edcd5226",
+            "created": "2024-08-27T16:29:22.279301Z",
+            "modified": "2024-08-27T16:29:22.279301Z",
+            "name": "financial institutions",
+            "description": "The main focus is on government and diplomatic entities, though we also noticed an unusual targeting of law firms and financial institutions."
+        },
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": "identity--7026a91a-7ea5-4499-8983-1c0c392ae737",
+            "created": "2024-08-27T16:29:22.279633Z",
+            "modified": "2024-08-27T16:29:22.279633Z",
+            "name": "Lab52",
+            "description": "We attribute this campaign with high confidence to an actor named WIRTE, which is a lesser-known threat actor first publicly referenced by our colleagues at Lab52 in 2019."
+        },
+        {
+            "type": "threat-actor",
+            "spec_version": "2.1",
+            "id": "threat-actor--cd330d0e-5d1b-47c8-8b41-b4f764616611",
+            "created": "2024-08-27T16:29:22.279994Z",
+            "modified": "2024-08-27T16:29:22.279994Z",
+            "name": "Cybergang",
+            "description": "We further suspect, with low confidence, that the WIRTE group has relations with the Gaza Cybergang threat actor."
+        },
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": "identity--52bd5441-cc6f-4ff4-ba23-7c9bf6db363a",
+            "created": "2024-08-27T16:29:22.280221Z",
+            "modified": "2024-08-27T16:29:22.280221Z",
+            "name": "Kaspersky Intelligence Reporting",
+            "description": "More information about WIRTE is available to customers of Kaspersky Intelligence Reporting."
+        },
+        {
+            "type": "threat-actor",
+            "spec_version": "2.1",
+            "id": "threat-actor--b61f72ac-d97f-4298-bdfd-a7c0f079b69b",
+            "created": "2024-08-27T16:29:22.280373Z",
+            "modified": "2024-08-27T16:29:22.280373Z",
+            "name": "ka",
+            "description": "Contact: intelreports@kaspersky.com\u201d"
+        },
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": "identity--d2f0024f-cd56-468e-a567-8daa55749fc6",
+            "created": "2024-08-27T16:29:22.280537Z",
+            "modified": "2024-08-27T16:29:22.280537Z",
+            "name": "spersky",
+            "description": "Contact: intelreports@kaspersky.com\u201d"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--082a8256-7113-41d2-8e73-897e6f9c6a74",
+            "created": "2024-08-27T16:29:22.280678Z",
+            "modified": "2024-08-27T16:29:22.280678Z",
+            "name": "Malicious Email",
+            "description": "Contact: intelreports@kaspersky.com\u201d",
+            "pattern": "[email-message:from_ref.value = 'intelreports@kaspersky']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-08-27T16:29:22.280678Z"
+        },
+        {
+            "type": "tool",
+            "spec_version": "2.1",
+            "id": "tool--54ff8ba3-b855-498c-86b0-41b2e8ebaf70",
+            "created": "2024-08-27T16:29:22.291553Z",
+            "modified": "2024-08-27T16:29:22.291553Z",
+            "name": "Microsoft Excel",
+            "description": "In the instances we have observed, the threat actor sent spear-phishing emails, luring the victims to open a malicious Microsoft Excel/Word document."
+        },
+        {
+            "type": "tool",
+            "spec_version": "2.1",
+            "id": "tool--227b174e-1f96-48e3-9a80-1c1474d6209a",
+            "created": "2024-08-27T16:29:22.291734Z",
+            "modified": "2024-08-27T16:29:22.291734Z",
+            "name": "Word",
+            "description": "In the instances we have observed, the threat actor sent spear-phishing emails, luring the victims to open a malicious Microsoft Excel/Word document."
+        },
+        {
+            "type": "tool",
+            "spec_version": "2.1",
+            "id": "tool--42fd2ebb-18a1-4b44-a14e-a0c91532914b",
+            "created": "2024-08-27T16:29:22.29197Z",
+            "modified": "2024-08-27T16:29:22.29197Z",
+            "name": "Excel",
+            "description": "The Excel droppers observed in all instances were using Excel 4.0 macros \u2013 a technique that uses formulas in hidden spreadsheets or cells that execute macro 4.0 commands \u2013 to drop malware that in our particular case was named Ferocious dropper."
+        },
+        {
+            "type": "tool",
+            "spec_version": "2.1",
+            "id": "tool--d15595cd-ad6d-49e7-a275-9abd20bf1602",
+            "created": "2024-08-27T16:29:22.29211Z",
+            "modified": "2024-08-27T16:29:22.29211Z",
+            "name": "Excel 4.0",
+            "description": "The Excel droppers observed in all instances were using Excel 4.0 macros \u2013 a technique that uses formulas in hidden spreadsheets or cells that execute macro 4.0 commands \u2013 to drop malware that in our particular case was named Ferocious dropper."
+        },
+        {
+            "type": "malware",
+            "spec_version": "2.1",
+            "id": "malware--d4386e0d-b4b4-4199-a762-7b1db2e36753",
+            "created": "2024-08-27T16:29:22.292242Z",
+            "modified": "2024-08-27T16:29:22.292242Z",
+            "name": "Ferocious dropper",
+            "description": "The Excel droppers observed in all instances were using Excel 4.0 macros \u2013 a technique that uses formulas in hidden spreadsheets or cells that execute macro 4.0 commands \u2013 to drop malware that in our particular case was named Ferocious dropper.",
+            "is_family": false
+        },
+        {
+            "type": "tool",
+            "spec_version": "2.1",
+            "id": "tool--293b7b64-4ad2-4d2e-9e88-cf37e8dc2a72",
+            "created": "2024-08-27T16:29:22.292489Z",
+            "modified": "2024-08-27T16:29:22.292489Z",
+            "name": "Kaspersky Update Agent",
+            "description": "However, in some cases we saw a fake \u2018Kaspersky Update Agent\u2019 executable acting as a dropper for the VBS implant."
+        },
+        {
+            "type": "tool",
+            "spec_version": "2.1",
+            "id": "tool--a7fcbfd5-d91f-4d02-8f60-ad45585898ab",
+            "created": "2024-08-27T16:29:22.292855Z",
+            "modified": "2024-08-27T16:29:22.292855Z",
+            "name": "V",
+            "description": "Sample VBS dropper Excel and Word documents, and executable Sample VBS dropper Excel and Word documents, and executable Sample VBS dropper Excel and Word documents, and executable"
+        },
+        {
+            "type": "tool",
+            "spec_version": "2.1",
+            "id": "tool--87ec7c47-67f0-4c9d-a03d-633631bc955c",
+            "created": "2024-08-27T16:29:22.293098Z",
+            "modified": "2024-08-27T16:29:22.293098Z",
+            "name": "VBS drop",
+            "description": "Sample VBS dropper Excel and Word documents, and executable"
+        },
+        {
+            "type": "tool",
+            "spec_version": "2.1",
+            "id": "tool--50676b6d-b136-42bf-bf21-174e3e7d0627",
+            "created": "2024-08-27T16:29:22.293236Z",
+            "modified": "2024-08-27T16:29:22.293236Z",
+            "name": "PowerShell",
+            "description": "This first stage implant is composed of VBS and PowerShell scripts."
+        },
+        {
+            "type": "tool",
+            "spec_version": "2.1",
+            "id": "tool--bbecba4f-84cc-461c-807d-8313317bfda1",
+            "created": "2024-08-27T16:29:22.293378Z",
+            "modified": "2024-08-27T16:29:22.293378Z",
+            "name": "Windows",
+            "description": "The result will then be compared to a predefined Windows version in a hidden cell, for example: Windows (64-bit) NT :.00, Windows (64-bit) NT 6.01, Windows (32-bit) NT 10.00, Windows (32-bit) NT 6.02."
+        },
+        {
+            "type": "tool",
+            "spec_version": "2.1",
+            "id": "tool--ca70bd2c-c1ad-45a1-9205-26c273e68fb7",
+            "created": "2024-08-27T16:29:22.293532Z",
+            "modified": "2024-08-27T16:29:22.293532Z",
+            "name": "Shell",
+            "description": "In turn, the VBS script will write an embedded PowerShell snippet to a predefined filename that varies between samples, for instance, %ProgramData%\\regionh.txt."
+        },
+        {
+            "type": "tool",
+            "spec_version": "2.1",
+            "id": "tool--5ea20257-cd8c-459f-8e45-96e021fb1792",
+            "created": "2024-08-27T16:29:22.293655Z",
+            "modified": "2024-08-27T16:29:22.293655Z",
+            "name": "VBS",
+            "description": "The VBS script will also add two important registry keys for persistence."
+        },
+        {
+            "type": "malware",
+            "spec_version": "2.1",
+            "id": "malware--db702469-bef9-47cd-b9ce-0fab2b7a47f4",
+            "created": "2024-08-27T16:29:22.29377Z",
+            "modified": "2024-08-27T16:29:22.29377Z",
+            "name": "Win",
+            "description": "In our analysis and testing, the WinRM Scripting API that is called by the legitimate Windows VBS scripts \u201cC:\\Windows\\System32\\winrm.vbs\u201d or \u201cC:\\Windows\\SysWOW64\\winrm.vbs\u201d, are able",
+            "is_family": false
+        },
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": "identity--eaa8c12e-603a-46ff-9606-87a240137a57",
+            "created": "2024-08-27T16:29:22.293915Z",
+            "modified": "2024-08-27T16:29:22.293915Z",
+            "name": "Microsoft",
+            "description": "Microsoft\u2019s command line licensing tool slmgr.vbs is also able to provide similar results."
+        },
+        {
+            "type": "malware",
+            "spec_version": "2.1",
+            "id": "malware--e85a1077-2d0c-4cb0-a641-a55885767068",
+            "created": "2024-08-27T16:29:22.294036Z",
+            "modified": "2024-08-27T16:29:22.294036Z",
+            "name": "LitePower Stager",
+            "description": "Once successful, the macro invokes %ProgramData%\\winrm.vbs again using explorer.exe, which in turn will execute the PowerShell snippet that connects to the C2 server and which we named LitePower Stager.",
+            "is_family": false
+        },
+        {
+            "type": "malware",
+            "spec_version": "2.1",
+            "id": "malware--5c879764-af49-4eb9-bbd2-fb99f19e5eec",
+            "created": "2024-08-27T16:29:22.294205Z",
+            "modified": "2024-08-27T16:29:22.294205Z",
+            "name": "Mozilla/5.0",
+            "description": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:FTS_06) Gecko/22.36.35.06 Firefox/2.0",
+            "is_family": false
+        },
+        {
+            "type": "tool",
+            "spec_version": "2.1",
+            "id": "tool--2fdd4e1a-e261-4fff-956f-f6e37a3202d7",
+            "created": "2024-08-27T16:29:22.294372Z",
+            "modified": "2024-08-27T16:29:22.294372Z",
+            "name": "Windows NT 10.0",
+            "description": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:FTS_06) Gecko/22.36.35.06 Firefox/2.0"
+        },
+        {
+            "type": "malware",
+            "spec_version": "2.1",
+            "id": "malware--be1d6532-387b-4de2-a174-4c976613803b",
+            "created": "2024-08-27T16:29:22.294527Z",
+            "modified": "2024-08-27T16:29:22.294527Z",
+            "name": "Firefox/2.0",
+            "description": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:FTS_06) Gecko/22.36.35.06 Firefox/2.0",
+            "is_family": false
+        },
+        {
+            "type": "malware",
+            "spec_version": "2.1",
+            "id": "malware--3aed4a0e-7609-402f-a02b-a52f68d0962b",
+            "created": "2024-08-27T16:29:22.294905Z",
+            "modified": "2024-08-27T16:29:22.294905Z",
+            "name": "Lite",
+            "description": "If the threat actor succeeds in establishing C2 communications using LitePower, further payloads containing system commands are sent back to the victim in the form of PowerShell functions through HTTP GET requests, and the command results are sent back as HTTP POST requests to the",
+            "is_family": false
+        },
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": "identity--1c83b756-32e4-40fd-833e-1733ef694107",
+            "created": "2024-08-27T16:29:22.29514Z",
+            "modified": "2024-08-27T16:29:22.29514Z",
+            "name": "LitePower",
+            "description": "The GET requests will be parsed by LitePower and invoked using PowerShell\u2019s IEX function."
+        },
+        {
+            "type": "tool",
+            "spec_version": "2.1",
+            "id": "tool--9c7de40f-13f8-4ec1-969b-de25be6ddec8",
+            "created": "2024-08-27T16:29:22.295422Z",
+            "modified": "2024-08-27T16:29:22.295422Z",
+            "name": "antivirus",
+            "description": "else{$ret= $antivirusProduct.displayName} Get list of antivirus software installed"
+        },
+        {
+            "type": "threat-actor",
+            "spec_version": "2.1",
+            "id": "threat-actor--c7985559-5d65-40a9-a911-b037dd452a53",
+            "created": "2024-08-27T16:29:22.29562Z",
+            "modified": "2024-08-27T16:29:22.29562Z",
+            "name": "george",
+            "description": "In our initial sample analysis, the C2 domain we observed was stgeorgebankers[.]com."
+        },
+        {
+            "type": "tool",
+            "spec_version": "2.1",
+            "id": "tool--04ea789c-19d0-44d7-bb1e-9ed5a7a816cf",
+            "created": "2024-08-27T16:29:22.295833Z",
+            "modified": "2024-08-27T16:29:22.295833Z",
+            "name": "bank",
+            "description": "In our initial sample analysis, the C2 domain we observed was stgeorgebankers[.]com."
+        },
+        {
+            "type": "threat-actor",
+            "spec_version": "2.1",
+            "id": "threat-actor--8ceef674-09d3-4395-88cb-b341eed0c5bf",
+            "created": "2024-08-27T16:29:22.296013Z",
+            "modified": "2024-08-27T16:29:22.296013Z",
+            "name": "ers",
+            "description": "In our initial sample analysis, the C2 domain we observed was stgeorgebankers[.]com."
+        },
+        {
+            "type": "tool",
+            "spec_version": "2.1",
+            "id": "tool--5cc9dec3-207c-41fc-a978-f6182a549ddc",
+            "created": "2024-08-27T16:29:22.296352Z",
+            "modified": "2024-08-27T16:29:22.296352Z",
+            "name": "CloudFlare",
+            "description": "These C2 domains were occasionally behind CloudFlare to obscure the real C2 IP address."
+        },
+        {
+            "type": "malware",
+            "spec_version": "2.1",
+            "id": "malware--6133fe47-455d-49ae-895a-675fbf36b7ae",
+            "created": "2024-08-27T16:29:22.296687Z",
+            "modified": "2024-08-27T16:29:22.296687Z",
+            "name": "]net",
+            "description": "]net listens for incoming HTTPS connections on several ports and uses common names seen on other C2 domains.",
+            "is_family": false
+        },
+        {
+            "type": "tool",
+            "spec_version": "2.1",
+            "id": "tool--33e0ce76-7fae-42fc-aa0d-ba2717e017d5",
+            "created": "2024-08-27T16:29:22.296915Z",
+            "modified": "2024-08-27T16:29:22.296915Z",
+            "name": "financial",
+            "description": "Our telemetry indicates that the threat actor has targeted a variety of verticals including diplomatic and financial institutions, government, law firms, military organizations, and technology companies."
+        },
+        {
+            "type": "tool",
+            "spec_version": "2.1",
+            "id": "tool--8e553031-6eb8-4071-8db2-f90ac86ed426",
+            "created": "2024-08-27T16:29:22.29744Z",
+            "modified": "2024-08-27T16:29:22.29744Z",
+            "name": "Visual Basic Script (VBS",
+            "description": "WIRTE used documents deploying Visual Basic Script (VBS), potentially delivered through spear phishing, decoys with Arabic content, occasionally associated with Palestinian matters."
+        },
+        {
+            "type": "tool",
+            "spec_version": "2.1",
+            "id": "tool--6fc9e0a2-4bd2-4c14-b59b-0dc4305290dd",
+            "created": "2024-08-27T16:29:22.297707Z",
+            "modified": "2024-08-27T16:29:22.297707Z",
+            "name": "hell",
+            "description": "In addition, the C2 requests explored here and in the public post have similar PowerShell IEX command execution and sleep functions."
+        },
+        {
+            "type": "threat-actor",
+            "spec_version": "2.1",
+            "id": "threat-actor--88dcfbe6-5aac-4e2d-a724-7607a6128c0f",
+            "created": "2024-08-27T16:29:22.297902Z",
+            "modified": "2024-08-27T16:29:22.297902Z",
+            "name": "A",
+            "description": "The C2s in both cases were protected by Cloudflare, and the real VPSs were under ASNs primarily in Ukraine (e.g., ASN 201094)."
+        },
+        {
+            "type": "tool",
+            "spec_version": "2.1",
+            "id": "tool--72aceccd-6789-4d60-aa91-17380b2a6306",
+            "created": "2024-08-27T16:29:22.298204Z",
+            "modified": "2024-08-27T16:29:22.298204Z",
+            "name": "SN",
+            "description": "The C2s in both cases were protected by Cloudflare, and the real VPSs were under ASNs primarily in Ukraine (e.g., ASN 201094)."
+        },
+        {
+            "type": "threat-actor",
+            "spec_version": "2.1",
+            "id": "threat-actor--eba054dd-3af2-4c96-bac0-c3bf0457c514",
+            "created": "2024-08-27T16:29:22.298339Z",
+            "modified": "2024-08-27T16:29:22.298339Z",
+            "name": "201094)",
+            "description": "The C2s in both cases were protected by Cloudflare, and the real VPSs were under ASNs primarily in Ukraine (e.g., ASN 201094)."
+        },
+        {
+            "type": "malware",
+            "spec_version": "2.1",
+            "id": "malware--c47a5c06-e455-493f-94d4-301e7ebedbd7",
+            "created": "2024-08-27T16:29:22.298518Z",
+            "modified": "2024-08-27T16:29:22.298518Z",
+            "name": "Cyber",
+            "description": "We assess with low confidence that WIRTE is a subgroup under the Gaza Cybergang umbrella.",
+            "is_family": false
+        },
+        {
+            "type": "threat-actor",
+            "spec_version": "2.1",
+            "id": "threat-actor--eb018d94-6321-48e3-830b-4ad0bff1d525",
+            "created": "2024-08-27T16:29:22.298719Z",
+            "modified": "2024-08-27T16:29:22.298719Z",
+            "name": "gang",
+            "description": "We assess with low confidence that WIRTE is a subgroup under the Gaza Cybergang umbrella."
+        },
+        {
+            "type": "malware",
+            "spec_version": "2.1",
+            "id": "malware--3ae5be03-f85d-476c-b4ec-39964f357d5b",
+            "created": "2024-08-27T16:29:22.298866Z",
+            "modified": "2024-08-27T16:29:22.298866Z",
+            "name": "OpSec",
+            "description": "This suspected subgroup of Gaza Cybergang used simple yet effective methods to compromise its victims with better OpSec than its suspected counterparts.",
+            "is_family": false
+        },
+        {
+            "type": "malware",
+            "spec_version": "2.1",
+            "id": "malware--73b1616c-41c8-4db8-90aa-753a575e0332",
+            "created": "2024-08-27T16:29:22.299003Z",
+            "modified": "2024-08-27T16:29:22.299003Z",
+            "name": "kaspersky",
+            "description": "8ade05c4b4e98cc89fa09bd513ea1a99 kaspersky update agent.exe",
+            "is_family": false
+        },
+        {
+            "type": "malware",
+            "spec_version": "2.1",
+            "id": "malware--fa94a712-069b-4aea-bdad-a6878598011c",
+            "created": "2024-08-27T16:29:22.299252Z",
+            "modified": "2024-08-27T16:29:22.299252Z",
+            "name": "St",
+            "description": "Stgeorgebankers[.",
+            "is_family": false
+        },
+        {
+            "type": "threat-actor",
+            "spec_version": "2.1",
+            "id": "threat-actor--d1444134-43a6-4a86-b0aa-b12dd757a213",
+            "created": "2024-08-27T16:29:22.299404Z",
+            "modified": "2024-08-27T16:29:22.299404Z",
+            "name": "org",
+            "description": "Stgeorgebankers[."
+        },
+        {
+            "type": "tool",
+            "spec_version": "2.1",
+            "id": "tool--8f49fef2-3dc8-4b4d-bd17-7b24ca5f6425",
+            "created": "2024-08-27T16:29:22.299547Z",
+            "modified": "2024-08-27T16:29:22.299547Z",
+            "name": "First",
+            "description": "Firstohiobank[."
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--4c3d7983-c507-4a36-836f-d0aadf5dde2b",
+            "created": "2024-08-27T16:29:22.302604Z",
+            "modified": "2024-08-27T16:29:22.302604Z",
+            "relationship_type": "has",
+            "source_ref": "threat-actor--b61f72ac-d97f-4298-bdfd-a7c0f079b69b",
+            "target_ref": "identity--d2f0024f-cd56-468e-a567-8daa55749fc6"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--897813ec-2f96-4224-8a8a-f552e620cd39",
+            "created": "2024-08-27T16:29:22.302852Z",
+            "modified": "2024-08-27T16:29:22.302852Z",
+            "relationship_type": "targets",
+            "source_ref": "indicator--082a8256-7113-41d2-8e73-897e6f9c6a74",
+            "target_ref": "threat-actor--b61f72ac-d97f-4298-bdfd-a7c0f079b69b"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--940874fa-d7c5-4474-8306-295a2ae90aab",
+            "created": "2024-08-27T16:29:22.303568Z",
+            "modified": "2024-08-27T16:29:22.303568Z",
+            "relationship_type": "isA",
+            "source_ref": "threat-actor--c7985559-5d65-40a9-a911-b037dd452a53",
+            "target_ref": "tool--04ea789c-19d0-44d7-bb1e-9ed5a7a816cf"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--d188731e-ccd7-48e0-9dd3-819677710889",
+            "created": "2024-08-27T16:29:22.303803Z",
+            "modified": "2024-08-27T16:29:22.303803Z",
+            "relationship_type": "isA",
+            "source_ref": "tool--04ea789c-19d0-44d7-bb1e-9ed5a7a816cf",
+            "target_ref": "threat-actor--8ceef674-09d3-4395-88cb-b341eed0c5bf"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--61f8713d-39bd-4d55-9229-b0b166d441c8",
+            "created": "2024-08-27T16:29:22.30543Z",
+            "modified": "2024-08-27T16:29:22.30543Z",
+            "relationship_type": "using",
+            "source_ref": "malware--de324080-aad9-4caa-bf49-9c7f271002c3",
+            "target_ref": "attack-pattern--7a98ac88-c29d-4528-9666-da7569eccd65"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--ee6575e9-7364-4e23-8003-f021bdc2960d",
+            "created": "2024-08-27T16:29:22.30659Z",
+            "modified": "2024-08-27T16:29:22.30659Z",
+            "relationship_type": "using",
+            "source_ref": "malware--de324080-aad9-4caa-bf49-9c7f271002c3",
+            "target_ref": "attack-pattern--7565442f-0320-4e5f-8d43-7bbfb8a70680"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--37be0c2f-dd53-415c-8714-0c4aae1f6576",
+            "created": "2024-08-27T16:29:22.30798Z",
+            "modified": "2024-08-27T16:29:22.30798Z",
+            "relationship_type": "using",
+            "source_ref": "malware--de324080-aad9-4caa-bf49-9c7f271002c3",
+            "target_ref": "attack-pattern--098237e5-9b4a-446b-b740-bdb0a036cd3e"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--1244da9f-c2ee-40e1-885f-e9085d808e06",
+            "created": "2024-08-27T16:29:22.308219Z",
+            "modified": "2024-08-27T16:29:22.308219Z",
+            "relationship_type": "using",
+            "source_ref": "malware--de324080-aad9-4caa-bf49-9c7f271002c3",
+            "target_ref": "attack-pattern--72b66b00-679d-4e8c-9e47-3403a4eec421"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--21ff359a-a5f4-443f-90f8-213892fa8a70",
+            "created": "2024-08-27T16:29:22.308355Z",
+            "modified": "2024-08-27T16:29:22.308355Z",
+            "relationship_type": "using",
+            "source_ref": "malware--de324080-aad9-4caa-bf49-9c7f271002c3",
+            "target_ref": "attack-pattern--f9720d61-24a8-42ea-abee-d2884b12c2a9"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--9b3b8f25-89df-4192-8415-803143c14bdb",
+            "created": "2024-08-27T16:29:22.308486Z",
+            "modified": "2024-08-27T16:29:22.308486Z",
+            "relationship_type": "using",
+            "source_ref": "malware--de324080-aad9-4caa-bf49-9c7f271002c3",
+            "target_ref": "attack-pattern--455917b8-76e0-4594-a547-26e2b1f2d2bd"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--3fd6eb07-d68a-45a6-a592-6008e9726098",
+            "created": "2024-08-27T16:29:22.308612Z",
+            "modified": "2024-08-27T16:29:22.308612Z",
+            "relationship_type": "using",
+            "source_ref": "malware--de324080-aad9-4caa-bf49-9c7f271002c3",
+            "target_ref": "attack-pattern--7498c74e-0b26-4439-b443-3ec1a03dae74"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--0c7b305b-bf8d-40c5-a9dd-d5259de1566e",
+            "created": "2024-08-27T16:29:22.308834Z",
+            "modified": "2024-08-27T16:29:22.308834Z",
+            "relationship_type": "using",
+            "source_ref": "malware--de324080-aad9-4caa-bf49-9c7f271002c3",
+            "target_ref": "attack-pattern--10264d4c-871d-4f0a-a08e-532b2190d1fc"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--1fe93ccf-8025-4786-a17d-b55d7c8a752e",
+            "created": "2024-08-27T16:29:22.309134Z",
+            "modified": "2024-08-27T16:29:22.309134Z",
+            "relationship_type": "using",
+            "source_ref": "malware--de324080-aad9-4caa-bf49-9c7f271002c3",
+            "target_ref": "attack-pattern--3a0fec81-9521-4679-9729-0a0cb82ee87a"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--16ec2fbd-e8bd-4391-902e-b03989121fe8",
+            "created": "2024-08-27T16:29:22.309361Z",
+            "modified": "2024-08-27T16:29:22.309361Z",
+            "relationship_type": "using",
+            "source_ref": "malware--de324080-aad9-4caa-bf49-9c7f271002c3",
+            "target_ref": "attack-pattern--8217e075-7568-4e5a-99e4-13318b322a9c"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--0d8f1f94-204e-4f8d-841d-925ce6b87c41",
+            "created": "2024-08-27T16:29:22.309543Z",
+            "modified": "2024-08-27T16:29:22.309543Z",
+            "relationship_type": "using",
+            "source_ref": "malware--de324080-aad9-4caa-bf49-9c7f271002c3",
+            "target_ref": "attack-pattern--d03d8c93-e57c-43c9-a3a6-32052b01140e"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--9a226fd1-2717-4a0d-a30f-74f5d74cfcaf",
+            "created": "2024-08-27T16:29:22.309771Z",
+            "modified": "2024-08-27T16:29:22.309771Z",
+            "relationship_type": "using",
+            "source_ref": "malware--de324080-aad9-4caa-bf49-9c7f271002c3",
+            "target_ref": "attack-pattern--fcc30089-4f52-41e0-b91c-35c85ad46571"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--c63bb17c-14cf-4c31-8098-2fc4d282399c",
+            "created": "2024-08-27T16:29:22.310248Z",
+            "modified": "2024-08-27T16:29:22.310248Z",
+            "relationship_type": "using",
+            "source_ref": "malware--de324080-aad9-4caa-bf49-9c7f271002c3",
+            "target_ref": "attack-pattern--756572d9-de3c-457c-92b4-6eb3072adead"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--874473f3-99fb-4c1d-8e9b-3424901feccc",
+            "created": "2024-08-27T16:29:22.31039Z",
+            "modified": "2024-08-27T16:29:22.31039Z",
+            "relationship_type": "using",
+            "source_ref": "malware--de324080-aad9-4caa-bf49-9c7f271002c3",
+            "target_ref": "attack-pattern--94a29eef-945f-4517-b6c2-9bc321a39c26"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--de3e33cb-3fa1-4bac-9522-eeaf9c53014b",
+            "created": "2024-08-27T16:29:22.310592Z",
+            "modified": "2024-08-27T16:29:22.310592Z",
+            "relationship_type": "using",
+            "source_ref": "malware--de324080-aad9-4caa-bf49-9c7f271002c3",
+            "target_ref": "attack-pattern--2b13ff8f-4703-43b5-a490-655937305221"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--4dcc5181-793c-4e76-bda0-17d5ad1a9d9f",
+            "created": "2024-08-27T16:29:22.310799Z",
+            "modified": "2024-08-27T16:29:22.310799Z",
+            "relationship_type": "using",
+            "source_ref": "malware--de324080-aad9-4caa-bf49-9c7f271002c3",
+            "target_ref": "attack-pattern--b518eed8-2f0d-4022-b908-84acad1422a1"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--f1c49bdb-e2c5-4aa1-80d2-7c521436536d",
+            "created": "2024-08-27T16:29:22.310958Z",
+            "modified": "2024-08-27T16:29:22.310958Z",
+            "relationship_type": "using",
+            "source_ref": "malware--de324080-aad9-4caa-bf49-9c7f271002c3",
+            "target_ref": "attack-pattern--6e9c3f59-a962-4c3e-b52d-0474f0980db7"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--3bba95ee-9476-4a56-b16d-c51b040265ca",
+            "created": "2024-08-27T16:29:22.311135Z",
+            "modified": "2024-08-27T16:29:22.311135Z",
+            "relationship_type": "using",
+            "source_ref": "malware--de324080-aad9-4caa-bf49-9c7f271002c3",
+            "target_ref": "attack-pattern--70c93b6f-1bcb-4174-a871-08132bb61406"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--7a98ac88-c29d-4528-9666-da7569eccd65",
+            "created": "2024-08-27T16:29:22.299694Z",
+            "modified": "2024-08-27T16:29:22.299694Z",
+            "name": "Hijack Execution Flow",
+            "description": "Adversaries may execute their own malicious payloads by hijacking the way operating systems run programs. Hijacking execution flow can be for the purposes of persistence, since this hijacked execution may reoccur over time. Adversaries may also use these mechanisms to elevate privileges or evade defenses, such as application control or other restrictions on execution.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1574",
+                    "external_id": "T1574"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--7565442f-0320-4e5f-8d43-7bbfb8a70680",
+            "created": "2024-08-27T16:29:22.299955Z",
+            "modified": "2024-08-27T16:29:22.299955Z",
+            "name": "Hide Artifacts",
+            "description": "Adversaries may attempt to hide artifacts associated with their behaviors to evade detection. Operating systems may have features to hide various artifacts, such as important system files and administrative task execution, to avoid disrupting user work environments and prevent users from changing files or features on the system. Adversaries may abuse these features to hide artifacts such as files, directories, user accounts, or other system activity to evade detection.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1564",
+                    "external_id": "T1564"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--098237e5-9b4a-446b-b740-bdb0a036cd3e",
+            "created": "2024-08-27T16:29:22.30011Z",
+            "modified": "2024-08-27T16:29:22.30011Z",
+            "name": "Endpoint Denial of Service",
+            "description": "Adversaries may perform Endpoint Denial of Service (DoS) attacks to degrade or block the availability of services to users. Endpoint DoS can be performed by exhausting the system resources those services are hosted on or exploiting the system to cause a persistent crash condition. Example services include websites, email services, DNS, and web-based applications. Adversaries have been observed conducting DoS attacks for political purposes and to support other malicious activities, including distraction, hacktivism, and extortion.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1499",
+                    "external_id": "T1499"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--72b66b00-679d-4e8c-9e47-3403a4eec421",
+            "created": "2024-08-27T16:29:22.300257Z",
+            "modified": "2024-08-27T16:29:22.300257Z",
+            "name": "Impair Defenses",
+            "description": "Adversaries may maliciously modify components of a victim environment in order to hinder or disable defensive mechanisms. This not only involves impairing preventative defenses, such as firewalls and anti-virus, but also detection capabilities that defenders can use to audit activity and identify malicious behavior. This may also span both native defenses as well as supplemental capabilities installed by users and administrators.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1562",
+                    "external_id": "T1562"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--f9720d61-24a8-42ea-abee-d2884b12c2a9",
+            "created": "2024-08-27T16:29:22.300394Z",
+            "modified": "2024-08-27T16:29:22.300394Z",
+            "name": "Boot or Logon Autostart Execution",
+            "description": "Adversaries may configure system settings to automatically execute a program during system boot or logon to maintain persistence or gain higher-level privileges on compromised systems. Operating systems may have mechanisms for automatically running a program on system boot or account logon. These mechanisms may include automatically executing programs that are placed in specially designated directories or are referenced by repositories that store configuration information, such as the Windows Registry. An adversary may achieve the same goal by modifying or extending features of the kernel.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1547",
+                    "external_id": "T1547"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--455917b8-76e0-4594-a547-26e2b1f2d2bd",
+            "created": "2024-08-27T16:29:22.300531Z",
+            "modified": "2024-08-27T16:29:22.300531Z",
+            "name": "Disk Wipe",
+            "description": "Adversaries may wipe or corrupt raw disk data on specific systems or in large numbers in a network to interrupt availability to system and network resources. With direct write access to a disk, adversaries may attempt to overwrite portions of disk data. Adversaries may opt to wipe arbitrary portions of disk data and/or wipe disk structures like the master boot record (MBR). A complete wipe of all disk sectors may be attempted.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1561",
+                    "external_id": "T1561"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--7498c74e-0b26-4439-b443-3ec1a03dae74",
+            "created": "2024-08-27T16:29:22.300667Z",
+            "modified": "2024-08-27T16:29:22.300667Z",
+            "name": "Command and Scripting Interpreter",
+            "description": "Adversaries may abuse command and script interpreters to execute commands, scripts, or binaries. These interfaces and languages provide ways of interacting with computer systems and are a common feature across many different platforms. Most systems come with some built-in command-line interface and scripting capabilities, for example, macOS and Linux distributions include some flavor of Unix Shell while Windows installations include the Windows Command Shell and PowerShell.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1059",
+                    "external_id": "T1059"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--10264d4c-871d-4f0a-a08e-532b2190d1fc",
+            "created": "2024-08-27T16:29:22.300813Z",
+            "modified": "2024-08-27T16:29:22.300813Z",
+            "name": "Modify Registry",
+            "description": "Adversaries may interact with the Windows Registry to hide configuration information within Registry keys, remove information as part of cleaning up, or as part of other techniques to aid in persistence and execution.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1112",
+                    "external_id": "T1112"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--3a0fec81-9521-4679-9729-0a0cb82ee87a",
+            "created": "2024-08-27T16:29:22.300951Z",
+            "modified": "2024-08-27T16:29:22.300951Z",
+            "name": "Indicator Removal on Host",
+            "description": "Adversaries may delete or modify artifacts generated on a host system to remove evidence of their presence or hinder defenses. Various artifacts may be created by an adversary or something that can be attributed to an adversary\u2019s actions. Typically these artifacts are used as defensive indicators related to monitored events, such as strings from downloaded files, logs that are generated from user actions, and other data analyzed by defenders. Location, format, and type of artifact (such as command or login history) are often specific to each platform.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1070",
+                    "external_id": "T1070"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--8217e075-7568-4e5a-99e4-13318b322a9c",
+            "created": "2024-08-27T16:29:22.301089Z",
+            "modified": "2024-08-27T16:29:22.301089Z",
+            "name": "Develop Capabilities",
+            "description": "Adversaries may build capabilities that can be used during targeting. Rather than purchasing, freely downloading, or stealing capabilities, adversaries may develop their own capabilities in-house. This is the process of identifying development requirements and building solutions such as malware, exploits, and self-signed certificates. Adversaries may develop capabilities to support their operations throughout numerous phases of the adversary lifecycle.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1587",
+                    "external_id": "T1587"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--d03d8c93-e57c-43c9-a3a6-32052b01140e",
+            "created": "2024-08-27T16:29:22.301228Z",
+            "modified": "2024-08-27T16:29:22.301228Z",
+            "name": "Gather Victim Host Information",
+            "description": "Adversaries may gather information about the victim's hosts that can be used during targeting. Information about hosts may include a variety of details, including administrative data (ex: name, assigned IP, functionality, etc.) as well as specifics regarding its configuration (ex: operating system, language, etc.).",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1592",
+                    "external_id": "T1592"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--fcc30089-4f52-41e0-b91c-35c85ad46571",
+            "created": "2024-08-27T16:29:22.301376Z",
+            "modified": "2024-08-27T16:29:22.301376Z",
+            "name": "Scheduled Task/Job",
+            "description": "Adversaries may abuse task scheduling functionality to facilitate initial or recurring execution of malicious code. Utilities exist within all major operating systems to schedule programs or scripts to be executed at a specified date and time. A task can also be scheduled on a remote system, provided the proper authentication is met (ex: RPC and file and printer sharing in Windows environments). Scheduling a task on a remote system typically may require being a member of an admin or otherwise privileged group on the remote system.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1053",
+                    "external_id": "T1053"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--756572d9-de3c-457c-92b4-6eb3072adead",
+            "created": "2024-08-27T16:29:22.301514Z",
+            "modified": "2024-08-27T16:29:22.301514Z",
+            "name": "Abuse Elevation Control Mechanism",
+            "description": "Adversaries may circumvent mechanisms designed to control elevate privileges to gain higher-level permissions. Most modern systems contain native elevation control mechanisms that are intended to limit privileges that a user can perform on a machine. Authorization has to be granted to specific users in order to perform tasks that can be considered of higher risk. An adversary can perform several methods to take advantage of built-in control mechanisms in order to escalate privileges on a system.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1548",
+                    "external_id": "T1548"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--94a29eef-945f-4517-b6c2-9bc321a39c26",
+            "created": "2024-08-27T16:29:22.30165Z",
+            "modified": "2024-08-27T16:29:22.30165Z",
+            "name": "Pre-OS Boot",
+            "description": "Adversaries may abuse Pre-OS Boot mechanisms as a way to establish persistence on a system. During the booting process of a computer, firmware and various startup services are loaded before the operating system. These programs control flow of execution before the operating system takes control.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1542",
+                    "external_id": "T1542"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--2b13ff8f-4703-43b5-a490-655937305221",
+            "created": "2024-08-27T16:29:22.301786Z",
+            "modified": "2024-08-27T16:29:22.301786Z",
+            "name": "System Service Discovery",
+            "description": "Adversaries may try to gather information about registered local system services. Adversaries may obtain information about services using tools as well as OS utility commands such as sc query, tasklist /svc, systemctl --type=service, and net start.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1007",
+                    "external_id": "T1007"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--b518eed8-2f0d-4022-b908-84acad1422a1",
+            "created": "2024-08-27T16:29:22.301933Z",
+            "modified": "2024-08-27T16:29:22.301933Z",
+            "name": "Screen Capture",
+            "description": "Adversaries may attempt to take screen captures of the desktop to gather information over the course of an operation. Screen capturing functionality may be included as a feature of a remote access tool used in post-compromise operations. Taking a screenshot is also typically possible through native utilities or API calls, such as CopyFromScreen, xwd, or screencapture.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1113",
+                    "external_id": "T1113"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--6e9c3f59-a962-4c3e-b52d-0474f0980db7",
+            "created": "2024-08-27T16:29:22.302071Z",
+            "modified": "2024-08-27T16:29:22.302071Z",
+            "name": "User Execution",
+            "description": "An adversary may rely upon specific actions by a user in order to gain execution. Users may be subjected to social engineering to get them to execute malicious code by, for example, opening a malicious document file or link. These user actions will typically be observed as follow-on behavior from forms of Phishing.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1204",
+                    "external_id": "T1204"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--70c93b6f-1bcb-4174-a871-08132bb61406",
+            "created": "2024-08-27T16:29:22.302208Z",
+            "modified": "2024-08-27T16:29:22.302208Z",
+            "name": "File and Directory Discovery",
+            "description": "Adversaries may enumerate files and directories or may search in specific locations of a host or network share for certain information within a file system. Adversaries may use the information from File and Directory Discovery during automated discovery to shape follow-on behaviors, including whether or not the adversary fully infects the target and/or attempts specific actions.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1083",
+                    "external_id": "T1083"
+                }
+            ]
+        }
+    ]
+}

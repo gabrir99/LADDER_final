@@ -1,0 +1,146 @@
+{
+    "type": "bundle",
+    "id": "bundle--2b684701-737e-4647-8158-cffea88cf1f8",
+    "objects": [
+        {
+            "type": "malware",
+            "spec_version": "2.1",
+            "id": "malware--ecf02038-101f-4710-92ca-6d7c2d57d3f1",
+            "created": "2024-08-29T12:51:39.806056Z",
+            "modified": "2024-08-29T12:51:39.806056Z",
+            "name": "Authorization.exe",
+            "description": "['Screensaver', 'Input Capture', 'Spearphishing Link']",
+            "is_family": false
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--9175ef2a-6194-4f8d-80d7-8c6d8a7c1c35",
+            "created": "2024-08-29T12:51:39.806438Z",
+            "modified": "2024-08-29T12:51:39.806438Z",
+            "name": "Suspicious Registry Entry",
+            "description": "It stores the logged keystrokes in the following file: [CWD]\\.tmp When the \"EXECUTABLE_0\" malware is executed it : Creates a copy of itself in the following locations: %APPDATA% %USERNAME% Tries to open the following file: [CWD]\\Authorization.exe.config Entrenches in the system for persistence in the following registry locations: REGISTRY_0 REGISTRY_1 Beacons to the following C2 node IP:.",
+            "pattern": "[windows-registry-key:key = 'HKCU\\\\...\\\\bf7a7ffda58092e10']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-08-29T12:51:39.806438Z"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--935af09f-b055-422c-9cc3-fa308db4c1c5",
+            "created": "2024-08-29T12:51:39.817762Z",
+            "modified": "2024-08-29T12:51:39.817762Z",
+            "name": "Suspicious Registry Entry",
+            "description": "It stores the logged keystrokes in the following file: [CWD]\\.tmp When the \"EXECUTABLE_0\" malware is executed it : Creates a copy of itself in the following locations: %APPDATA% %USERNAME% Tries to open the following file: [CWD]\\Authorization.exe.config Entrenches in the system for persistence in the following registry locations: REGISTRY_0 REGISTRY_1 Beacons to the following C2 node IP:.",
+            "pattern": "[windows-registry-key:key = 'HKLM\\\\...\\\\bfda58092e10']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-08-29T12:51:39.817762Z"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--f76e6342-7bf5-48c1-8d08-73ca481eddaa",
+            "created": "2024-08-29T12:51:39.818832Z",
+            "modified": "2024-08-29T12:51:39.818832Z",
+            "name": "Malicious IP",
+            "description": "* over TCP port 1177:\"IP_0\u201d Makes the following modification to the registry to bypass the Windows Firewall: REGISTRY_0 The downloaded file is decoded, written to disk as %APPDATA%\\...\\ccSvcHst The following files created when the EXECUTABLE_0 malware executed: EXECUTABLE_1 EXECUTABLE_2 EXECUTABLE_3 and EXECUTABLE_4 are created by EXECUTABLE_5.",
+            "pattern": "[ipv4-addr:value = '217.66.231.245']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-08-29T12:51:39.818832Z"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--3368cbd9-2e25-4965-898c-098e8efc529f",
+            "created": "2024-08-29T12:51:39.821039Z",
+            "modified": "2024-08-29T12:51:39.821039Z",
+            "name": "Suspicious Registry Entry",
+            "description": "* over TCP port 1177:\"IP_0\u201d Makes the following modification to the registry to bypass the Windows Firewall: REGISTRY_0 The downloaded file is decoded, written to disk as %APPDATA%\\...\\ccSvcHst The following files created when the EXECUTABLE_0 malware executed: EXECUTABLE_1 EXECUTABLE_2 EXECUTABLE_3 and EXECUTABLE_4 are created by EXECUTABLE_5.",
+            "pattern": "[windows-registry-key:key = 'HKLM\\\\...\\\\msnco.exe']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-08-29T12:51:39.821039Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--953aab7a-ab1d-4f40-b4a5-135e6cb4094c",
+            "created": "2024-08-29T12:51:39.824612Z",
+            "modified": "2024-08-29T12:51:39.824612Z",
+            "relationship_type": "using",
+            "source_ref": "malware--ecf02038-101f-4710-92ca-6d7c2d57d3f1",
+            "target_ref": "attack-pattern--51aeb1ba-c4a4-45da-ae5f-53fa92e1d5c9"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--3e43898c-ab51-4fcc-80ae-d255e47eeadc",
+            "created": "2024-08-29T12:51:39.826078Z",
+            "modified": "2024-08-29T12:51:39.826078Z",
+            "relationship_type": "using",
+            "source_ref": "malware--ecf02038-101f-4710-92ca-6d7c2d57d3f1",
+            "target_ref": "attack-pattern--7311efd5-becd-4d93-8176-0e62f66134a9"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--1023d52b-57aa-4a1f-9da8-1e2390da06e9",
+            "created": "2024-08-29T12:51:39.826366Z",
+            "modified": "2024-08-29T12:51:39.826366Z",
+            "relationship_type": "using",
+            "source_ref": "malware--ecf02038-101f-4710-92ca-6d7c2d57d3f1",
+            "target_ref": "attack-pattern--4d67c2a2-4d8b-488c-9eca-62741af21736"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--51aeb1ba-c4a4-45da-ae5f-53fa92e1d5c9",
+            "created": "2024-08-29T12:51:39.822967Z",
+            "modified": "2024-08-29T12:51:39.822967Z",
+            "name": "Screensaver",
+            "description": "",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/t1180",
+                    "external_id": "t1180"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--7311efd5-becd-4d93-8176-0e62f66134a9",
+            "created": "2024-08-29T12:51:39.823514Z",
+            "modified": "2024-08-29T12:51:39.823514Z",
+            "name": "Input Capture",
+            "description": "",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/t1056",
+                    "external_id": "t1056"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--4d67c2a2-4d8b-488c-9eca-62741af21736",
+            "created": "2024-08-29T12:51:39.824124Z",
+            "modified": "2024-08-29T12:51:39.824124Z",
+            "name": "Spearphishing Link",
+            "description": "",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/t1192",
+                    "external_id": "t1192"
+                }
+            ]
+        }
+    ]
+}

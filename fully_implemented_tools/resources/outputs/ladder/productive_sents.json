@@ -1,0 +1,766 @@
+[
+    {
+        "sent": "WIRTE\u2019s campaign in the Middle East \u2018living off the land\u2019 since at least 2019",
+        "relevant": 0
+    },
+    {
+        "sent": "Overview",
+        "relevant": 0
+    },
+    {
+        "sent": "This February, during our hunting efforts for threat actors using VBS/VBA implants, we came across MS Excel droppers that use hidden spreadsheets and VBA macros to drop their first stage implant.",
+        "relevant": 0
+    },
+    {
+        "sent": "The implant itself is a VBS script with functionality to collect system information and execute arbitrary code sent by the attackers on the infected machine.",
+        "relevant": 1
+    },
+    {
+        "sent": "Although these intrusion sets may appear similar to the new MuddyWater first stage VBS implant used for reconnaissance and profiling activities, which we described recently in a private report, they have slightly different TTPs and wider targeting.",
+        "relevant": 0
+    },
+    {
+        "sent": "To date, most of the known victims are located in the Middle East, but there are also targets in other regions.",
+        "relevant": 0
+    },
+    {
+        "sent": "Various industries are affected by this campaign.",
+        "relevant": 0
+    },
+    {
+        "sent": "The main focus is on government and diplomatic entities, though we also noticed an unusual targeting of law firms and financial institutions.",
+        "relevant": 0
+    },
+    {
+        "sent": "We attribute this campaign with high confidence to an actor named WIRTE, which is a lesser-known threat actor first publicly referenced by our colleagues at Lab52 in 2019.",
+        "relevant": 0
+    },
+    {
+        "sent": "We further suspect, with low confidence, that the WIRTE group has relations with the Gaza Cybergang threat actor.",
+        "relevant": 0
+    },
+    {
+        "sent": "More information about WIRTE is available to customers of Kaspersky Intelligence Reporting.",
+        "relevant": 0
+    },
+    {
+        "sent": "Contact: intelreports@kaspersky.com\u201d",
+        "relevant": 0
+    },
+    {
+        "sent": "Gaining an initial foothold",
+        "relevant": 0
+    },
+    {
+        "sent": "In the instances we have observed, the threat actor sent spear-phishing emails, luring the victims to open a malicious Microsoft Excel/Word document.",
+        "relevant": 0
+    },
+    {
+        "sent": "The Excel droppers observed in all instances were using Excel 4.0 macros \u2013 a technique that uses formulas in hidden spreadsheets or cells that execute macro 4.0 commands \u2013 to drop malware that in our particular case was named Ferocious dropper.",
+        "relevant": 0
+    },
+    {
+        "sent": "The Word droppers were using standard VBA macros to download the payload.",
+        "relevant": 1
+    },
+    {
+        "sent": "The actor tailored the decoy contents to the targeted victims, using logos and themes relevant to the targeted company or using trending topics from their region and, in one instance, even mimicking the Palestinian authority.",
+        "relevant": 0
+    },
+    {
+        "sent": "However, in some cases we saw a fake \u2018Kaspersky Update Agent\u2019 executable acting as a dropper for the VBS implant.",
+        "relevant": 0
+    },
+    {
+        "sent": "We were unable to confirm if this PE file was also distributed through email or downloaded by the threat actor after some initial penetration, but our analysis shows it has the same execution flow as the Excel 4.0 macros.",
+        "relevant": 0
+    },
+    {
+        "sent": "Sample VBS dropper Excel and Word documents, and executable Sample VBS dropper Excel and Word documents, and executable Sample VBS dropper Excel and Word documents, and executable",
+        "relevant": 1
+    },
+    {
+        "sent": "Sample VBS dropper Excel and Word documents, and executable",
+        "relevant": 1
+    },
+    {
+        "sent": "Exploitation, installation and persistence",
+        "relevant": 1
+    },
+    {
+        "sent": "Ferocious dropper",
+        "relevant": 0
+    },
+    {
+        "sent": "This first stage implant is composed of VBS and PowerShell scripts.",
+        "relevant": 1
+    },
+    {
+        "sent": "The actor used some interesting new techniques in the dropper\u2019s execution flow.",
+        "relevant": 0
+    },
+    {
+        "sent": "Below, we break it down into three parts:",
+        "relevant": 0
+    },
+    {
+        "sent": "Ferocious dropper: The Excel dropper, after the user opens it and disables the protected mode, will execute a series of formulas placed in a hidden column.",
+        "relevant": 1
+    },
+    {
+        "sent": "Initially, they will hide the main spreadsheet that requested the user to \u201cenable editing\u201d, then unhide a secondary spreadsheet that contains the decoy, to avoid raising suspicion.",
+        "relevant": 1
+    },
+    {
+        "sent": "The dropper will then run formulas from a third spreadsheet with hidden columns.",
+        "relevant": 1
+    },
+    {
+        "sent": "The infection process will start by running three basic anti-sandbox checks using the Excel 4.0 function \u201cGET.WORKSPACE\u201d, with three integers:",
+        "relevant": 1
+    },
+    {
+        "sent": "1: Get the name of the environment in which Microsoft Excel is running, as text, followed by the environment\u2019s version number.",
+        "relevant": 1
+    },
+    {
+        "sent": "The result will then be compared to a predefined Windows version in a hidden cell, for example: Windows (64-bit) NT :.00, Windows (64-bit) NT 6.01, Windows (32-bit) NT 10.00, Windows (32-bit) NT 6.02.",
+        "relevant": 0
+    },
+    {
+        "sent": "19: Check if a mouse is present.",
+        "relevant": 0
+    },
+    {
+        "sent": "42: Check if the host computer is capable of playing sounds.",
+        "relevant": 1
+    },
+    {
+        "sent": "If any of the above checks fail, or if the Windows environment matches any of the aforementioned versions predefined in the document (different documents have different predefined versions), the process will halt.",
+        "relevant": 1
+    },
+    {
+        "sent": "Otherwise, the macro will open a temporary %ProgramData%\\winrm.txt file and save a VBS stager to %ProgramData%\\winrm.vbs and set up registry keys for persistence.",
+        "relevant": 1
+    },
+    {
+        "sent": "Ferocious run-1: After the macro finishes writing to disk, it runs winrm.vbs using explorer.exe.",
+        "relevant": 1
+    },
+    {
+        "sent": "In turn, the VBS script will write an embedded PowerShell snippet to a predefined filename that varies between samples, for instance, %ProgramData%\\regionh.txt.",
+        "relevant": 1
+    },
+    {
+        "sent": "The VBS script will also add two important registry keys for persistence.",
+        "relevant": 1
+    },
+    {
+        "sent": "The persistence technique observed in all intrusions uses COM hijacking.",
+        "relevant": 1
+    },
+    {
+        "sent": "In this technique, the threat actor is able to add a Class ID in the current user registry hive (HKCU) referencing the malicious VBS script written previously to %ProgramData%\\winrm.vbs.",
+        "relevant": 1
+    },
+    {
+        "sent": "This registry modification will effectively invoke the malicious VBS script any time a program or script references \u201cScripting.Dictionary\u201d COM programs during their execution.",
+        "relevant": 1
+    },
+    {
+        "sent": "In our analysis and testing, the WinRM Scripting API that is called by the legitimate Windows VBS scripts \u201cC:\\Windows\\System32\\winrm.vbs\u201d or \u201cC:\\Windows\\SysWOW64\\winrm.vbs\u201d, are able to trigger the persistence mechanism smoothly.",
+        "relevant": 0
+    },
+    {
+        "sent": "Microsoft\u2019s command line licensing tool slmgr.vbs is also able to provide similar results.",
+        "relevant": 0
+    },
+    {
+        "sent": "Both winrm.vbs and slmgr.vbs were leveraged across different intrusions.",
+        "relevant": 1
+    },
+    {
+        "sent": "The mechanism through which these scripts are invoked during the boot process is described in a later section.",
+        "relevant": 0
+    },
+    {
+        "sent": "Registry keys used for COM hijacking",
+        "relevant": 1
+    },
+    {
+        "sent": "Registry keys used for COM hijacking",
+        "relevant": 1
+    },
+    {
+        "sent": "After the above execution chain, the Excel 4.0 macro will clean up and delete the winrm.vbs and winrm.txt files.",
+        "relevant": 1
+    },
+    {
+        "sent": "Ferocious run-2: The macro will continue after the cleanup by recreating and opening the same files, winrm.vbs and winrm.txt.",
+        "relevant": 1
+    },
+    {
+        "sent": "However, this time it writes a PowerShell one-liner wrapped with VB code temporarily into %ProgramData%\\winrm.txt and then saved into %ProgramData%\\winrm.vbs.",
+        "relevant": 1
+    },
+    {
+        "sent": "This one-liner acts as a stager for the PowerShell snippet written in regionh.txt mentioned above.",
+        "relevant": 0
+    },
+    {
+        "sent": "Once successful, the macro invokes %ProgramData%\\winrm.vbs again using explorer.exe, which in turn will execute the PowerShell snippet that connects to the C2 server and which we named LitePower Stager.",
+        "relevant": 1
+    },
+    {
+        "sent": "LitePower stager",
+        "relevant": 0
+    },
+    {
+        "sent": "The implant is a small PowerShell script that acts as a downloader and secondary stager used to execute commands provided by its C2, and possibly download and deploy further malware.",
+        "relevant": 1
+    },
+    {
+        "sent": "LitePower PowerShell implant",
+        "relevant": 0
+    },
+    {
+        "sent": "LitePower PowerShell implant",
+        "relevant": 0
+    },
+    {
+        "sent": "This script is able to connect with the embedded C2 domain using predefined HTTP settings such as a unique User-Agent:",
+        "relevant": 1
+    },
+    {
+        "sent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:FTS_06) Gecko/22.36.35.06 Firefox/2.0",
+        "relevant": 1
+    },
+    {
+        "sent": "1",
+        "relevant": 0
+    },
+    {
+        "sent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:FTS_06) Gecko/22.36.35.06 Firefox/2.0",
+        "relevant": 1
+    },
+    {
+        "sent": "Interestingly, and across the different incidents we observed, the \u201crv\u201d field of the user agent has changed.",
+        "relevant": 0
+    },
+    {
+        "sent": "In the example above, it is FTS_06.",
+        "relevant": 0
+    },
+    {
+        "sent": "However, we have seen more than 10 variations.",
+        "relevant": 0
+    },
+    {
+        "sent": "We suspect these are used to track intrusions.",
+        "relevant": 0
+    },
+    {
+        "sent": "If the connection to the C2 server is successful, the script parses the output and invokes it using IEX.",
+        "relevant": 1
+    },
+    {
+        "sent": "The script sleeps for a random number of seconds between 60 and 100 after each attempt to reach the C2.",
+        "relevant": 1
+    },
+    {
+        "sent": "If the threat actor succeeds in establishing C2 communications using LitePower, further payloads containing system commands are sent back to the victim in the form of PowerShell functions through HTTP GET requests, and the command results are sent back as HTTP POST requests to the C2 server.",
+        "relevant": 1
+    },
+    {
+        "sent": "The GET requests will be parsed by LitePower and invoked using PowerShell\u2019s IEX function.",
+        "relevant": 1
+    },
+    {
+        "sent": "The threat actor initially conducts system reconnaissance to assess the AV software installed and the user privilege.",
+        "relevant": 1
+    },
+    {
+        "sent": "This is followed by the creation of a legitimate scheduled task to trigger \u201cScripting.Dictionary\u201d COM programs; this will become the cornerstone that allows the persistence to work using the COM hijacking technique and the registry keys added during the installation phase described above.",
+        "relevant": 1
+    },
+    {
+        "sent": "Sample scheduled task settings referencing SLMGR.VBS to trigger WINRM.VBS through COM hijacking",
+        "relevant": 1
+    },
+    {
+        "sent": "Sample scheduled task settings referencing SLMGR.VBS to trigger WINRM.VBS through COM hijacking",
+        "relevant": 1
+    },
+    {
+        "sent": "The commands observed during the different intrusions are summarized below:",
+        "relevant": 0
+    },
+    {
+        "sent": "Command Description",
+        "relevant": 0
+    },
+    {
+        "sent": "Get-WmiObject Win32_logicaldisk -Filter \u2018DeviceID=\u201dC:\u201d\u2019 |",
+        "relevant": 0
+    },
+    {
+        "sent": "select volumeserialnumber List local disk drives",
+        "relevant": 1
+    },
+    {
+        "sent": "\u2018SELECT * FROM AntiVirusProduct\u2019",
+        "relevant": 1
+    },
+    {
+        "sent": "$antivirusProduct = Get-WmiObject -Namespace",
+        "relevant": 1
+    },
+    {
+        "sent": "\u2018root\\SecurityCenter2\u2019 -Query $wmiQuery",
+        "relevant": 1
+    },
+    {
+        "sent": "if($antivirusProduct.displayName -eq \u201d){$ret= \u2018N/A\u2019}",
+        "relevant": 1
+    },
+    {
+        "sent": "else{$ret= $antivirusProduct.displayName} Get list of antivirus software installed",
+        "relevant": 1
+    },
+    {
+        "sent": "New-Object Security.Principal.WindowsPrincipal([Security.Principal.WindowsId",
+        "relevant": 0
+    },
+    {
+        "sent": "entity]::GetCurrent())).IsInRole([Security.Principal.WindowsBuilt",
+        "relevant": 0
+    },
+    {
+        "sent": "inRole]::Administrator Check if current user has admin privileges",
+        "relevant": 1
+    },
+    {
+        "sent": "Get-WmiObject win32_operatingsystem).caption) + \u2018 x\u2019+ ((Get-",
+        "relevant": 1
+    },
+    {
+        "sent": "WmiObject Win32_OperatingSystem).OSArchitecture).substring(0,2) Get operating system architecture",
+        "relevant": 1
+    },
+    {
+        "sent": "Additional long functions that we observed can be summarized as follows:",
+        "relevant": 0
+    },
+    {
+        "sent": "Function Get-ServiceStatus: checks for possible backdoors installed as services (MsDataSvc and NgcCtrlSvc), if the computer is part of a domain, and if the current user is a member of \u201cDomain admins\u201d.",
+        "relevant": 1
+    },
+    {
+        "sent": "Function Get-PersistenceStatus: checks for the registry keys added for COM hijacking.",
+        "relevant": 1
+    },
+    {
+        "sent": "Function Get-HotFixes: lists all hotfixes installed.",
+        "relevant": 1
+    },
+    {
+        "sent": "Screenshot: takes system screenshots and saves them to %AppData% before sending them to the C2 via a POST request.",
+        "relevant": 1
+    },
+    {
+        "sent": "Command and control",
+        "relevant": 0
+    },
+    {
+        "sent": "In our initial sample analysis, the C2 domain we observed was stgeorgebankers[.]com.",
+        "relevant": 0
+    },
+    {
+        "sent": "After conducting pivots through malware samples, we were able to identify multiple C2 domains that date back to at least December 2019.",
+        "relevant": 0
+    },
+    {
+        "sent": "These C2 domains were occasionally behind CloudFlare to obscure the real C2 IP address.",
+        "relevant": 1
+    },
+    {
+        "sent": "Thanks to collaboration with our partners, we were able to gather some of the original C2 IP addresses, which allowed us to discover that the servers are hosted in Ukraine and Estonia.",
+        "relevant": 0
+    },
+    {
+        "sent": "Infrastructure overview",
+        "relevant": 0
+    },
+    {
+        "sent": "Infrastructure overview",
+        "relevant": 0
+    },
+    {
+        "sent": "By looking for more machines presenting identical TLS certificates, we were able to identify additional domain names and IP addresses.",
+        "relevant": 0
+    },
+    {
+        "sent": "Interestingly, the server mapped to kneeexercises[.",
+        "relevant": 0
+    },
+    {
+        "sent": "]net listens for incoming HTTPS connections on several ports and uses common names seen on other C2 domains.",
+        "relevant": 1
+    },
+    {
+        "sent": "For example, ports 2083 and 8443 had CN firstohiobank[.",
+        "relevant": 0
+    },
+    {
+        "sent": "]com, and TCP port 2087 had a TLS certificate with the common name dentalmatrix[.]net.",
+        "relevant": 0
+    },
+    {
+        "sent": "We observed use of these non-standard ports during some of the older intrusions, while the newer ones mostly use port 443.",
+        "relevant": 0
+    },
+    {
+        "sent": "Victimology",
+        "relevant": 0
+    },
+    {
+        "sent": "Our telemetry indicates that the threat actor has targeted a variety of verticals including diplomatic and financial institutions, government, law firms, military organizations, and technology companies.",
+        "relevant": 0
+    },
+    {
+        "sent": "The affected entities are located in Armenia, Cyprus, Egypt, Jordan, Lebanon, Palestine, Syria and Turkey.",
+        "relevant": 0
+    },
+    {
+        "sent": "Threat actor assessment",
+        "relevant": 0
+    },
+    {
+        "sent": "We assess with high confidence that the intrusions discussed here are associated with the WIRTE threat actor group.",
+        "relevant": 0
+    },
+    {
+        "sent": "WIRTE used documents deploying Visual Basic Script (VBS), potentially delivered through spear phishing, decoys with Arabic content, occasionally associated with Palestinian matters.",
+        "relevant": 0
+    },
+    {
+        "sent": "We see the same theme being followed in the intrusions discussed in this report.",
+        "relevant": 0
+    },
+    {
+        "sent": "Both old and new intrusions leveraged VBS and PowerShell in similar ways to stage additional tools and communicate with the C2.",
+        "relevant": 1
+    },
+    {
+        "sent": "Even though the latest intrusions are using TCP/443 over HTTPS in C2 communications, the oldest intrusions explored in this report used similar ports to those mentioned in the public post by Lab52, such as TCP 2096 and 2087.",
+        "relevant": 0
+    },
+    {
+        "sent": "In addition, the C2 requests explored here and in the public post have similar PowerShell IEX command execution and sleep functions.",
+        "relevant": 0
+    },
+    {
+        "sent": "Old C2 request highlighting the status condition, IEX invocation and 60-100 sleep function ",
+        "relevant": 1
+    },
+    {
+        "sent": "Old C2 request highlighting the status condition, IEX invocation and 60-100 sleep function",
+        "relevant": 1
+    },
+    {
+        "sent": "New C2 request highlighting the status condition, IEX invocation and 60-100 sleep function",
+        "relevant": 1
+    },
+    {
+        "sent": "New C2 request highlighting the status condition, IEX invocation and 60-100 sleep function",
+        "relevant": 1
+    },
+    {
+        "sent": "The snippets above also show the custom user-agents.",
+        "relevant": 0
+    },
+    {
+        "sent": "Although the old intrusions had them encoded, the intrusions explored in this report had them in plain text.",
+        "relevant": 0
+    },
+    {
+        "sent": "In both cases the adversaries identified separate intrusions by changing the \u201crv\u201d field.",
+        "relevant": 0
+    },
+    {
+        "sent": "The C2s in both cases were protected by Cloudflare, and the real VPSs were under ASNs primarily in Ukraine (e.g., ASN 201094).",
+        "relevant": 0
+    },
+    {
+        "sent": "In the Lab52 post, the author described the use of a defense evasion and living-off-the-land (LotL) technique using regsvr32.exe, whereas in the intrusions explored in this report, the threat actor used another LotL technique such as COM hijacking.",
+        "relevant": 0
+    },
+    {
+        "sent": "In both cases, the working directory is %ProgramData%.",
+        "relevant": 0
+    },
+    {
+        "sent": "All in all, we believe that all these similarities are a strong indication that the attacks described in this report were conducted by the WIRTE threat actor.",
+        "relevant": 0
+    },
+    {
+        "sent": "We assess with low confidence that WIRTE is a subgroup under the Gaza Cybergang umbrella.",
+        "relevant": 0
+    },
+    {
+        "sent": "Although the three subgroups we are tracking use entirely different TTPs, they all occasionally use decoys associated with Palestinian matters, which we haven\u2019t seen commonly used by other threat actors, especially those operating in the Middle East region such as MuddyWater and Oilrig.",
+        "relevant": 0
+    },
+    {
+        "sent": "Conclusion and outlook",
+        "relevant": 0
+    },
+    {
+        "sent": "WIRTE operators use simple and rather common TTPs that have allowed them to remain undetected for a long period of time.",
+        "relevant": 0
+    },
+    {
+        "sent": "If our assessment of associating WIRTE with Gaza Cybergang proves to be correct in the future, it may signal a change in the group\u2019s motivation.",
+        "relevant": 0
+    },
+    {
+        "sent": "Gaza Cybergang is politically motivated and therefore primarily targets governmental and political entities; it is unusual for such groups to target law firms and financial institutions.",
+        "relevant": 0
+    },
+    {
+        "sent": "Despite the targeting of these latter spheres, the majority of victims still fall within the government and diplomatic categories.",
+        "relevant": 0
+    },
+    {
+        "sent": "WIRTE modified their toolset and how they operate to remain stealthy for a longer period of time.",
+        "relevant": 0
+    },
+    {
+        "sent": "Living-off-the-land (LotL) techniques are an interesting new addition to their TTPs.",
+        "relevant": 0
+    },
+    {
+        "sent": "This suspected subgroup of Gaza Cybergang used simple yet effective methods to compromise its victims with better OpSec than its suspected counterparts.",
+        "relevant": 0
+    },
+    {
+        "sent": "Using interpreted language malware such as VBS and PowerShell scripts, unlike the other Gaza Cybergang subgroups, adds flexibility to update their toolset and avoid static detection controls.",
+        "relevant": 0
+    },
+    {
+        "sent": "Whether WIRTE is a new subgroup or an evolution of existing Gaza Cybergang subgroups, we see them expanding their presence further in cyberspace by using updated and stealthier TTPs.",
+        "relevant": 0
+    },
+    {
+        "sent": "In the near future we expect them to continue compromising their victims using the TTPs discussed in this report.",
+        "relevant": 0
+    },
+    {
+        "sent": "Indicators of compromise",
+        "relevant": 0
+    },
+    {
+        "sent": "Malicious documents and droppers",
+        "relevant": 1
+    },
+    {
+        "sent": "ecaaab9e2fc089eefb6accae9750ac60 xls.\u0627\u0644\u0644\u0627\u0626\u062d\u0629 \u0627\u0644\u062c\u0646\u06cc\u0633\u06cc\u0629",
+        "relevant": 0
+    },
+    {
+        "sent": "a7802c9a4046edbcbe3f5a503de61867 doc.1803202155-\u062a\u0639\u0645\u06cc\u0645 \u0631\u0642\u0645",
+        "relevant": 0
+    },
+    {
+        "sent": "3a7425539f8853e7b89624890a5de25b saint george bankers & trust business offer.docx",
+        "relevant": 0
+    },
+    {
+        "sent": "5AE4505A5CA7235C842680C557D05383 slmgr.vbs",
+        "relevant": 0
+    },
+    {
+        "sent": "B2F8CCE7B03E7AA70DAB4A5D377375B5 exhaustedq.txt",
+        "relevant": 0
+    },
+    {
+        "sent": "8ade05c4b4e98cc89fa09bd513ea1a99 kaspersky update agent.exe",
+        "relevant": 0
+    },
+    {
+        "sent": "Class IDs in registry",
+        "relevant": 1
+    },
+    {
+        "sent": "HKCU:\\Software\\Classes\\CLSID\\{50236F14-2C02-4291-93AB-B5A80F9666B0}\\LocalServer32",
+        "relevant": 0
+    },
+    {
+        "sent": "HKCU:\\Software\\Classes\\CLSID\\{14C34482-E07F-44CF-B261-385B616C54EC}\\LocalServer32",
+        "relevant": 0
+    },
+    {
+        "sent": "File path",
+        "relevant": 1
+    },
+    {
+        "sent": "%AppData%\\Temp\\9127.tmp\\9128.tmp\\",
+        "relevant": 0
+    },
+    {
+        "sent": "%ProgramData%\\",
+        "relevant": 0
+    },
+    {
+        "sent": "PDB paths",
+        "relevant": 0
+    },
+    {
+        "sent": "K:\\Hacking\\NgcCtrlSvc\\NgcCtrlSvc\\obj\\Release\\NgcCtrlSvc.pdb",
+        "relevant": 0
+    },
+    {
+        "sent": "K:\\Hacking\\Tools\\MsDataSvc-v3\\MsDataSvc\\obj\\Release\\MsDataSvc.pdb",
+        "relevant": 0
+    },
+    {
+        "sent": "Domains and IPs",
+        "relevant": 0
+    },
+    {
+        "sent": "nutrition-information[.",
+        "relevant": 0
+    },
+    {
+        "sent": "]org",
+        "relevant": 0
+    },
+    {
+        "sent": "Stgeorgebankers[.",
+        "relevant": 0
+    },
+    {
+        "sent": "]com",
+        "relevant": 0
+    },
+    {
+        "sent": "Firstohiobank[.",
+        "relevant": 0
+    },
+    {
+        "sent": "]com",
+        "relevant": 0
+    },
+    {
+        "sent": "allaccounting[.",
+        "relevant": 0
+    },
+    {
+        "sent": "]ca",
+        "relevant": 0
+    },
+    {
+        "sent": "est-clinic[.",
+        "relevant": 0
+    },
+    {
+        "sent": "]com",
+        "relevant": 0
+    },
+    {
+        "sent": "unitedfamilyhealth[.",
+        "relevant": 0
+    },
+    {
+        "sent": "]net",
+        "relevant": 0
+    },
+    {
+        "sent": "pocket-property[.",
+        "relevant": 0
+    },
+    {
+        "sent": "]com",
+        "relevant": 0
+    },
+    {
+        "sent": "kneeexercises[.",
+        "relevant": 0
+    },
+    {
+        "sent": "]net",
+        "relevant": 0
+    },
+    {
+        "sent": "doctoressolis[.",
+        "relevant": 0
+    },
+    {
+        "sent": "]com",
+        "relevant": 0
+    },
+    {
+        "sent": "omegaeyehospital[.",
+        "relevant": 0
+    },
+    {
+        "sent": "]com",
+        "relevant": 0
+    },
+    {
+        "sent": "Healthyhabitsusa[.",
+        "relevant": 0
+    },
+    {
+        "sent": "]com",
+        "relevant": 0
+    },
+    {
+        "sent": "niftybuysellchart[.",
+        "relevant": 0
+    },
+    {
+        "sent": "]com",
+        "relevant": 0
+    },
+    {
+        "sent": "Dentalmatrix[.",
+        "relevant": 0
+    },
+    {
+        "sent": "]net",
+        "relevant": 0
+    },
+    {
+        "sent": "91.211.89[.",
+        "relevant": 0
+    },
+    {
+        "sent": "]33",
+        "relevant": 0
+    },
+    {
+        "sent": "91.203.6[.",
+        "relevant": 0
+    },
+    {
+        "sent": "]27",
+        "relevant": 0
+    },
+    {
+        "sent": "45.129.96[.",
+        "relevant": 0
+    },
+    {
+        "sent": "]174",
+        "relevant": 0
+    },
+    {
+        "sent": "45.129.97[.",
+        "relevant": 0
+    },
+    {
+        "sent": "]207",
+        "relevant": 0
+    }
+]

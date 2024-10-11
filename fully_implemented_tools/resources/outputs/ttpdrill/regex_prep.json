@@ -1,0 +1,133 @@
+[
+    {
+        "entity": [],
+        "sentence": "The malware connects to the Command & Control (CnC) server.",
+        "original": "The malware connects to the Command & Control (CnC) server."
+    },
+    {
+        "entity": [
+            {
+                "type": "Executable_0",
+                "position": [
+                    5,
+                    17
+                ],
+                "mention": "Authorization.exe",
+                "probability": 1
+            }
+        ],
+        "sentence": "The \"EXECUTABLE_0\" malware has keylogger functionality.",
+        "original": "The \"Authorization.exe\" malware has keylogger functionality."
+    },
+    {
+        "entity": [
+            {
+                "type": "Executable_0",
+                "position": [
+                    76,
+                    88
+                ],
+                "mention": "Authorization.exe",
+                "probability": 1
+            },
+            {
+                "type": "Registry_0",
+                "position": [
+                    332,
+                    342
+                ],
+                "mention": "HKCU\\...\\bf7a7ffda58092e10",
+                "probability": 1
+            },
+            {
+                "type": "Registry_1",
+                "position": [
+                    343,
+                    353
+                ],
+                "mention": "HKLM\\...\\bfda58092e10",
+                "probability": 1
+            }
+        ],
+        "sentence": "It stores the logged keystrokes in the following file: [CWD]\\.tmp When the \"EXECUTABLE_0\" malware is executed it : Creates a copy of itself in the following locations: %APPDATA% %USERNAME% Tries to open the following file: [CWD]\\Authorization.exe.config Entrenches in the system for persistence in the following registry locations: REGISTRY_0 REGISTRY_1 Beacons to the following C2 node IP:.",
+        "original": "It stores the logged keystrokes in the following file: [CWD]\\.tmp When the \"Authorization.exe\" malware is executed it : Creates a copy of itself in the following locations: %APPDATA% %USERNAME% Tries to open the following file: [CWD]\\Authorization.exe.config Entrenches in the system for persistence in the following registry locations: HKCU\\...\\bf7a7ffda58092e10 HKLM\\...\\bfda58092e10 Beacons to the following C2 node IP:."
+    },
+    {
+        "entity": [
+            {
+                "type": "IP_0",
+                "position": [
+                    22,
+                    26
+                ],
+                "mention": "217.66.231.245",
+                "probability": 1
+            },
+            {
+                "type": "Registry_0",
+                "position": [
+                    109,
+                    119
+                ],
+                "mention": "HKLM\\...\\msnco.exe",
+                "probability": 1
+            },
+            {
+                "type": "Executable_0",
+                "position": [
+                    231,
+                    243
+                ],
+                "mention": "Authorization.exe",
+                "probability": 1
+            },
+            {
+                "type": "Executable_1",
+                "position": [
+                    262,
+                    274
+                ],
+                "mention": "msnco.exe",
+                "probability": 1
+            },
+            {
+                "type": "Executable_2",
+                "position": [
+                    275,
+                    287
+                ],
+                "mention": "authorization.EXE-0AD199D6.pf",
+                "probability": 1
+            },
+            {
+                "type": "Executable_3",
+                "position": [
+                    288,
+                    300
+                ],
+                "mention": "Msnco.exe",
+                "probability": 1
+            },
+            {
+                "type": "Executable_4",
+                "position": [
+                    305,
+                    317
+                ],
+                "mention": "Authorization.EXE-0AD199D6.pf",
+                "probability": 1
+            },
+            {
+                "type": "Executable_5",
+                "position": [
+                    333,
+                    345
+                ],
+                "mention": "Authorization.exe",
+                "probability": 1
+            }
+        ],
+        "sentence": "* over TCP port 1177:\"IP_0\u201d Makes the following modification to the registry to bypass the Windows Firewall: REGISTRY_0 The downloaded file is decoded, written to disk as %APPDATA%\\...\\ccSvcHst The following files created when the EXECUTABLE_0 malware executed: EXECUTABLE_1 EXECUTABLE_2 EXECUTABLE_3 and EXECUTABLE_4 are created by EXECUTABLE_5.",
+        "original": "* over TCP port 1177:\"217.66.231.245\u201d Makes the following modification to the registry to bypass the Windows Firewall: HKLM\\...\\msnco.exe The downloaded file is decoded, written to disk as %APPDATA%\\...\\ccSvcHst The following files created when the Authorization.exe malware executed: msnco.exe authorization.EXE-0AD199D6.pf Msnco.exe and Authorization.EXE-0AD199D6.pf are created by Authorization.exe."
+    }
+]

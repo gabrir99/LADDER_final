@@ -1,0 +1,3689 @@
+[
+    {
+        "entity": [
+            {
+                "type": "ThreatActor",
+                "position": [
+                    0,
+                    5
+                ],
+                "mention": "WIRTE",
+                "probability": 0.847691019376119
+            },
+            {
+                "type": "location",
+                "position": [
+                    24,
+                    35
+                ],
+                "mention": "Middle East",
+                "probability": 0.9838834702968597
+            },
+            {
+                "type": "Time",
+                "position": [
+                    73,
+                    77
+                ],
+                "mention": "2019",
+                "probability": 0.9716962575912476
+            }
+        ],
+        "sentence": "WIRTE\u2019s campaign in the Middle East \u2018living off the land\u2019 since at least 2019",
+        "annotated_sent_comb": [
+            {
+                "annotated": "<e1>WIRTE</e1>\u2019s campaign in the <e2>Middle East</e2> \u2018living off the land\u2019 since at least 2019",
+                "e1": {
+                    "type": "ThreatActor",
+                    "position": [
+                        0,
+                        5
+                    ],
+                    "mention": "WIRTE",
+                    "probability": 0.847691019376119
+                },
+                "e2": {
+                    "type": "location",
+                    "position": [
+                        24,
+                        35
+                    ],
+                    "mention": "Middle East",
+                    "probability": 0.9838834702968597
+                }
+            }
+        ]
+    },
+    {
+        "entity": [],
+        "sentence": "Overview",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [
+            {
+                "type": "Time",
+                "position": [
+                    5,
+                    13
+                ],
+                "mention": "February",
+                "probability": 0.9498022794723511
+            },
+            {
+                "type": "Application",
+                "position": [
+                    99,
+                    107
+                ],
+                "mention": "MS Excel",
+                "probability": 0.974867969751358
+            },
+            {
+                "type": "Filepath-Unix",
+                "position": [
+                    69,
+                    72
+                ],
+                "mention": "/VBA",
+                "probability": 1
+            }
+        ],
+        "sentence": "This February, during our hunting efforts for threat actors using VBS/VBA implants, we came across MS Excel droppers that use hidden spreadsheets and VBA macros to drop their first stage implant.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "The implant itself is a VBS script with functionality to collect system information and execute arbitrary code sent by the attackers on the infected machine.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [
+            {
+                "type": "Malware",
+                "position": [
+                    60,
+                    70
+                ],
+                "mention": "MuddyWater",
+                "probability": 0.7817401140928268
+            }
+        ],
+        "sentence": "Although these intrusion sets may appear similar to the new MuddyWater first stage VBS implant used for reconnaissance and profiling activities, which we described recently in a private report, they have slightly different TTPs and wider targeting.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [
+            {
+                "type": "location",
+                "position": [
+                    54,
+                    65
+                ],
+                "mention": "Middle East",
+                "probability": 0.9846220910549164
+            }
+        ],
+        "sentence": "To date, most of the known victims are located in the Middle East, but there are also targets in other regions.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "Various industries are affected by this campaign.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [
+            {
+                "type": "Application",
+                "position": [
+                    104,
+                    112
+                ],
+                "mention": "law firm",
+                "probability": 0.949141651391983
+            },
+            {
+                "type": "Application",
+                "position": [
+                    118,
+                    140
+                ],
+                "mention": "financial institutions",
+                "probability": 0.9453272024790446
+            }
+        ],
+        "sentence": "The main focus is on government and diplomatic entities, though we also noticed an unusual targeting of law firms and financial institutions.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [
+            {
+                "type": "Malware",
+                "position": [
+                    66,
+                    71
+                ],
+                "mention": "WIRTE",
+                "probability": 0.7358011305332184
+            },
+            {
+                "type": "Organization",
+                "position": [
+                    157,
+                    162
+                ],
+                "mention": "Lab52",
+                "probability": 0.9754862189292908
+            },
+            {
+                "type": "Time",
+                "position": [
+                    166,
+                    171
+                ],
+                "mention": "2019.",
+                "probability": 0.9038546085357666
+            }
+        ],
+        "sentence": "We attribute this campaign with high confidence to an actor named WIRTE, which is a lesser-known threat actor first publicly referenced by our colleagues at Lab52 in 2019.",
+        "annotated_sent_comb": [
+            {
+                "annotated": "We attribute this campaign with high confidence to an actor named <e1>WIRTE</e1>, which is a lesser-known threat actor first publicly referenced by our colleagues at <e2>Lab52</e2> in 2019.",
+                "e1": {
+                    "type": "Malware",
+                    "position": [
+                        66,
+                        71
+                    ],
+                    "mention": "WIRTE",
+                    "probability": 0.7358011305332184
+                },
+                "e2": {
+                    "type": "Organization",
+                    "position": [
+                        157,
+                        162
+                    ],
+                    "mention": "Lab52",
+                    "probability": 0.9754862189292908
+                }
+            }
+        ]
+    },
+    {
+        "entity": [
+            {
+                "type": "ThreatActor",
+                "position": [
+                    50,
+                    55
+                ],
+                "mention": "WIRTE",
+                "probability": 0.9218248327573141
+            },
+            {
+                "type": "location",
+                "position": [
+                    85,
+                    89
+                ],
+                "mention": "Gaza",
+                "probability": 0.8493292927742004
+            },
+            {
+                "type": "ThreatActor",
+                "position": [
+                    90,
+                    99
+                ],
+                "mention": "Cybergang",
+                "probability": 0.8251510858535767
+            }
+        ],
+        "sentence": "We further suspect, with low confidence, that the WIRTE group has relations with the Gaza Cybergang threat actor.",
+        "annotated_sent_comb": [
+            {
+                "annotated": "We further suspect, with low confidence, that the <e1>WIRTE</e1> group has relations with the <e2>Gaza</e2> Cybergang threat actor.",
+                "e1": {
+                    "type": "ThreatActor",
+                    "position": [
+                        50,
+                        55
+                    ],
+                    "mention": "WIRTE",
+                    "probability": 0.9218248327573141
+                },
+                "e2": {
+                    "type": "location",
+                    "position": [
+                        85,
+                        89
+                    ],
+                    "mention": "Gaza",
+                    "probability": 0.8493292927742004
+                }
+            },
+            {
+                "annotated": "We further suspect, with low confidence, that the WIRTE group has relations with the <e1>Gaza</e1> <e2>Cybergang</e2> threat actor.",
+                "e1": {
+                    "type": "location",
+                    "position": [
+                        85,
+                        89
+                    ],
+                    "mention": "Gaza",
+                    "probability": 0.8493292927742004
+                },
+                "e2": {
+                    "type": "ThreatActor",
+                    "position": [
+                        90,
+                        99
+                    ],
+                    "mention": "Cybergang",
+                    "probability": 0.8251510858535767
+                }
+            }
+        ]
+    },
+    {
+        "entity": [
+            {
+                "type": "Malware",
+                "position": [
+                    23,
+                    28
+                ],
+                "mention": "WIRTE",
+                "probability": 0.7968223690986633
+            },
+            {
+                "type": "Organization",
+                "position": [
+                    58,
+                    90
+                ],
+                "mention": "Kaspersky Intelligence Reporting",
+                "probability": 0.9829515218734741
+            }
+        ],
+        "sentence": "More information about WIRTE is available to customers of Kaspersky Intelligence Reporting.",
+        "annotated_sent_comb": [
+            {
+                "annotated": "More information about <e1>WIRTE</e1> is available to customers of <e2>Kaspersky Intelligence Reporting</e2>.",
+                "e1": {
+                    "type": "Malware",
+                    "position": [
+                        23,
+                        28
+                    ],
+                    "mention": "WIRTE",
+                    "probability": 0.7968223690986633
+                },
+                "e2": {
+                    "type": "Organization",
+                    "position": [
+                        58,
+                        90
+                    ],
+                    "mention": "Kaspersky Intelligence Reporting",
+                    "probability": 0.9829515218734741
+                }
+            }
+        ]
+    },
+    {
+        "entity": [
+            {
+                "type": "ThreatActor",
+                "position": [
+                    22,
+                    24
+                ],
+                "mention": "ka",
+                "probability": 0.3787866234779358
+            },
+            {
+                "type": "Organization",
+                "position": [
+                    24,
+                    31
+                ],
+                "mention": "spersky",
+                "probability": 0.294001042842865
+            },
+            {
+                "type": "Email",
+                "position": [
+                    9,
+                    30
+                ],
+                "mention": "intelreports@kaspersky",
+                "probability": 1
+            }
+        ],
+        "sentence": "Contact: intelreports@kaspersky.com\u201d",
+        "annotated_sent_comb": [
+            {
+                "annotated": "Contact: intelreports@<e1>ka</e1><e2>spersky</e2>.com\u201d",
+                "e1": {
+                    "type": "ThreatActor",
+                    "position": [
+                        22,
+                        24
+                    ],
+                    "mention": "ka",
+                    "probability": 0.3787866234779358
+                },
+                "e2": {
+                    "type": "Organization",
+                    "position": [
+                        24,
+                        31
+                    ],
+                    "mention": "spersky",
+                    "probability": 0.294001042842865
+                }
+            },
+            {
+                "annotated": "Contact: <e1>intelreports@<e2>ka</</e1>e2>spersky.com\u201d",
+                "e1": {
+                    "type": "Email",
+                    "position": [
+                        9,
+                        30
+                    ],
+                    "mention": "intelreports@kaspersky",
+                    "probability": 1
+                },
+                "e2": {
+                    "type": "ThreatActor",
+                    "position": [
+                        22,
+                        24
+                    ],
+                    "mention": "ka",
+                    "probability": 0.3787866234779358
+                }
+            }
+        ]
+    },
+    {
+        "entity": [],
+        "sentence": "Gaining an initial foothold",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [
+            {
+                "type": "Application",
+                "position": [
+                    119,
+                    134
+                ],
+                "mention": "Microsoft Excel",
+                "probability": 0.9795781970024109
+            },
+            {
+                "type": "Application",
+                "position": [
+                    135,
+                    139
+                ],
+                "mention": "Word",
+                "probability": 0.5833067297935486
+            },
+            {
+                "type": "Filepath-Unix",
+                "position": [
+                    134,
+                    138
+                ],
+                "mention": "/Word",
+                "probability": 1
+            }
+        ],
+        "sentence": "In the instances we have observed, the threat actor sent spear-phishing emails, luring the victims to open a malicious Microsoft Excel/Word document.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [
+            {
+                "type": "Application",
+                "position": [
+                    4,
+                    9
+                ],
+                "mention": "Excel",
+                "probability": 0.9321814775466919
+            },
+            {
+                "type": "Application",
+                "position": [
+                    56,
+                    65
+                ],
+                "mention": "Excel 4.0",
+                "probability": 0.6143230050802231
+            },
+            {
+                "type": "Malware",
+                "position": [
+                    226,
+                    243
+                ],
+                "mention": "Ferocious dropper",
+                "probability": 0.7071414768695832
+            }
+        ],
+        "sentence": "The Excel droppers observed in all instances were using Excel 4.0 macros \u2013 a technique that uses formulas in hidden spreadsheets or cells that execute macro 4.0 commands \u2013 to drop malware that in our particular case was named Ferocious dropper.",
+        "annotated_sent_comb": [
+            {
+                "annotated": "The <e1>Excel</e1> droppers observed in all instances were using Excel 4.0 macros \u2013 a technique that uses formulas in hidden spreadsheets or cells that execute macro 4.0 commands \u2013 to drop malware that in our particular case was named <e2>Ferocious dropper</e2>.",
+                "e1": {
+                    "type": "Application",
+                    "position": [
+                        4,
+                        9
+                    ],
+                    "mention": "Excel",
+                    "probability": 0.9321814775466919
+                },
+                "e2": {
+                    "type": "Malware",
+                    "position": [
+                        226,
+                        243
+                    ],
+                    "mention": "Ferocious dropper",
+                    "probability": 0.7071414768695832
+                }
+            },
+            {
+                "annotated": "The Excel droppers observed in all instances were using <e1>Excel 4.0</e1> macros \u2013 a technique that uses formulas in hidden spreadsheets or cells that execute macro 4.0 commands \u2013 to drop malware that in our particular case was named <e2>Ferocious dropper</e2>.",
+                "e1": {
+                    "type": "Application",
+                    "position": [
+                        56,
+                        65
+                    ],
+                    "mention": "Excel 4.0",
+                    "probability": 0.6143230050802231
+                },
+                "e2": {
+                    "type": "Malware",
+                    "position": [
+                        226,
+                        243
+                    ],
+                    "mention": "Ferocious dropper",
+                    "probability": 0.7071414768695832
+                }
+            }
+        ]
+    },
+    {
+        "entity": [
+            {
+                "type": "Application",
+                "position": [
+                    4,
+                    8
+                ],
+                "mention": "Word",
+                "probability": 0.9815565347671509
+            }
+        ],
+        "sentence": "The Word droppers were using standard VBA macros to download the payload.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [
+            {
+                "type": "location",
+                "position": [
+                    203,
+                    214
+                ],
+                "mention": "Palestinian",
+                "probability": 0.8194569051265717
+            }
+        ],
+        "sentence": "The actor tailored the decoy contents to the targeted victims, using logos and themes relevant to the targeted company or using trending topics from their region and, in one instance, even mimicking the Palestinian authority.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [
+            {
+                "type": "Application",
+                "position": [
+                    38,
+                    60
+                ],
+                "mention": "Kaspersky Update Agent",
+                "probability": 0.8812321066856384
+            }
+        ],
+        "sentence": "However, in some cases we saw a fake \u2018Kaspersky Update Agent\u2019 executable acting as a dropper for the VBS implant.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [
+            {
+                "type": "Application",
+                "position": [
+                    204,
+                    213
+                ],
+                "mention": "Excel 4.0",
+                "probability": 0.7891605198383331
+            }
+        ],
+        "sentence": "We were unable to confirm if this PE file was also distributed through email or downloaded by the threat actor after some initial penetration, but our analysis shows it has the same execution flow as the Excel 4.0 macros.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [
+            {
+                "type": "Application",
+                "position": [
+                    19,
+                    24
+                ],
+                "mention": "Excel",
+                "probability": 0.9768473505973816
+            },
+            {
+                "type": "Application",
+                "position": [
+                    29,
+                    33
+                ],
+                "mention": "Word",
+                "probability": 0.9567428827285767
+            },
+            {
+                "type": "Application",
+                "position": [
+                    79,
+                    84
+                ],
+                "mention": "Excel",
+                "probability": 0.9780600666999817
+            },
+            {
+                "type": "Application",
+                "position": [
+                    89,
+                    93
+                ],
+                "mention": "Word",
+                "probability": 0.9764958620071411
+            },
+            {
+                "type": "Application",
+                "position": [
+                    127,
+                    128
+                ],
+                "mention": "V",
+                "probability": 0.8029615879058838
+            },
+            {
+                "type": "Application",
+                "position": [
+                    139,
+                    144
+                ],
+                "mention": "Excel",
+                "probability": 0.9763941168785095
+            },
+            {
+                "type": "Application",
+                "position": [
+                    149,
+                    153
+                ],
+                "mention": "Word",
+                "probability": 0.9646666646003723
+            }
+        ],
+        "sentence": "Sample VBS dropper Excel and Word documents, and executable Sample VBS dropper Excel and Word documents, and executable Sample VBS dropper Excel and Word documents, and executable",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [
+            {
+                "type": "Application",
+                "position": [
+                    7,
+                    15
+                ],
+                "mention": "VBS drop",
+                "probability": 0.7542691429456075
+            },
+            {
+                "type": "Application",
+                "position": [
+                    19,
+                    24
+                ],
+                "mention": "Excel",
+                "probability": 0.9748179912567139
+            },
+            {
+                "type": "Application",
+                "position": [
+                    29,
+                    33
+                ],
+                "mention": "Word",
+                "probability": 0.9800574779510498
+            }
+        ],
+        "sentence": "Sample VBS dropper Excel and Word documents, and executable",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "Exploitation, installation and persistence",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "Ferocious dropper",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [
+            {
+                "type": "Application",
+                "position": [
+                    48,
+                    58
+                ],
+                "mention": "PowerShell",
+                "probability": 0.5458867351214091
+            }
+        ],
+        "sentence": "This first stage implant is composed of VBS and PowerShell scripts.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "The actor used some interesting new techniques in the dropper\u2019s execution flow.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "Below, we break it down into three parts:",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [
+            {
+                "type": "Application",
+                "position": [
+                    23,
+                    28
+                ],
+                "mention": "Excel",
+                "probability": 0.9096919894218445
+            }
+        ],
+        "sentence": "Ferocious dropper: The Excel dropper, after the user opens it and disables the protected mode, will execute a series of formulas placed in a hidden column.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "Initially, they will hide the main spreadsheet that requested the user to \u201cenable editing\u201d, then unhide a secondary spreadsheet that contains the decoy, to avoid raising suspicion.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "The dropper will then run formulas from a third spreadsheet with hidden columns.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [
+            {
+                "type": "Application",
+                "position": [
+                    86,
+                    95
+                ],
+                "mention": "Excel 4.0",
+                "probability": 0.7093259692192078
+            }
+        ],
+        "sentence": "The infection process will start by running three basic anti-sandbox checks using the Excel 4.0 function \u201cGET.WORKSPACE\u201d, with three integers:",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [
+            {
+                "type": "Application",
+                "position": [
+                    44,
+                    59
+                ],
+                "mention": "Microsoft Excel",
+                "probability": 0.9800823032855988
+            }
+        ],
+        "sentence": "1: Get the name of the environment in which Microsoft Excel is running, as text, followed by the environment\u2019s version number.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [
+            {
+                "type": "OS",
+                "position": [
+                    49,
+                    56
+                ],
+                "mention": "Windows",
+                "probability": 0.9688781499862671
+            }
+        ],
+        "sentence": "The result will then be compared to a predefined Windows version in a hidden cell, for example: Windows (64-bit) NT :.00, Windows (64-bit) NT 6.01, Windows (32-bit) NT 10.00, Windows (32-bit) NT 6.02.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "19: Check if a mouse is present.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "42: Check if the host computer is capable of playing sounds.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [
+            {
+                "type": "OS",
+                "position": [
+                    43,
+                    50
+                ],
+                "mention": "Windows",
+                "probability": 0.9787909984588623
+            }
+        ],
+        "sentence": "If any of the above checks fail, or if the Windows environment matches any of the aforementioned versions predefined in the document (different documents have different predefined versions), the process will halt.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "Otherwise, the macro will open a temporary %ProgramData%\\winrm.txt file and save a VBS stager to %ProgramData%\\winrm.vbs and set up registry keys for persistence.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "Ferocious run-1: After the macro finishes writing to disk, it runs winrm.vbs using explorer.exe.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [
+            {
+                "type": "Application",
+                "position": [
+                    52,
+                    57
+                ],
+                "mention": "Shell",
+                "probability": 0.5015067309141159
+            }
+        ],
+        "sentence": "In turn, the VBS script will write an embedded PowerShell snippet to a predefined filename that varies between samples, for instance, %ProgramData%\\regionh.txt.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [
+            {
+                "type": "Application",
+                "position": [
+                    4,
+                    7
+                ],
+                "mention": "VBS",
+                "probability": 0.6659673303365707
+            }
+        ],
+        "sentence": "The VBS script will also add two important registry keys for persistence.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "The persistence technique observed in all intrusions uses COM hijacking.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "In this technique, the threat actor is able to add a Class ID in the current user registry hive (HKCU) referencing the malicious VBS script written previously to %ProgramData%\\winrm.vbs.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [
+            {
+                "type": "Application",
+                "position": [
+                    65,
+                    66
+                ],
+                "mention": "V",
+                "probability": 0.7896168231964111
+            }
+        ],
+        "sentence": "This registry modification will effectively invoke the malicious VBS script any time a program or script references \u201cScripting.Dictionary\u201d COM programs during their execution.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [
+            {
+                "type": "Malware",
+                "position": [
+                    33,
+                    36
+                ],
+                "mention": "Win",
+                "probability": 0.9053052067756653
+            },
+            {
+                "type": "OS",
+                "position": [
+                    86,
+                    93
+                ],
+                "mention": "Windows",
+                "probability": 0.9630265235900879
+            },
+            {
+                "type": "Filepath-Win",
+                "position": [
+                    86,
+                    92
+                ],
+                "mention": "Windows",
+                "probability": 1
+            },
+            {
+                "type": "Filepath-Win",
+                "position": [
+                    110,
+                    116
+                ],
+                "mention": "Windows",
+                "probability": 1
+            },
+            {
+                "type": "Filepath-Win",
+                "position": [
+                    145,
+                    151
+                ],
+                "mention": "Windows",
+                "probability": 1
+            }
+        ],
+        "sentence": "In our analysis and testing, the WinRM Scripting API that is called by the legitimate Windows VBS scripts \u201cC:\\Windows\\System32\\winrm.vbs\u201d or \u201cC:\\Windows\\SysWOW64\\winrm.vbs\u201d, are able",
+        "annotated_sent_comb": [
+            {
+                "annotated": "In our analysis and testing, the <e1>Win</e1>RM Scripting API that is called by the legitimate <e2>Windows</e2> VBS scripts \u201cC:\\Windows\\System32\\winrm.vbs\u201d or \u201cC:\\Windows\\SysWOW64\\winrm.vbs\u201d, are able",
+                "e1": {
+                    "type": "Malware",
+                    "position": [
+                        33,
+                        36
+                    ],
+                    "mention": "Win",
+                    "probability": 0.9053052067756653
+                },
+                "e2": {
+                    "type": "OS",
+                    "position": [
+                        86,
+                        93
+                    ],
+                    "mention": "Windows",
+                    "probability": 0.9630265235900879
+                }
+            },
+            {
+                "annotated": "In our analysis and testing, the WinRM Scripting API that is called by the legitimate <e1>Window</e1>s VBS scripts \u201cC:\\<e2>Window</e2>s\\System32\\winrm.vbs\u201d or \u201cC:\\Windows\\SysWOW64\\winrm.vbs\u201d, are able",
+                "e1": {
+                    "type": "Filepath-Win",
+                    "position": [
+                        86,
+                        92
+                    ],
+                    "mention": "Windows",
+                    "probability": 1
+                },
+                "e2": {
+                    "type": "Filepath-Win",
+                    "position": [
+                        110,
+                        116
+                    ],
+                    "mention": "Windows",
+                    "probability": 1
+                }
+            },
+            {
+                "annotated": "In our analysis and testing, the WinRM Scripting API that is called by the legitimate <e1>Window</e1>s VBS scripts \u201cC:\\Windows\\System32\\winrm.vbs\u201d or \u201cC:\\<e2>Window</e2>s\\SysWOW64\\winrm.vbs\u201d, are able",
+                "e1": {
+                    "type": "Filepath-Win",
+                    "position": [
+                        86,
+                        92
+                    ],
+                    "mention": "Windows",
+                    "probability": 1
+                },
+                "e2": {
+                    "type": "Filepath-Win",
+                    "position": [
+                        145,
+                        151
+                    ],
+                    "mention": "Windows",
+                    "probability": 1
+                }
+            },
+            {
+                "annotated": "In our analysis and testing, the WinRM Scripting API that is called by the legitimate Windows VBS scripts \u201cC:\\<e1>Window</e1>s\\System32\\winrm.vbs\u201d or \u201cC:\\<e2>Window</e2>s\\SysWOW64\\winrm.vbs\u201d, are able",
+                "e1": {
+                    "type": "Filepath-Win",
+                    "position": [
+                        110,
+                        116
+                    ],
+                    "mention": "Windows",
+                    "probability": 1
+                },
+                "e2": {
+                    "type": "Filepath-Win",
+                    "position": [
+                        145,
+                        151
+                    ],
+                    "mention": "Windows",
+                    "probability": 1
+                }
+            }
+        ]
+    },
+    {
+        "entity": [
+            {
+                "type": "Organization",
+                "position": [
+                    0,
+                    9
+                ],
+                "mention": "Microsoft",
+                "probability": 0.9054190516471863
+            }
+        ],
+        "sentence": "Microsoft\u2019s command line licensing tool slmgr.vbs is also able to provide similar results.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "Both winrm.vbs and slmgr.vbs were leveraged across different intrusions.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "The mechanism through which these scripts are invoked during the boot process is described in a later section.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "Registry keys used for COM hijacking",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "Registry keys used for COM hijacking",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [
+            {
+                "type": "Application",
+                "position": [
+                    37,
+                    46
+                ],
+                "mention": "Excel 4.0",
+                "probability": 0.9081436395645142
+            }
+        ],
+        "sentence": "After the above execution chain, the Excel 4.0 macro will clean up and delete the winrm.vbs and winrm.txt files.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "Ferocious run-2: The macro will continue after the cleanup by recreating and opening the same files, winrm.vbs and winrm.txt.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [
+            {
+                "type": "Application",
+                "position": [
+                    31,
+                    41
+                ],
+                "mention": "PowerShell",
+                "probability": 0.8701827526092529
+            }
+        ],
+        "sentence": "However, this time it writes a PowerShell one-liner wrapped with VB code temporarily into %ProgramData%\\winrm.txt and then saved into %ProgramData%\\winrm.vbs.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [
+            {
+                "type": "Application",
+                "position": [
+                    40,
+                    50
+                ],
+                "mention": "PowerShell",
+                "probability": 0.947364350159963
+            }
+        ],
+        "sentence": "This one-liner acts as a stager for the PowerShell snippet written in regionh.txt mentioned above.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [
+            {
+                "type": "Malware",
+                "position": [
+                    185,
+                    201
+                ],
+                "mention": "LitePower Stager",
+                "probability": 0.8380468487739563
+            }
+        ],
+        "sentence": "Once successful, the macro invokes %ProgramData%\\winrm.vbs again using explorer.exe, which in turn will execute the PowerShell snippet that connects to the C2 server and which we named LitePower Stager.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "LitePower stager",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [
+            {
+                "type": "Application",
+                "position": [
+                    23,
+                    33
+                ],
+                "mention": "PowerShell",
+                "probability": 0.7398649255434672
+            }
+        ],
+        "sentence": "The implant is a small PowerShell script that acts as a downloader and secondary stager used to execute commands provided by its C2, and possibly download and deploy further malware.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "LitePower PowerShell implant",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "LitePower PowerShell implant",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "This script is able to connect with the embedded C2 domain using predefined HTTP settings such as a unique User-Agent:",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [
+            {
+                "type": "Malware",
+                "position": [
+                    0,
+                    11
+                ],
+                "mention": "Mozilla/5.0",
+                "probability": 0.6805374224980673
+            },
+            {
+                "type": "OS",
+                "position": [
+                    13,
+                    28
+                ],
+                "mention": "Windows NT 10.0",
+                "probability": 0.8290776908397675
+            },
+            {
+                "type": "Malware",
+                "position": [
+                    71,
+                    82
+                ],
+                "mention": "Firefox/2.0",
+                "probability": 0.6705654263496399
+            },
+            {
+                "type": "Filepath-Unix",
+                "position": [
+                    7,
+                    10
+                ],
+                "mention": "/5.0",
+                "probability": 1
+            },
+            {
+                "type": "Filepath-Unix",
+                "position": [
+                    58,
+                    69
+                ],
+                "mention": "/22.36.35.06",
+                "probability": 1
+            },
+            {
+                "type": "Filepath-Unix",
+                "position": [
+                    78,
+                    81
+                ],
+                "mention": "/2.0",
+                "probability": 1
+            }
+        ],
+        "sentence": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:FTS_06) Gecko/22.36.35.06 Firefox/2.0",
+        "annotated_sent_comb": [
+            {
+                "annotated": "<e1>Mozilla/5.0</e1> (<e2>Windows NT 10.0</e2>; Win64; x64; rv:FTS_06) Gecko/22.36.35.06 Firefox/2.0",
+                "e1": {
+                    "type": "Malware",
+                    "position": [
+                        0,
+                        11
+                    ],
+                    "mention": "Mozilla/5.0",
+                    "probability": 0.6805374224980673
+                },
+                "e2": {
+                    "type": "OS",
+                    "position": [
+                        13,
+                        28
+                    ],
+                    "mention": "Windows NT 10.0",
+                    "probability": 0.8290776908397675
+                }
+            },
+            {
+                "annotated": "<e1>Mozilla/5.0</e1> (Windows NT 10.0; Win64; x64; rv:FTS_06) Gecko/22.36.35.06 <e2>Firefox/2.0</e2>",
+                "e1": {
+                    "type": "Malware",
+                    "position": [
+                        0,
+                        11
+                    ],
+                    "mention": "Mozilla/5.0",
+                    "probability": 0.6805374224980673
+                },
+                "e2": {
+                    "type": "Malware",
+                    "position": [
+                        71,
+                        82
+                    ],
+                    "mention": "Firefox/2.0",
+                    "probability": 0.6705654263496399
+                }
+            },
+            {
+                "annotated": "Mozilla/5.0 (<e1>Windows NT 10.0</e1>; Win64; x64; rv:FTS_06) Gecko/22.36.35.06 <e2>Firefox/2.0</e2>",
+                "e1": {
+                    "type": "OS",
+                    "position": [
+                        13,
+                        28
+                    ],
+                    "mention": "Windows NT 10.0",
+                    "probability": 0.8290776908397675
+                },
+                "e2": {
+                    "type": "Malware",
+                    "position": [
+                        71,
+                        82
+                    ],
+                    "mention": "Firefox/2.0",
+                    "probability": 0.6705654263496399
+                }
+            },
+            {
+                "annotated": "Mozilla<e1>/5.</e1>0 (Windows NT 10.0; Win64; x64; rv:FTS_06) Gecko<e2>/22.36.35.0</e2>6 Firefox/2.0",
+                "e1": {
+                    "type": "Filepath-Unix",
+                    "position": [
+                        7,
+                        10
+                    ],
+                    "mention": "/5.0",
+                    "probability": 1
+                },
+                "e2": {
+                    "type": "Filepath-Unix",
+                    "position": [
+                        58,
+                        69
+                    ],
+                    "mention": "/22.36.35.06",
+                    "probability": 1
+                }
+            },
+            {
+                "annotated": "Mozilla<e1>/5.</e1>0 (Windows NT 10.0; Win64; x64; rv:FTS_06) Gecko/22.36.35.06 Firefox<e2>/2.</e2>0",
+                "e1": {
+                    "type": "Filepath-Unix",
+                    "position": [
+                        7,
+                        10
+                    ],
+                    "mention": "/5.0",
+                    "probability": 1
+                },
+                "e2": {
+                    "type": "Filepath-Unix",
+                    "position": [
+                        78,
+                        81
+                    ],
+                    "mention": "/2.0",
+                    "probability": 1
+                }
+            },
+            {
+                "annotated": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:FTS_06) Gecko<e1>/22.36.35.0</e1>6 Firefox<e2>/2.</e2>0",
+                "e1": {
+                    "type": "Filepath-Unix",
+                    "position": [
+                        58,
+                        69
+                    ],
+                    "mention": "/22.36.35.06",
+                    "probability": 1
+                },
+                "e2": {
+                    "type": "Filepath-Unix",
+                    "position": [
+                        78,
+                        81
+                    ],
+                    "mention": "/2.0",
+                    "probability": 1
+                }
+            }
+        ]
+    },
+    {
+        "entity": [],
+        "sentence": "1",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [
+            {
+                "type": "Malware",
+                "position": [
+                    0,
+                    11
+                ],
+                "mention": "Mozilla/5.0",
+                "probability": 0.6805374224980673
+            },
+            {
+                "type": "OS",
+                "position": [
+                    13,
+                    28
+                ],
+                "mention": "Windows NT 10.0",
+                "probability": 0.8290776908397675
+            },
+            {
+                "type": "Malware",
+                "position": [
+                    71,
+                    82
+                ],
+                "mention": "Firefox/2.0",
+                "probability": 0.6705654263496399
+            },
+            {
+                "type": "Filepath-Unix",
+                "position": [
+                    7,
+                    10
+                ],
+                "mention": "/5.0",
+                "probability": 1
+            },
+            {
+                "type": "Filepath-Unix",
+                "position": [
+                    58,
+                    69
+                ],
+                "mention": "/22.36.35.06",
+                "probability": 1
+            },
+            {
+                "type": "Filepath-Unix",
+                "position": [
+                    78,
+                    81
+                ],
+                "mention": "/2.0",
+                "probability": 1
+            }
+        ],
+        "sentence": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:FTS_06) Gecko/22.36.35.06 Firefox/2.0",
+        "annotated_sent_comb": [
+            {
+                "annotated": "<e1>Mozilla/5.0</e1> (<e2>Windows NT 10.0</e2>; Win64; x64; rv:FTS_06) Gecko/22.36.35.06 Firefox/2.0",
+                "e1": {
+                    "type": "Malware",
+                    "position": [
+                        0,
+                        11
+                    ],
+                    "mention": "Mozilla/5.0",
+                    "probability": 0.6805374224980673
+                },
+                "e2": {
+                    "type": "OS",
+                    "position": [
+                        13,
+                        28
+                    ],
+                    "mention": "Windows NT 10.0",
+                    "probability": 0.8290776908397675
+                }
+            },
+            {
+                "annotated": "<e1>Mozilla/5.0</e1> (Windows NT 10.0; Win64; x64; rv:FTS_06) Gecko/22.36.35.06 <e2>Firefox/2.0</e2>",
+                "e1": {
+                    "type": "Malware",
+                    "position": [
+                        0,
+                        11
+                    ],
+                    "mention": "Mozilla/5.0",
+                    "probability": 0.6805374224980673
+                },
+                "e2": {
+                    "type": "Malware",
+                    "position": [
+                        71,
+                        82
+                    ],
+                    "mention": "Firefox/2.0",
+                    "probability": 0.6705654263496399
+                }
+            },
+            {
+                "annotated": "Mozilla/5.0 (<e1>Windows NT 10.0</e1>; Win64; x64; rv:FTS_06) Gecko/22.36.35.06 <e2>Firefox/2.0</e2>",
+                "e1": {
+                    "type": "OS",
+                    "position": [
+                        13,
+                        28
+                    ],
+                    "mention": "Windows NT 10.0",
+                    "probability": 0.8290776908397675
+                },
+                "e2": {
+                    "type": "Malware",
+                    "position": [
+                        71,
+                        82
+                    ],
+                    "mention": "Firefox/2.0",
+                    "probability": 0.6705654263496399
+                }
+            },
+            {
+                "annotated": "Mozilla<e1>/5.</e1>0 (Windows NT 10.0; Win64; x64; rv:FTS_06) Gecko<e2>/22.36.35.0</e2>6 Firefox/2.0",
+                "e1": {
+                    "type": "Filepath-Unix",
+                    "position": [
+                        7,
+                        10
+                    ],
+                    "mention": "/5.0",
+                    "probability": 1
+                },
+                "e2": {
+                    "type": "Filepath-Unix",
+                    "position": [
+                        58,
+                        69
+                    ],
+                    "mention": "/22.36.35.06",
+                    "probability": 1
+                }
+            },
+            {
+                "annotated": "Mozilla<e1>/5.</e1>0 (Windows NT 10.0; Win64; x64; rv:FTS_06) Gecko/22.36.35.06 Firefox<e2>/2.</e2>0",
+                "e1": {
+                    "type": "Filepath-Unix",
+                    "position": [
+                        7,
+                        10
+                    ],
+                    "mention": "/5.0",
+                    "probability": 1
+                },
+                "e2": {
+                    "type": "Filepath-Unix",
+                    "position": [
+                        78,
+                        81
+                    ],
+                    "mention": "/2.0",
+                    "probability": 1
+                }
+            },
+            {
+                "annotated": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:FTS_06) Gecko<e1>/22.36.35.0</e1>6 Firefox<e2>/2.</e2>0",
+                "e1": {
+                    "type": "Filepath-Unix",
+                    "position": [
+                        58,
+                        69
+                    ],
+                    "mention": "/22.36.35.06",
+                    "probability": 1
+                },
+                "e2": {
+                    "type": "Filepath-Unix",
+                    "position": [
+                        78,
+                        81
+                    ],
+                    "mention": "/2.0",
+                    "probability": 1
+                }
+            }
+        ]
+    },
+    {
+        "entity": [],
+        "sentence": "Interestingly, and across the different incidents we observed, the \u201crv\u201d field of the user agent has changed.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "In the example above, it is FTS_06.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "However, we have seen more than 10 variations.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "We suspect these are used to track intrusions.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "If the connection to the C2 server is successful, the script parses the output and invokes it using IEX.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "The script sleeps for a random number of seconds between 60 and 100 after each attempt to reach the C2.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [
+            {
+                "type": "Malware",
+                "position": [
+                    69,
+                    73
+                ],
+                "mention": "Lite",
+                "probability": 0.5157394409179688
+            },
+            {
+                "type": "Application",
+                "position": [
+                    167,
+                    177
+                ],
+                "mention": "PowerShell",
+                "probability": 0.6193121075630188
+            }
+        ],
+        "sentence": "If the threat actor succeeds in establishing C2 communications using LitePower, further payloads containing system commands are sent back to the victim in the form of PowerShell functions through HTTP GET requests, and the command results are sent back as HTTP POST requests to the",
+        "annotated_sent_comb": [
+            {
+                "annotated": "If the threat actor succeeds in establishing C2 communications using <e1>Lite</e1>Power, further payloads containing system commands are sent back to the victim in the form of <e2>PowerShell</e2> functions through HTTP GET requests, and the command results are sent back as HTTP POST requests to the",
+                "e1": {
+                    "type": "Malware",
+                    "position": [
+                        69,
+                        73
+                    ],
+                    "mention": "Lite",
+                    "probability": 0.5157394409179688
+                },
+                "e2": {
+                    "type": "Application",
+                    "position": [
+                        167,
+                        177
+                    ],
+                    "mention": "PowerShell",
+                    "probability": 0.6193121075630188
+                }
+            }
+        ]
+    },
+    {
+        "entity": [
+            {
+                "type": "Organization",
+                "position": [
+                    35,
+                    44
+                ],
+                "mention": "LitePower",
+                "probability": 0.5665487200021744
+            }
+        ],
+        "sentence": "The GET requests will be parsed by LitePower and invoked using PowerShell\u2019s IEX function.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "The threat actor initially conducts system reconnaissance to assess the AV software installed and the user privilege.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "This is followed by the creation of a legitimate scheduled task to trigger \u201cScripting.Dictionary\u201d COM programs; this will become the cornerstone that allows the persistence to work using the COM hijacking technique and the registry keys added during the installation phase described above.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "Sample scheduled task settings referencing SLMGR.VBS to trigger WINRM.VBS through COM hijacking",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "Sample scheduled task settings referencing SLMGR.VBS to trigger WINRM.VBS through COM hijacking",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "The commands observed during the different intrusions are summarized below:",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "Command Description",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "Get-WmiObject Win32_logicaldisk -Filter \u2018DeviceID=\u201dC:\u201d\u2019 |",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "select volumeserialnumber List local disk drives",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "\u2018SELECT * FROM AntiVirusProduct\u2019",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "$antivirusProduct = Get-WmiObject -Namespace",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "\u2018root\\SecurityCenter2\u2019 -Query $wmiQuery",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [
+            {
+                "type": "Filepath-Unix",
+                "position": [
+                    48,
+                    51
+                ],
+                "mention": "/A\u2019}",
+                "probability": 1
+            }
+        ],
+        "sentence": "if($antivirusProduct.displayName -eq \u201d){$ret= \u2018N/A\u2019}",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [
+            {
+                "type": "Application",
+                "position": [
+                    54,
+                    63
+                ],
+                "mention": "antivirus",
+                "probability": 0.9870384931564331
+            }
+        ],
+        "sentence": "else{$ret= $antivirusProduct.displayName} Get list of antivirus software installed",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "New-Object Security.Principal.WindowsPrincipal([Security.Principal.WindowsId",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "entity]::GetCurrent())).IsInRole([Security.Principal.WindowsBuilt",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "inRole]::Administrator Check if current user has admin privileges",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "Get-WmiObject win32_operatingsystem).caption) + \u2018 x\u2019+ ((Get-",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "WmiObject Win32_OperatingSystem).OSArchitecture).substring(0,2) Get operating system architecture",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "Additional long functions that we observed can be summarized as follows:",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "Function Get-ServiceStatus: checks for possible backdoors installed as services (MsDataSvc and NgcCtrlSvc), if the computer is part of a domain, and if the current user is a member of \u201cDomain admins\u201d.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "Function Get-PersistenceStatus: checks for the registry keys added for COM hijacking.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "Function Get-HotFixes: lists all hotfixes installed.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "Screenshot: takes system screenshots and saves them to %AppData% before sending them to the C2 via a POST request.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "Command and control",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [
+            {
+                "type": "ThreatActor",
+                "position": [
+                    64,
+                    70
+                ],
+                "mention": "george",
+                "probability": 0.3018169701099396
+            },
+            {
+                "type": "Application",
+                "position": [
+                    70,
+                    74
+                ],
+                "mention": "bank",
+                "probability": 0.3028201162815094
+            },
+            {
+                "type": "ThreatActor",
+                "position": [
+                    74,
+                    77
+                ],
+                "mention": "ers",
+                "probability": 0.3677462339401245
+            }
+        ],
+        "sentence": "In our initial sample analysis, the C2 domain we observed was stgeorgebankers[.]com.",
+        "annotated_sent_comb": [
+            {
+                "annotated": "In our initial sample analysis, the C2 domain we observed was st<e1>george</e1><e2>bank</e2>ers[.]com.",
+                "e1": {
+                    "type": "ThreatActor",
+                    "position": [
+                        64,
+                        70
+                    ],
+                    "mention": "george",
+                    "probability": 0.3018169701099396
+                },
+                "e2": {
+                    "type": "Application",
+                    "position": [
+                        70,
+                        74
+                    ],
+                    "mention": "bank",
+                    "probability": 0.3028201162815094
+                }
+            },
+            {
+                "annotated": "In our initial sample analysis, the C2 domain we observed was stgeorge<e1>bank</e1><e2>ers</e2>[.]com.",
+                "e1": {
+                    "type": "Application",
+                    "position": [
+                        70,
+                        74
+                    ],
+                    "mention": "bank",
+                    "probability": 0.3028201162815094
+                },
+                "e2": {
+                    "type": "ThreatActor",
+                    "position": [
+                        74,
+                        77
+                    ],
+                    "mention": "ers",
+                    "probability": 0.3677462339401245
+                }
+            }
+        ]
+    },
+    {
+        "entity": [
+            {
+                "type": "Time",
+                "position": [
+                    121,
+                    135
+                ],
+                "mention": "December 2019.",
+                "probability": 0.9813281297683716
+            }
+        ],
+        "sentence": "After conducting pivots through malware samples, we were able to identify multiple C2 domains that date back to at least December 2019.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [
+            {
+                "type": "Application",
+                "position": [
+                    42,
+                    52
+                ],
+                "mention": "CloudFlare",
+                "probability": 0.9606029589970907
+            }
+        ],
+        "sentence": "These C2 domains were occasionally behind CloudFlare to obscure the real C2 IP address.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [
+            {
+                "type": "location",
+                "position": [
+                    164,
+                    171
+                ],
+                "mention": "Ukraine",
+                "probability": 0.9935139417648315
+            },
+            {
+                "type": "location",
+                "position": [
+                    176,
+                    183
+                ],
+                "mention": "Estonia",
+                "probability": 0.9948816299438477
+            }
+        ],
+        "sentence": "Thanks to collaboration with our partners, we were able to gather some of the original C2 IP addresses, which allowed us to discover that the servers are hosted in Ukraine and Estonia.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "Infrastructure overview",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "Infrastructure overview",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "By looking for more machines presenting identical TLS certificates, we were able to identify additional domain names and IP addresses.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "Interestingly, the server mapped to kneeexercises[.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [
+            {
+                "type": "Malware",
+                "position": [
+                    0,
+                    4
+                ],
+                "mention": "]net",
+                "probability": 0.6852874457836151
+            }
+        ],
+        "sentence": "]net listens for incoming HTTPS connections on several ports and uses common names seen on other C2 domains.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "For example, ports 2083 and 8443 had CN firstohiobank[.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "]com, and TCP port 2087 had a TLS certificate with the common name dentalmatrix[.]net.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "We observed use of these non-standard ports during some of the older intrusions, while the newer ones mostly use port 443.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "Victimology",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [
+            {
+                "type": "Application",
+                "position": [
+                    107,
+                    116
+                ],
+                "mention": "financial",
+                "probability": 0.5263789892196655
+            }
+        ],
+        "sentence": "Our telemetry indicates that the threat actor has targeted a variety of verticals including diplomatic and financial institutions, government, law firms, military organizations, and technology companies.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [
+            {
+                "type": "location",
+                "position": [
+                    37,
+                    44
+                ],
+                "mention": "Armenia",
+                "probability": 0.9951582551002502
+            },
+            {
+                "type": "location",
+                "position": [
+                    46,
+                    52
+                ],
+                "mention": "Cyprus",
+                "probability": 0.8941839933395386
+            },
+            {
+                "type": "location",
+                "position": [
+                    54,
+                    59
+                ],
+                "mention": "Egypt",
+                "probability": 0.9951510429382324
+            },
+            {
+                "type": "location",
+                "position": [
+                    61,
+                    67
+                ],
+                "mention": "Jordan",
+                "probability": 0.9944297671318054
+            },
+            {
+                "type": "location",
+                "position": [
+                    69,
+                    76
+                ],
+                "mention": "Lebanon",
+                "probability": 0.9943842887878418
+            },
+            {
+                "type": "location",
+                "position": [
+                    78,
+                    87
+                ],
+                "mention": "Palestine",
+                "probability": 0.9293996095657349
+            },
+            {
+                "type": "location",
+                "position": [
+                    89,
+                    94
+                ],
+                "mention": "Syria",
+                "probability": 0.9942929744720459
+            },
+            {
+                "type": "location",
+                "position": [
+                    99,
+                    105
+                ],
+                "mention": "Turkey",
+                "probability": 0.9944890737533569
+            }
+        ],
+        "sentence": "The affected entities are located in Armenia, Cyprus, Egypt, Jordan, Lebanon, Palestine, Syria and Turkey.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "Threat actor assessment",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "We assess with high confidence that the intrusions discussed here are associated with the WIRTE threat actor group.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [
+            {
+                "type": "Malware",
+                "position": [
+                    0,
+                    5
+                ],
+                "mention": "WIRTE",
+                "probability": 0.8887025912602743
+            },
+            {
+                "type": "Application",
+                "position": [
+                    31,
+                    55
+                ],
+                "mention": "Visual Basic Script (VBS",
+                "probability": 0.9529606997966766
+            },
+            {
+                "type": "location",
+                "position": [
+                    161,
+                    172
+                ],
+                "mention": "Palestinian",
+                "probability": 0.7143049240112305
+            }
+        ],
+        "sentence": "WIRTE used documents deploying Visual Basic Script (VBS), potentially delivered through spear phishing, decoys with Arabic content, occasionally associated with Palestinian matters.",
+        "annotated_sent_comb": [
+            {
+                "annotated": "<e1>WIRTE</e1> used documents deploying <e2>Visual Basic Script (VBS</e2>), potentially delivered through spear phishing, decoys with Arabic content, occasionally associated with Palestinian matters.",
+                "e1": {
+                    "type": "Malware",
+                    "position": [
+                        0,
+                        5
+                    ],
+                    "mention": "WIRTE",
+                    "probability": 0.8887025912602743
+                },
+                "e2": {
+                    "type": "Application",
+                    "position": [
+                        31,
+                        55
+                    ],
+                    "mention": "Visual Basic Script (VBS",
+                    "probability": 0.9529606997966766
+                }
+            },
+            {
+                "annotated": "<e1>WIRTE</e1> used documents deploying Visual Basic Script (VBS), potentially delivered through spear phishing, decoys with Arabic content, occasionally associated with <e2>Palestinian</e2> matters.",
+                "e1": {
+                    "type": "Malware",
+                    "position": [
+                        0,
+                        5
+                    ],
+                    "mention": "WIRTE",
+                    "probability": 0.8887025912602743
+                },
+                "e2": {
+                    "type": "location",
+                    "position": [
+                        161,
+                        172
+                    ],
+                    "mention": "Palestinian",
+                    "probability": 0.7143049240112305
+                }
+            },
+            {
+                "annotated": "WIRTE used documents deploying <e1>Visual Basic Script (VBS</e1>), potentially delivered through spear phishing, decoys with Arabic content, occasionally associated with <e2>Palestinian</e2> matters.",
+                "e1": {
+                    "type": "Application",
+                    "position": [
+                        31,
+                        55
+                    ],
+                    "mention": "Visual Basic Script (VBS",
+                    "probability": 0.9529606997966766
+                },
+                "e2": {
+                    "type": "location",
+                    "position": [
+                        161,
+                        172
+                    ],
+                    "mention": "Palestinian",
+                    "probability": 0.7143049240112305
+                }
+            }
+        ]
+    },
+    {
+        "entity": [],
+        "sentence": "We see the same theme being followed in the intrusions discussed in this report.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [
+            {
+                "type": "Application",
+                "position": [
+                    38,
+                    41
+                ],
+                "mention": "VBS",
+                "probability": 0.9218856990337372
+            },
+            {
+                "type": "Application",
+                "position": [
+                    46,
+                    56
+                ],
+                "mention": "PowerShell",
+                "probability": 0.9349618554115295
+            }
+        ],
+        "sentence": "Both old and new intrusions leveraged VBS and PowerShell in similar ways to stage additional tools and communicate with the C2.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [
+            {
+                "type": "Organization",
+                "position": [
+                    191,
+                    196
+                ],
+                "mention": "Lab52",
+                "probability": 0.8993529379367828
+            },
+            {
+                "type": "Filepath-Unix",
+                "position": [
+                    47,
+                    50
+                ],
+                "mention": "/443",
+                "probability": 1
+            }
+        ],
+        "sentence": "Even though the latest intrusions are using TCP/443 over HTTPS in C2 communications, the oldest intrusions explored in this report used similar ports to those mentioned in the public post by Lab52, such as TCP 2096 and 2087.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [
+            {
+                "type": "Application",
+                "position": [
+                    85,
+                    89
+                ],
+                "mention": "hell",
+                "probability": 0.4900369346141815
+            }
+        ],
+        "sentence": "In addition, the C2 requests explored here and in the public post have similar PowerShell IEX command execution and sleep functions.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "Old C2 request highlighting the status condition, IEX invocation and 60-100 sleep function",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "Old C2 request highlighting the status condition, IEX invocation and 60-100 sleep function",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "New C2 request highlighting the status condition, IEX invocation and 60-100 sleep function",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "New C2 request highlighting the status condition, IEX invocation and 60-100 sleep function",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "The snippets above also show the custom user-agents.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "Although the old intrusions had them encoded, the intrusions explored in this report had them in plain text.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "In both cases the adversaries identified separate intrusions by changing the \u201crv\u201d field.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [
+            {
+                "type": "Application",
+                "position": [
+                    40,
+                    50
+                ],
+                "mention": "Cloudflare",
+                "probability": 0.7328417102495829
+            },
+            {
+                "type": "location",
+                "position": [
+                    99,
+                    106
+                ],
+                "mention": "Ukraine",
+                "probability": 0.9877703189849854
+            },
+            {
+                "type": "ThreatActor",
+                "position": [
+                    114,
+                    115
+                ],
+                "mention": "A",
+                "probability": 0.38072723150253296
+            },
+            {
+                "type": "Application",
+                "position": [
+                    115,
+                    117
+                ],
+                "mention": "SN",
+                "probability": 0.25695541501045227
+            },
+            {
+                "type": "ThreatActor",
+                "position": [
+                    118,
+                    125
+                ],
+                "mention": "201094)",
+                "probability": 0.2721070274710655
+            }
+        ],
+        "sentence": "The C2s in both cases were protected by Cloudflare, and the real VPSs were under ASNs primarily in Ukraine (e.g., ASN 201094).",
+        "annotated_sent_comb": [
+            {
+                "annotated": "The C2s in both cases were protected by <e1>Cloudflare</e1>, and the real VPSs were under ASNs primarily in <e2>Ukraine</e2> (e.g., ASN 201094).",
+                "e1": {
+                    "type": "Application",
+                    "position": [
+                        40,
+                        50
+                    ],
+                    "mention": "Cloudflare",
+                    "probability": 0.7328417102495829
+                },
+                "e2": {
+                    "type": "location",
+                    "position": [
+                        99,
+                        106
+                    ],
+                    "mention": "Ukraine",
+                    "probability": 0.9877703189849854
+                }
+            },
+            {
+                "annotated": "The C2s in both cases were protected by <e1>Cloudflare</e1>, and the real VPSs were under ASNs primarily in Ukraine (e.g., <e2>A</e2>SN 201094).",
+                "e1": {
+                    "type": "Application",
+                    "position": [
+                        40,
+                        50
+                    ],
+                    "mention": "Cloudflare",
+                    "probability": 0.7328417102495829
+                },
+                "e2": {
+                    "type": "ThreatActor",
+                    "position": [
+                        114,
+                        115
+                    ],
+                    "mention": "A",
+                    "probability": 0.38072723150253296
+                }
+            },
+            {
+                "annotated": "The C2s in both cases were protected by <e1>Cloudflare</e1>, and the real VPSs were under ASNs primarily in Ukraine (e.g., ASN <e2>201094)</e2>.",
+                "e1": {
+                    "type": "Application",
+                    "position": [
+                        40,
+                        50
+                    ],
+                    "mention": "Cloudflare",
+                    "probability": 0.7328417102495829
+                },
+                "e2": {
+                    "type": "ThreatActor",
+                    "position": [
+                        118,
+                        125
+                    ],
+                    "mention": "201094)",
+                    "probability": 0.2721070274710655
+                }
+            },
+            {
+                "annotated": "The C2s in both cases were protected by Cloudflare, and the real VPSs were under ASNs primarily in <e1>Ukraine</e1> (e.g., <e2>A</e2>SN 201094).",
+                "e1": {
+                    "type": "location",
+                    "position": [
+                        99,
+                        106
+                    ],
+                    "mention": "Ukraine",
+                    "probability": 0.9877703189849854
+                },
+                "e2": {
+                    "type": "ThreatActor",
+                    "position": [
+                        114,
+                        115
+                    ],
+                    "mention": "A",
+                    "probability": 0.38072723150253296
+                }
+            },
+            {
+                "annotated": "The C2s in both cases were protected by Cloudflare, and the real VPSs were under ASNs primarily in <e1>Ukraine</e1> (e.g., A<e2>SN</e2> 201094).",
+                "e1": {
+                    "type": "location",
+                    "position": [
+                        99,
+                        106
+                    ],
+                    "mention": "Ukraine",
+                    "probability": 0.9877703189849854
+                },
+                "e2": {
+                    "type": "Application",
+                    "position": [
+                        115,
+                        117
+                    ],
+                    "mention": "SN",
+                    "probability": 0.25695541501045227
+                }
+            },
+            {
+                "annotated": "The C2s in both cases were protected by Cloudflare, and the real VPSs were under ASNs primarily in <e1>Ukraine</e1> (e.g., ASN <e2>201094)</e2>.",
+                "e1": {
+                    "type": "location",
+                    "position": [
+                        99,
+                        106
+                    ],
+                    "mention": "Ukraine",
+                    "probability": 0.9877703189849854
+                },
+                "e2": {
+                    "type": "ThreatActor",
+                    "position": [
+                        118,
+                        125
+                    ],
+                    "mention": "201094)",
+                    "probability": 0.2721070274710655
+                }
+            },
+            {
+                "annotated": "The C2s in both cases were protected by Cloudflare, and the real VPSs were under ASNs primarily in Ukraine (e.g., <e1>A</e1><e2>SN</e2> 201094).",
+                "e1": {
+                    "type": "ThreatActor",
+                    "position": [
+                        114,
+                        115
+                    ],
+                    "mention": "A",
+                    "probability": 0.38072723150253296
+                },
+                "e2": {
+                    "type": "Application",
+                    "position": [
+                        115,
+                        117
+                    ],
+                    "mention": "SN",
+                    "probability": 0.25695541501045227
+                }
+            },
+            {
+                "annotated": "The C2s in both cases were protected by Cloudflare, and the real VPSs were under ASNs primarily in Ukraine (e.g., A<e1>SN</e1> <e2>201094)</e2>.",
+                "e1": {
+                    "type": "Application",
+                    "position": [
+                        115,
+                        117
+                    ],
+                    "mention": "SN",
+                    "probability": 0.25695541501045227
+                },
+                "e2": {
+                    "type": "ThreatActor",
+                    "position": [
+                        118,
+                        125
+                    ],
+                    "mention": "201094)",
+                    "probability": 0.2721070274710655
+                }
+            }
+        ]
+    },
+    {
+        "entity": [
+            {
+                "type": "Organization",
+                "position": [
+                    7,
+                    12
+                ],
+                "mention": "Lab52",
+                "probability": 0.9258421957492828
+            }
+        ],
+        "sentence": "In the Lab52 post, the author described the use of a defense evasion and living-off-the-land (LotL) technique using regsvr32.exe, whereas in the intrusions explored in this report, the threat actor used another LotL technique such as COM hija",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "In both cases, the working directory is %ProgramData%.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "All in all, we believe that all these similarities are a strong indication that the attacks described in this report were conducted by the WIRTE threat actor.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [
+            {
+                "type": "Malware",
+                "position": [
+                    35,
+                    40
+                ],
+                "mention": "WIRTE",
+                "probability": 0.6596662898858389
+            },
+            {
+                "type": "location",
+                "position": [
+                    65,
+                    69
+                ],
+                "mention": "Gaza",
+                "probability": 0.6305980682373047
+            },
+            {
+                "type": "MalwareType",
+                "position": [
+                    70,
+                    75
+                ],
+                "mention": "Cyber",
+                "probability": 0.30898594856262207
+            },
+            {
+                "type": "ThreatActor",
+                "position": [
+                    75,
+                    79
+                ],
+                "mention": "gang",
+                "probability": 0.5068840384483337
+            }
+        ],
+        "sentence": "We assess with low confidence that WIRTE is a subgroup under the Gaza Cybergang umbrella.",
+        "annotated_sent_comb": [
+            {
+                "annotated": "We assess with low confidence that <e1>WIRTE</e1> is a subgroup under the <e2>Gaza</e2> Cybergang umbrella.",
+                "e1": {
+                    "type": "Malware",
+                    "position": [
+                        35,
+                        40
+                    ],
+                    "mention": "WIRTE",
+                    "probability": 0.6596662898858389
+                },
+                "e2": {
+                    "type": "location",
+                    "position": [
+                        65,
+                        69
+                    ],
+                    "mention": "Gaza",
+                    "probability": 0.6305980682373047
+                }
+            },
+            {
+                "annotated": "We assess with low confidence that <e1>WIRTE</e1> is a subgroup under the Gaza <e2>Cyber</e2>gang umbrella.",
+                "e1": {
+                    "type": "Malware",
+                    "position": [
+                        35,
+                        40
+                    ],
+                    "mention": "WIRTE",
+                    "probability": 0.6596662898858389
+                },
+                "e2": {
+                    "type": "MalwareType",
+                    "position": [
+                        70,
+                        75
+                    ],
+                    "mention": "Cyber",
+                    "probability": 0.30898594856262207
+                }
+            },
+            {
+                "annotated": "We assess with low confidence that <e1>WIRTE</e1> is a subgroup under the Gaza Cyber<e2>gang</e2> umbrella.",
+                "e1": {
+                    "type": "Malware",
+                    "position": [
+                        35,
+                        40
+                    ],
+                    "mention": "WIRTE",
+                    "probability": 0.6596662898858389
+                },
+                "e2": {
+                    "type": "ThreatActor",
+                    "position": [
+                        75,
+                        79
+                    ],
+                    "mention": "gang",
+                    "probability": 0.5068840384483337
+                }
+            },
+            {
+                "annotated": "We assess with low confidence that WIRTE is a subgroup under the <e1>Gaza</e1> <e2>Cyber</e2>gang umbrella.",
+                "e1": {
+                    "type": "location",
+                    "position": [
+                        65,
+                        69
+                    ],
+                    "mention": "Gaza",
+                    "probability": 0.6305980682373047
+                },
+                "e2": {
+                    "type": "MalwareType",
+                    "position": [
+                        70,
+                        75
+                    ],
+                    "mention": "Cyber",
+                    "probability": 0.30898594856262207
+                }
+            },
+            {
+                "annotated": "We assess with low confidence that WIRTE is a subgroup under the <e1>Gaza</e1> Cyber<e2>gang</e2> umbrella.",
+                "e1": {
+                    "type": "location",
+                    "position": [
+                        65,
+                        69
+                    ],
+                    "mention": "Gaza",
+                    "probability": 0.6305980682373047
+                },
+                "e2": {
+                    "type": "ThreatActor",
+                    "position": [
+                        75,
+                        79
+                    ],
+                    "mention": "gang",
+                    "probability": 0.5068840384483337
+                }
+            },
+            {
+                "annotated": "We assess with low confidence that WIRTE is a subgroup under the Gaza <e1>Cyber</e1><e2>gang</e2> umbrella.",
+                "e1": {
+                    "type": "MalwareType",
+                    "position": [
+                        70,
+                        75
+                    ],
+                    "mention": "Cyber",
+                    "probability": 0.30898594856262207
+                },
+                "e2": {
+                    "type": "ThreatActor",
+                    "position": [
+                        75,
+                        79
+                    ],
+                    "mention": "gang",
+                    "probability": 0.5068840384483337
+                }
+            }
+        ]
+    },
+    {
+        "entity": [
+            {
+                "type": "location",
+                "position": [
+                    123,
+                    134
+                ],
+                "mention": "Palestinian",
+                "probability": 0.9191276431083679
+            },
+            {
+                "type": "location",
+                "position": [
+                    238,
+                    249
+                ],
+                "mention": "Middle East",
+                "probability": 0.9840520620346069
+            },
+            {
+                "type": "ThreatActor",
+                "position": [
+                    265,
+                    275
+                ],
+                "mention": "MuddyWater",
+                "probability": 0.5313674136996269
+            }
+        ],
+        "sentence": "Although the three subgroups we are tracking use entirely different TTPs, they all occasionally use decoys associated with Palestinian matters, which we haven\u2019t seen commonly used by other threat actors, especially those operating in the Middle East region such as MuddyWater and",
+        "annotated_sent_comb": [
+            {
+                "annotated": "Although the three subgroups we are tracking use entirely different TTPs, they all occasionally use decoys associated with <e1>Palestinian</e1> matters, which we haven\u2019t seen commonly used by other threat actors, especially those operating in the Middle East region such as <e2>MuddyWater</e2> and",
+                "e1": {
+                    "type": "location",
+                    "position": [
+                        123,
+                        134
+                    ],
+                    "mention": "Palestinian",
+                    "probability": 0.9191276431083679
+                },
+                "e2": {
+                    "type": "ThreatActor",
+                    "position": [
+                        265,
+                        275
+                    ],
+                    "mention": "MuddyWater",
+                    "probability": 0.5313674136996269
+                }
+            },
+            {
+                "annotated": "Although the three subgroups we are tracking use entirely different TTPs, they all occasionally use decoys associated with Palestinian matters, which we haven\u2019t seen commonly used by other threat actors, especially those operating in the <e1>Middle East</e1> region such as <e2>MuddyWater</e2> and",
+                "e1": {
+                    "type": "location",
+                    "position": [
+                        238,
+                        249
+                    ],
+                    "mention": "Middle East",
+                    "probability": 0.9840520620346069
+                },
+                "e2": {
+                    "type": "ThreatActor",
+                    "position": [
+                        265,
+                        275
+                    ],
+                    "mention": "MuddyWater",
+                    "probability": 0.5313674136996269
+                }
+            }
+        ]
+    },
+    {
+        "entity": [],
+        "sentence": "Conclusion and outlook",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "WIRTE operators use simple and rather common TTPs that have allowed them to remain undetected for a long period of time.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [
+            {
+                "type": "location",
+                "position": [
+                    44,
+                    48
+                ],
+                "mention": "Gaza",
+                "probability": 0.3810195028781891
+            },
+            {
+                "type": "ThreatActor",
+                "position": [
+                    49,
+                    58
+                ],
+                "mention": "Cybergang",
+                "probability": 0.7897067964076996
+            }
+        ],
+        "sentence": "If our assessment of associating WIRTE with Gaza Cybergang proves to be correct in the future, it may signal a change in the group\u2019s motivation.",
+        "annotated_sent_comb": [
+            {
+                "annotated": "If our assessment of associating WIRTE with <e1>Gaza</e1> <e2>Cybergang</e2> proves to be correct in the future, it may signal a change in the group\u2019s motivation.",
+                "e1": {
+                    "type": "location",
+                    "position": [
+                        44,
+                        48
+                    ],
+                    "mention": "Gaza",
+                    "probability": 0.3810195028781891
+                },
+                "e2": {
+                    "type": "ThreatActor",
+                    "position": [
+                        49,
+                        58
+                    ],
+                    "mention": "Cybergang",
+                    "probability": 0.7897067964076996
+                }
+            }
+        ]
+    },
+    {
+        "entity": [
+            {
+                "type": "location",
+                "position": [
+                    0,
+                    4
+                ],
+                "mention": "Gaza",
+                "probability": 0.878410279750824
+            },
+            {
+                "type": "ThreatActor",
+                "position": [
+                    5,
+                    14
+                ],
+                "mention": "Cybergang",
+                "probability": 0.6245001256465912
+            },
+            {
+                "type": "Application",
+                "position": [
+                    149,
+                    157
+                ],
+                "mention": "law firm",
+                "probability": 0.8609989583492279
+            },
+            {
+                "type": "Application",
+                "position": [
+                    163,
+                    185
+                ],
+                "mention": "financial institutions",
+                "probability": 0.8393175999323527
+            }
+        ],
+        "sentence": "Gaza Cybergang is politically motivated and therefore primarily targets governmental and political entities; it is unusual for such groups to target law firms and financial institutions.",
+        "annotated_sent_comb": [
+            {
+                "annotated": "<e1>Gaza</e1> <e2>Cybergang</e2> is politically motivated and therefore primarily targets governmental and political entities; it is unusual for such groups to target law firms and financial institutions.",
+                "e1": {
+                    "type": "location",
+                    "position": [
+                        0,
+                        4
+                    ],
+                    "mention": "Gaza",
+                    "probability": 0.878410279750824
+                },
+                "e2": {
+                    "type": "ThreatActor",
+                    "position": [
+                        5,
+                        14
+                    ],
+                    "mention": "Cybergang",
+                    "probability": 0.6245001256465912
+                }
+            },
+            {
+                "annotated": "<e1>Gaza</e1> Cybergang is politically motivated and therefore primarily targets governmental and political entities; it is unusual for such groups to target <e2>law firm</e2>s and financial institutions.",
+                "e1": {
+                    "type": "location",
+                    "position": [
+                        0,
+                        4
+                    ],
+                    "mention": "Gaza",
+                    "probability": 0.878410279750824
+                },
+                "e2": {
+                    "type": "Application",
+                    "position": [
+                        149,
+                        157
+                    ],
+                    "mention": "law firm",
+                    "probability": 0.8609989583492279
+                }
+            },
+            {
+                "annotated": "<e1>Gaza</e1> Cybergang is politically motivated and therefore primarily targets governmental and political entities; it is unusual for such groups to target law firms and <e2>financial institutions</e2>.",
+                "e1": {
+                    "type": "location",
+                    "position": [
+                        0,
+                        4
+                    ],
+                    "mention": "Gaza",
+                    "probability": 0.878410279750824
+                },
+                "e2": {
+                    "type": "Application",
+                    "position": [
+                        163,
+                        185
+                    ],
+                    "mention": "financial institutions",
+                    "probability": 0.8393175999323527
+                }
+            },
+            {
+                "annotated": "Gaza <e1>Cybergang</e1> is politically motivated and therefore primarily targets governmental and political entities; it is unusual for such groups to target <e2>law firm</e2>s and financial institutions.",
+                "e1": {
+                    "type": "ThreatActor",
+                    "position": [
+                        5,
+                        14
+                    ],
+                    "mention": "Cybergang",
+                    "probability": 0.6245001256465912
+                },
+                "e2": {
+                    "type": "Application",
+                    "position": [
+                        149,
+                        157
+                    ],
+                    "mention": "law firm",
+                    "probability": 0.8609989583492279
+                }
+            },
+            {
+                "annotated": "Gaza <e1>Cybergang</e1> is politically motivated and therefore primarily targets governmental and political entities; it is unusual for such groups to target law firms and <e2>financial institutions</e2>.",
+                "e1": {
+                    "type": "ThreatActor",
+                    "position": [
+                        5,
+                        14
+                    ],
+                    "mention": "Cybergang",
+                    "probability": 0.6245001256465912
+                },
+                "e2": {
+                    "type": "Application",
+                    "position": [
+                        163,
+                        185
+                    ],
+                    "mention": "financial institutions",
+                    "probability": 0.8393175999323527
+                }
+            }
+        ]
+    },
+    {
+        "entity": [],
+        "sentence": "Despite the targeting of these latter spheres, the majority of victims still fall within the government and diplomatic categories.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [
+            {
+                "type": "Malware",
+                "position": [
+                    0,
+                    5
+                ],
+                "mention": "WIRTE",
+                "probability": 0.8333792885144552
+            }
+        ],
+        "sentence": "WIRTE modified their toolset and how they operate to remain stealthy for a longer period of time.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "Living-off-the-land (LotL) techniques are an interesting new addition to their TTPs.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [
+            {
+                "type": "location",
+                "position": [
+                    27,
+                    31
+                ],
+                "mention": "Gaza",
+                "probability": 0.9320355653762817
+            },
+            {
+                "type": "ThreatActor",
+                "position": [
+                    32,
+                    41
+                ],
+                "mention": "Cybergang",
+                "probability": 0.8719189465045929
+            },
+            {
+                "type": "Malware",
+                "position": [
+                    114,
+                    119
+                ],
+                "mention": "OpSec",
+                "probability": 0.7482935587565104
+            }
+        ],
+        "sentence": "This suspected subgroup of Gaza Cybergang used simple yet effective methods to compromise its victims with better OpSec than its suspected counterparts.",
+        "annotated_sent_comb": [
+            {
+                "annotated": "This suspected subgroup of <e1>Gaza</e1> <e2>Cybergang</e2> used simple yet effective methods to compromise its victims with better OpSec than its suspected counterparts.",
+                "e1": {
+                    "type": "location",
+                    "position": [
+                        27,
+                        31
+                    ],
+                    "mention": "Gaza",
+                    "probability": 0.9320355653762817
+                },
+                "e2": {
+                    "type": "ThreatActor",
+                    "position": [
+                        32,
+                        41
+                    ],
+                    "mention": "Cybergang",
+                    "probability": 0.8719189465045929
+                }
+            },
+            {
+                "annotated": "This suspected subgroup of <e1>Gaza</e1> Cybergang used simple yet effective methods to compromise its victims with better <e2>OpSec</e2> than its suspected counterparts.",
+                "e1": {
+                    "type": "location",
+                    "position": [
+                        27,
+                        31
+                    ],
+                    "mention": "Gaza",
+                    "probability": 0.9320355653762817
+                },
+                "e2": {
+                    "type": "Malware",
+                    "position": [
+                        114,
+                        119
+                    ],
+                    "mention": "OpSec",
+                    "probability": 0.7482935587565104
+                }
+            },
+            {
+                "annotated": "This suspected subgroup of Gaza <e1>Cybergang</e1> used simple yet effective methods to compromise its victims with better <e2>OpSec</e2> than its suspected counterparts.",
+                "e1": {
+                    "type": "ThreatActor",
+                    "position": [
+                        32,
+                        41
+                    ],
+                    "mention": "Cybergang",
+                    "probability": 0.8719189465045929
+                },
+                "e2": {
+                    "type": "Malware",
+                    "position": [
+                        114,
+                        119
+                    ],
+                    "mention": "OpSec",
+                    "probability": 0.7482935587565104
+                }
+            }
+        ]
+    },
+    {
+        "entity": [
+            {
+                "type": "Application",
+                "position": [
+                    43,
+                    46
+                ],
+                "mention": "VBS",
+                "probability": 0.7850748598575592
+            },
+            {
+                "type": "Application",
+                "position": [
+                    51,
+                    61
+                ],
+                "mention": "PowerShell",
+                "probability": 0.8991646766662598
+            },
+            {
+                "type": "location",
+                "position": [
+                    88,
+                    92
+                ],
+                "mention": "Gaza",
+                "probability": 0.6486673951148987
+            },
+            {
+                "type": "ThreatActor",
+                "position": [
+                    93,
+                    102
+                ],
+                "mention": "Cybergang",
+                "probability": 0.5783067941665649
+            }
+        ],
+        "sentence": "Using interpreted language malware such as VBS and PowerShell scripts, unlike the other Gaza Cybergang subgroups, adds flexibility to update their toolset and avoid static detection controls.",
+        "annotated_sent_comb": [
+            {
+                "annotated": "Using interpreted language malware such as <e1>VBS</e1> and PowerShell scripts, unlike the other <e2>Gaza</e2> Cybergang subgroups, adds flexibility to update their toolset and avoid static detection controls.",
+                "e1": {
+                    "type": "Application",
+                    "position": [
+                        43,
+                        46
+                    ],
+                    "mention": "VBS",
+                    "probability": 0.7850748598575592
+                },
+                "e2": {
+                    "type": "location",
+                    "position": [
+                        88,
+                        92
+                    ],
+                    "mention": "Gaza",
+                    "probability": 0.6486673951148987
+                }
+            },
+            {
+                "annotated": "Using interpreted language malware such as <e1>VBS</e1> and PowerShell scripts, unlike the other Gaza <e2>Cybergang</e2> subgroups, adds flexibility to update their toolset and avoid static detection controls.",
+                "e1": {
+                    "type": "Application",
+                    "position": [
+                        43,
+                        46
+                    ],
+                    "mention": "VBS",
+                    "probability": 0.7850748598575592
+                },
+                "e2": {
+                    "type": "ThreatActor",
+                    "position": [
+                        93,
+                        102
+                    ],
+                    "mention": "Cybergang",
+                    "probability": 0.5783067941665649
+                }
+            },
+            {
+                "annotated": "Using interpreted language malware such as VBS and <e1>PowerShell</e1> scripts, unlike the other <e2>Gaza</e2> Cybergang subgroups, adds flexibility to update their toolset and avoid static detection controls.",
+                "e1": {
+                    "type": "Application",
+                    "position": [
+                        51,
+                        61
+                    ],
+                    "mention": "PowerShell",
+                    "probability": 0.8991646766662598
+                },
+                "e2": {
+                    "type": "location",
+                    "position": [
+                        88,
+                        92
+                    ],
+                    "mention": "Gaza",
+                    "probability": 0.6486673951148987
+                }
+            },
+            {
+                "annotated": "Using interpreted language malware such as VBS and <e1>PowerShell</e1> scripts, unlike the other Gaza <e2>Cybergang</e2> subgroups, adds flexibility to update their toolset and avoid static detection controls.",
+                "e1": {
+                    "type": "Application",
+                    "position": [
+                        51,
+                        61
+                    ],
+                    "mention": "PowerShell",
+                    "probability": 0.8991646766662598
+                },
+                "e2": {
+                    "type": "ThreatActor",
+                    "position": [
+                        93,
+                        102
+                    ],
+                    "mention": "Cybergang",
+                    "probability": 0.5783067941665649
+                }
+            },
+            {
+                "annotated": "Using interpreted language malware such as VBS and PowerShell scripts, unlike the other <e1>Gaza</e1> <e2>Cybergang</e2> subgroups, adds flexibility to update their toolset and avoid static detection controls.",
+                "e1": {
+                    "type": "location",
+                    "position": [
+                        88,
+                        92
+                    ],
+                    "mention": "Gaza",
+                    "probability": 0.6486673951148987
+                },
+                "e2": {
+                    "type": "ThreatActor",
+                    "position": [
+                        93,
+                        102
+                    ],
+                    "mention": "Cybergang",
+                    "probability": 0.5783067941665649
+                }
+            }
+        ]
+    },
+    {
+        "entity": [
+            {
+                "type": "Malware",
+                "position": [
+                    8,
+                    13
+                ],
+                "mention": "WIRTE",
+                "probability": 0.5337281922499338
+            },
+            {
+                "type": "location",
+                "position": [
+                    60,
+                    64
+                ],
+                "mention": "Gaza",
+                "probability": 0.872042715549469
+            },
+            {
+                "type": "ThreatActor",
+                "position": [
+                    65,
+                    74
+                ],
+                "mention": "Cybergang",
+                "probability": 0.5318880677223206
+            }
+        ],
+        "sentence": "Whether WIRTE is a new subgroup or an evolution of existing Gaza Cybergang subgroups, we see them expanding their presence further in cyberspace by using updated and stealthier TTPs.",
+        "annotated_sent_comb": [
+            {
+                "annotated": "Whether <e1>WIRTE</e1> is a new subgroup or an evolution of existing <e2>Gaza</e2> Cybergang subgroups, we see them expanding their presence further in cyberspace by using updated and stealthier TTPs.",
+                "e1": {
+                    "type": "Malware",
+                    "position": [
+                        8,
+                        13
+                    ],
+                    "mention": "WIRTE",
+                    "probability": 0.5337281922499338
+                },
+                "e2": {
+                    "type": "location",
+                    "position": [
+                        60,
+                        64
+                    ],
+                    "mention": "Gaza",
+                    "probability": 0.872042715549469
+                }
+            },
+            {
+                "annotated": "Whether <e1>WIRTE</e1> is a new subgroup or an evolution of existing Gaza <e2>Cybergang</e2> subgroups, we see them expanding their presence further in cyberspace by using updated and stealthier TTPs.",
+                "e1": {
+                    "type": "Malware",
+                    "position": [
+                        8,
+                        13
+                    ],
+                    "mention": "WIRTE",
+                    "probability": 0.5337281922499338
+                },
+                "e2": {
+                    "type": "ThreatActor",
+                    "position": [
+                        65,
+                        74
+                    ],
+                    "mention": "Cybergang",
+                    "probability": 0.5318880677223206
+                }
+            },
+            {
+                "annotated": "Whether WIRTE is a new subgroup or an evolution of existing <e1>Gaza</e1> <e2>Cybergang</e2> subgroups, we see them expanding their presence further in cyberspace by using updated and stealthier TTPs.",
+                "e1": {
+                    "type": "location",
+                    "position": [
+                        60,
+                        64
+                    ],
+                    "mention": "Gaza",
+                    "probability": 0.872042715549469
+                },
+                "e2": {
+                    "type": "ThreatActor",
+                    "position": [
+                        65,
+                        74
+                    ],
+                    "mention": "Cybergang",
+                    "probability": 0.5318880677223206
+                }
+            }
+        ]
+    },
+    {
+        "entity": [],
+        "sentence": "In the near future we expect them to continue compromising their victims using the TTPs discussed in this report.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "Indicators of compromise",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "Malicious documents and droppers",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "ecaaab9e2fc089eefb6accae9750ac60 xls.\u0627\u0644\u0644\u0627\u0626\u062d\u0629 \u0627\u0644\u062c\u0646\u06cc\u0633\u06cc\u0629",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "a7802c9a4046edbcbe3f5a503de61867 doc.1803202155-\u062a\u0639\u0645\u06cc\u0645 \u0631\u0642\u0645",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [
+            {
+                "type": "location",
+                "position": [
+                    39,
+                    45
+                ],
+                "mention": "george",
+                "probability": 0.9114640653133392
+            }
+        ],
+        "sentence": "3a7425539f8853e7b89624890a5de25b saint george bankers & trust business offer.docx",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "5AE4505A5CA7235C842680C557D05383 slmgr.vbs",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "B2F8CCE7B03E7AA70DAB4A5D377375B5 exhaustedq.txt",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [
+            {
+                "type": "Malware",
+                "position": [
+                    33,
+                    42
+                ],
+                "mention": "kaspersky",
+                "probability": 0.7965760429700216
+            }
+        ],
+        "sentence": "8ade05c4b4e98cc89fa09bd513ea1a99 kaspersky update agent.exe",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "Class IDs in registry",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [
+            {
+                "type": "Filepath-Win",
+                "position": [
+                    6,
+                    13
+                ],
+                "mention": "Software",
+                "probability": 1
+            }
+        ],
+        "sentence": "HKCU:\\Software\\Classes\\CLSID\\{50236F14-2C02-4291-93AB-B5A80F9666B0}\\LocalServer32",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [
+            {
+                "type": "Filepath-Win",
+                "position": [
+                    6,
+                    13
+                ],
+                "mention": "Software",
+                "probability": 1
+            }
+        ],
+        "sentence": "HKCU:\\Software\\Classes\\CLSID\\{14C34482-E07F-44CF-B261-385B616C54EC}\\LocalServer32",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "File path",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "%AppData%\\Temp\\9127.tmp\\9128.tmp\\",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "%ProgramData%\\",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "PDB paths",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [
+            {
+                "type": "Filepath-Win",
+                "position": [
+                    3,
+                    9
+                ],
+                "mention": "Hacking",
+                "probability": 1
+            }
+        ],
+        "sentence": "K:\\Hacking\\NgcCtrlSvc\\NgcCtrlSvc\\obj\\Release\\NgcCtrlSvc.pdb",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [
+            {
+                "type": "Filepath-Win",
+                "position": [
+                    3,
+                    9
+                ],
+                "mention": "Hacking",
+                "probability": 1
+            }
+        ],
+        "sentence": "K:\\Hacking\\Tools\\MsDataSvc-v3\\MsDataSvc\\obj\\Release\\MsDataSvc.pdb",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "Domains and IPs",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "nutrition-information[.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "]org",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [
+            {
+                "type": "Malware",
+                "position": [
+                    0,
+                    2
+                ],
+                "mention": "St",
+                "probability": 0.3051888346672058
+            },
+            {
+                "type": "ThreatActor",
+                "position": [
+                    4,
+                    7
+                ],
+                "mention": "org",
+                "probability": 0.28774112462997437
+            }
+        ],
+        "sentence": "Stgeorgebankers[.",
+        "annotated_sent_comb": [
+            {
+                "annotated": "<e1>St</e1>ge<e2>org</e2>ebankers[.",
+                "e1": {
+                    "type": "Malware",
+                    "position": [
+                        0,
+                        2
+                    ],
+                    "mention": "St",
+                    "probability": 0.3051888346672058
+                },
+                "e2": {
+                    "type": "ThreatActor",
+                    "position": [
+                        4,
+                        7
+                    ],
+                    "mention": "org",
+                    "probability": 0.28774112462997437
+                }
+            }
+        ]
+    },
+    {
+        "entity": [],
+        "sentence": "]com",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [
+            {
+                "type": "Application",
+                "position": [
+                    0,
+                    5
+                ],
+                "mention": "First",
+                "probability": 0.3294527977705002
+            }
+        ],
+        "sentence": "Firstohiobank[.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "]com",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "allaccounting[.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "]ca",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "est-clinic[.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "]com",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "unitedfamilyhealth[.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "]net",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "pocket-property[.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "]com",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "kneeexercises[.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "]net",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "doctoressolis[.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "]com",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "omegaeyehospital[.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "]com",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "Healthyhabitsusa[.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "]com",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "niftybuysellchart[.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "]com",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "Dentalmatrix[.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "]net",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "91.211.89[.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "]33",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "91.203.6[.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "]27",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "45.129.96[.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "]174",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "45.129.97[.",
+        "annotated_sent_comb": []
+    },
+    {
+        "entity": [],
+        "sentence": "]207",
+        "annotated_sent_comb": []
+    }
+]

@@ -1,0 +1,357 @@
+[
+    {
+        "sent": "The implant itself is a VBS script with functionality to collect system information and execute arbitrary code sent by the attackers on the infected machine.",
+        "attack_patterns": [
+            "implant itself is a VBS",
+            "execute arbitrary code sent by the attackers on the infected machine"
+        ]
+    },
+    {
+        "sent": "The Word droppers were using standard VBA macros to download the payload.",
+        "attack_patterns": [
+            "using standard VBA macros to download the payload"
+        ]
+    },
+    {
+        "sent": "Sample VBS dropper Excel and Word documents, and executable Sample VBS dropper Excel and Word documents, and executable Sample VBS dropper Excel and Word documents, and executable",
+        "attack_patterns": []
+    },
+    {
+        "sent": "Sample VBS dropper Excel and Word documents, and executable",
+        "attack_patterns": [
+            "Sample VBS dropper Excel and Word documents , and executable"
+        ]
+    },
+    {
+        "sent": "Exploitation, installation and persistence",
+        "attack_patterns": [
+            "Exploitation , installation and persistence"
+        ]
+    },
+    {
+        "sent": "This first stage implant is composed of VBS and PowerShell scripts.",
+        "attack_patterns": []
+    },
+    {
+        "sent": "Ferocious dropper: The Excel dropper, after the user opens it and disables the protected mode, will execute a series of formulas placed in a hidden column.",
+        "attack_patterns": [
+            "the user opens it and disables the protected mode",
+            "will execute a series of formulas placed in a hidden column"
+        ]
+    },
+    {
+        "sent": "Initially, they will hide the main spreadsheet that requested the user to \u201cenable editing\u201d, then unhide a secondary spreadsheet that contains the decoy, to avoid raising suspicion.",
+        "attack_patterns": [
+            "hide the main spreadsheet that requested the user to \u201c enable editing \u201d",
+            "unhide a secondary spreadsheet that contains the decoy"
+        ]
+    },
+    {
+        "sent": "The dropper will then run formulas from a third spreadsheet with hidden columns.",
+        "attack_patterns": [
+            "run formulas from a third spreadsheet with hidden columns"
+        ]
+    },
+    {
+        "sent": "The infection process will start by running three basic anti-sandbox checks using the Excel 4.0 function \u201cGET.WORKSPACE\u201d, with three integers:",
+        "attack_patterns": []
+    },
+    {
+        "sent": "1: Get the name of the environment in which Microsoft Excel is running, as text, followed by the environment\u2019s version number.",
+        "attack_patterns": [
+            "Get the name of the environment in which Microsoft Excel is running , as text , followed by the environment \u2019 s version number"
+        ]
+    },
+    {
+        "sent": "42: Check if the host computer is capable of playing sounds.",
+        "attack_patterns": [
+            "Check if the host computer is capable of playing sounds"
+        ]
+    },
+    {
+        "sent": "If any of the above checks fail, or if the Windows environment matches any of the aforementioned versions predefined in the document (different documents have different predefined versions), the process will halt.",
+        "attack_patterns": []
+    },
+    {
+        "sent": "Otherwise, the macro will open a temporary %ProgramData%\\winrm.txt file and save a VBS stager to %ProgramData%\\winrm.vbs and set up registry keys for persistence.",
+        "attack_patterns": [
+            "open a temporary % ProgramData",
+            "save a VBS stager to %",
+            "set up registry keys for persistence"
+        ]
+    },
+    {
+        "sent": "Ferocious run-1: After the macro finishes writing to disk, it runs winrm.vbs using explorer.exe.",
+        "attack_patterns": [
+            "finishes writing to disk",
+            "runs winrm.vbs using"
+        ]
+    },
+    {
+        "sent": "In turn, the VBS script will write an embedded PowerShell snippet to a predefined filename that varies between samples, for instance, %ProgramData%\\regionh.txt.",
+        "attack_patterns": [
+            "write an embedded PowerShell snippet to a predefined filename that varies between"
+        ]
+    },
+    {
+        "sent": "The VBS script will also add two important registry keys for persistence.",
+        "attack_patterns": []
+    },
+    {
+        "sent": "The persistence technique observed in all intrusions uses COM hijacking.",
+        "attack_patterns": [
+            "observed in all intrusions uses COM hijacking"
+        ]
+    },
+    {
+        "sent": "In this technique, the threat actor is able to add a Class ID in the current user registry hive (HKCU) referencing the malicious VBS script written previously to %ProgramData%\\winrm.vbs.",
+        "attack_patterns": [
+            "add a Class ID in the current user registry hive",
+            ") referencing the malicious VBS script written previously to"
+        ]
+    },
+    {
+        "sent": "This registry modification will effectively invoke the malicious VBS script any time a program or script references \u201cScripting.Dictionary\u201d COM programs during their execution.",
+        "attack_patterns": [
+            "invoke the malicious VBS script any time a program or script references \u201c Scripting.Dictionary \u201d COM programs during their execution"
+        ]
+    },
+    {
+        "sent": "Both winrm.vbs and slmgr.vbs were leveraged across different intrusions.",
+        "attack_patterns": []
+    },
+    {
+        "sent": "Registry keys used for COM hijacking",
+        "attack_patterns": [
+            "Registry keys used for COM hijacking"
+        ]
+    },
+    {
+        "sent": "Registry keys used for COM hijacking",
+        "attack_patterns": [
+            "Registry keys used for COM hijacking"
+        ]
+    },
+    {
+        "sent": "After the above execution chain, the Excel 4.0 macro will clean up and delete the winrm.vbs and winrm.txt files.",
+        "attack_patterns": [
+            "clean up and delete the winrm.vbs and winrm.txt files"
+        ]
+    },
+    {
+        "sent": "Ferocious run-2: The macro will continue after the cleanup by recreating and opening the same files, winrm.vbs and winrm.txt.",
+        "attack_patterns": [
+            "continue after the cleanup by recreating and opening the same files"
+        ]
+    },
+    {
+        "sent": "However, this time it writes a PowerShell one-liner wrapped with VB code temporarily into %ProgramData%\\winrm.txt and then saved into %ProgramData%\\winrm.vbs.",
+        "attack_patterns": [
+            "writes a PowerShell one-liner wrapped with VB code temporarily into",
+            "saved into"
+        ]
+    },
+    {
+        "sent": "Once successful, the macro invokes %ProgramData%\\winrm.vbs again using explorer.exe, which in turn will execute the PowerShell snippet that connects to the C2 server and which we named LitePower Stager.",
+        "attack_patterns": []
+    },
+    {
+        "sent": "The implant is a small PowerShell script that acts as a downloader and secondary stager used to execute commands provided by its C2, and possibly download and deploy further malware.",
+        "attack_patterns": [
+            "that acts as a downloader and secondary stager used to execute commands provided by its C2",
+            "download and deploy further malware"
+        ]
+    },
+    {
+        "sent": "This script is able to connect with the embedded C2 domain using predefined HTTP settings such as a unique User-Agent:",
+        "attack_patterns": [
+            "connect with the embedded C2 domain using predefined HTTP settings such as a unique User-Agent"
+        ]
+    },
+    {
+        "sent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:FTS_06) Gecko/22.36.35.06 Firefox/2.0",
+        "attack_patterns": []
+    },
+    {
+        "sent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:FTS_06) Gecko/22.36.35.06 Firefox/2.0",
+        "attack_patterns": []
+    },
+    {
+        "sent": "If the connection to the C2 server is successful, the script parses the output and invokes it using IEX.",
+        "attack_patterns": [
+            "parses the output and invokes it using IEX"
+        ]
+    },
+    {
+        "sent": "The script sleeps for a random number of seconds between 60 and 100 after each attempt to reach the C2.",
+        "attack_patterns": [
+            "sleeps for a random number of seconds between 60 and 100 after each attempt to reach the C2"
+        ]
+    },
+    {
+        "sent": "If the threat actor succeeds in establishing C2 communications using LitePower, further payloads containing system commands are sent back to the victim in the form of PowerShell functions through HTTP GET requests, and the command results are sent back as HTTP POST requests to the C2 server.",
+        "attack_patterns": [
+            "establishing C2 communications using LitePower",
+            "further payloads containing system commands are sent back to the victim in the form of PowerShell functions through HTTP GET requests",
+            "results are sent back as HTTP POST requests to the C2 server"
+        ]
+    },
+    {
+        "sent": "The GET requests will be parsed by LitePower and invoked using PowerShell\u2019s IEX function.",
+        "attack_patterns": [
+            "The GET requests will be parsed by LitePower and invoked using PowerShell \u2019 s IEX"
+        ]
+    },
+    {
+        "sent": "The threat actor initially conducts system reconnaissance to assess the AV software installed and the user privilege.",
+        "attack_patterns": [
+            "conducts system reconnaissance to assess the AV software installed and the user privilege"
+        ]
+    },
+    {
+        "sent": "This is followed by the creation of a legitimate scheduled task to trigger \u201cScripting.Dictionary\u201d COM programs; this will become the cornerstone that allows the persistence to work using the COM hijacking technique and the registry keys added during the installation phase described above.",
+        "attack_patterns": []
+    },
+    {
+        "sent": "Sample scheduled task settings referencing SLMGR.VBS to trigger WINRM.VBS through COM hijacking",
+        "attack_patterns": [
+            "scheduled task settings referencing SLMGR.VBS to trigger WINRM.VBS through COM hijacking"
+        ]
+    },
+    {
+        "sent": "Sample scheduled task settings referencing SLMGR.VBS to trigger WINRM.VBS through COM hijacking",
+        "attack_patterns": [
+            "scheduled task settings referencing SLMGR.VBS to trigger WINRM.VBS through COM hijacking"
+        ]
+    },
+    {
+        "sent": "select volumeserialnumber List local disk drives",
+        "attack_patterns": [
+            "select volumeserialnumber List local disk drives"
+        ]
+    },
+    {
+        "sent": "\u2018SELECT * FROM AntiVirusProduct\u2019",
+        "attack_patterns": []
+    },
+    {
+        "sent": "$antivirusProduct = Get-WmiObject -Namespace",
+        "attack_patterns": [
+            "Get-WmiObject -Namespace"
+        ]
+    },
+    {
+        "sent": "\u2018root\\SecurityCenter2\u2019 -Query $wmiQuery",
+        "attack_patterns": []
+    },
+    {
+        "sent": "if($antivirusProduct.displayName -eq \u201d){$ret= \u2018N/A\u2019}",
+        "attack_patterns": []
+    },
+    {
+        "sent": "else{$ret= $antivirusProduct.displayName} Get list of antivirus software installed",
+        "attack_patterns": [
+            "Get list of antivirus software installed"
+        ]
+    },
+    {
+        "sent": "inRole]::Administrator Check if current user has admin privileges",
+        "attack_patterns": [
+            ":Administrator Check if current user has admin privileges"
+        ]
+    },
+    {
+        "sent": "Get-WmiObject win32_operatingsystem).caption) + \u2018 x\u2019+ ((Get-",
+        "attack_patterns": []
+    },
+    {
+        "sent": "WmiObject Win32_OperatingSystem).OSArchitecture).substring(0,2) Get operating system architecture",
+        "attack_patterns": [
+            "operating system architecture"
+        ]
+    },
+    {
+        "sent": "Function Get-ServiceStatus: checks for possible backdoors installed as services (MsDataSvc and NgcCtrlSvc), if the computer is part of a domain, and if the current user is a member of \u201cDomain admins\u201d.",
+        "attack_patterns": [
+            "checks for possible backdoors installed as services"
+        ]
+    },
+    {
+        "sent": "Function Get-PersistenceStatus: checks for the registry keys added for COM hijacking.",
+        "attack_patterns": [
+            "checks for the registry keys added for COM hijacking"
+        ]
+    },
+    {
+        "sent": "Function Get-HotFixes: lists all hotfixes installed.",
+        "attack_patterns": [
+            "lists all hotfixes installed"
+        ]
+    },
+    {
+        "sent": "Screenshot: takes system screenshots and saves them to %AppData% before sending them to the C2 via a POST request.",
+        "attack_patterns": [
+            "takes system screenshots and saves them to % AppData % before sending them to the C2 via a POST request"
+        ]
+    },
+    {
+        "sent": "These C2 domains were occasionally behind CloudFlare to obscure the real C2 IP address.",
+        "attack_patterns": [
+            "CloudFlare to obscure the real C2 IP address"
+        ]
+    },
+    {
+        "sent": "]net listens for incoming HTTPS connections on several ports and uses common names seen on other C2 domains.",
+        "attack_patterns": [
+            "listens for incoming HTTPS connections on several ports and uses common names seen on other C2 domains"
+        ]
+    },
+    {
+        "sent": "Both old and new intrusions leveraged VBS and PowerShell in similar ways to stage additional tools and communicate with the C2.",
+        "attack_patterns": [
+            "ways to stage additional tools and communicate with the C2"
+        ]
+    },
+    {
+        "sent": "Old C2 request highlighting the status condition, IEX invocation and 60-100 sleep function ",
+        "attack_patterns": [
+            "request highlighting the status condition , IEX invocation and 60-100 sleep function"
+        ]
+    },
+    {
+        "sent": "Old C2 request highlighting the status condition, IEX invocation and 60-100 sleep function",
+        "attack_patterns": [
+            "request highlighting the status condition , IEX invocation and 60-100 sleep function"
+        ]
+    },
+    {
+        "sent": "New C2 request highlighting the status condition, IEX invocation and 60-100 sleep function",
+        "attack_patterns": [
+            "highlighting the status condition , IEX invocation and 60-100 sleep function"
+        ]
+    },
+    {
+        "sent": "New C2 request highlighting the status condition, IEX invocation and 60-100 sleep function",
+        "attack_patterns": [
+            "highlighting the status condition , IEX invocation and 60-100 sleep function"
+        ]
+    },
+    {
+        "sent": "Malicious documents and droppers",
+        "attack_patterns": [
+            "Malicious documents and droppers"
+        ]
+    },
+    {
+        "sent": "Class IDs in registry",
+        "attack_patterns": [
+            "Class IDs in registry"
+        ]
+    },
+    {
+        "sent": "File path",
+        "attack_patterns": [
+            "File path"
+        ]
+    }
+]

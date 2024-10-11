@@ -1,0 +1,26 @@
+[
+    {
+        "report_text": "The \"EXECUTABLE_0\" malware has keylogger functionality.",
+        "ttp_id": "t1180",
+        "ttp_name": "Screensaver",
+        "ttp_descr": "",
+        "ttp_tactic": "Persistence",
+        "bm25_score": 11.76638932782088
+    },
+    {
+        "report_text": "It stores the logged keystrokes in the following file: [CWD]\\.tmp When the \"EXECUTABLE_0\" malware is executed it : Creates a copy of itself in the following locations: %APPDATA% %USERNAME% Tries to open the following file: [CWD]\\Authorization.exe.config Entrenches in the system for persistence in the following registry locations: REGISTRY_0 REGISTRY_1 Beacons to the following C2 node IP:.",
+        "ttp_id": "t1056",
+        "ttp_name": "Input Capture",
+        "ttp_descr": "",
+        "ttp_tactic": "Collection",
+        "bm25_score": 10.040891052483383
+    },
+    {
+        "report_text": "* over TCP port 1177:\"IP_0\u201d Makes the following modification to the registry to bypass the Windows Firewall: REGISTRY_0 The downloaded file is decoded, written to disk as %APPDATA%\\...\\ccSvcHst The following files created when the EXECUTABLE_0 malware executed: EXECUTABLE_1 EXECUTABLE_2 EXECUTABLE_3 and EXECUTABLE_4 are created by EXECUTABLE_5.",
+        "ttp_id": "t1192",
+        "ttp_name": "Spearphishing Link",
+        "ttp_descr": "",
+        "ttp_tactic": "Initial Access",
+        "bm25_score": 18.316460078448717
+    }
+]
