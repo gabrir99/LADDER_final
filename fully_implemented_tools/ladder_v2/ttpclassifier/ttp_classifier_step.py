@@ -121,7 +121,7 @@ if __name__ == "__main__":
     attack_pattern_mapper = AttackPatternFrameworkMapping(
         SentenceTransformer("all-MiniLM-L6-v2"),
         "MITRE",
-        "mapping_to_framework\\enterprise-techniques.csv"
+        "mapping_to_framework/enterprise-techniques.csv"
     )
 
     classified_sentences = extract_classified_sentences_from_txt(text, sent_classification);
